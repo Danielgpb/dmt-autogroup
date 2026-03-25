@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | DMT AUTOGROUP — Garage automobile Zaventem</title>
   <meta name="description" content="Contactez DMT AUTOGROUP, garage automobile à Zaventem. Mechelsesteenweg 270, 1933 Zaventem. Téléphone : 0484 11 58 13. Ouvert lun–ven 08:30–18:00.">
+  <meta name="robots" content="index, follow">
   <meta property="og:title" content="Contact — DMT AUTOGROUP Garage Zaventem">
   <meta property="og:description" content="Contactez DMT AUTOGROUP, garage automobile à Zaventem. Mechelsesteenweg 270. ☎ 0484 11 58 13. Lun-Ven 08:30-18:00.">
   <meta property="og:type" content="website">
@@ -44,6 +45,16 @@
   ]
 }
 </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.dmtautogroup.be/"},
+      {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.dmtautogroup.be/contact.html"}
+    ]
+  }
+  </script>
   <style>
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); margin-bottom: var(--space-xl); }
     .contact-card { background: var(--graphite); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: var(--space-lg); }
@@ -130,8 +141,8 @@
       </div>
 
       <div class="photo-gallery reveal" style="grid-template-columns:1fr 1fr; margin-bottom: var(--space-xl);">
-        <img src="img/facade-garage.jpg" alt="Façade garage DMT AUTOGROUP Mechelsesteenweg Zaventem" loading="lazy">
-        <img src="img/bureau.jpg" alt="Bureau accueil DMT AUTOGROUP Zaventem" loading="lazy">
+        <img src="img/facade-garage.jpg" alt="Façade garage DMT AUTOGROUP Mechelsesteenweg Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/bureau.jpg" alt="Bureau accueil DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533">
       </div>
 
       <div class="map-container reveal">
@@ -170,8 +181,8 @@
       <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="services/mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="services/mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="services/controle-technique.html" data-lang="fr">Contrôle technique</a><a href="services/controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="https://maps.google.com/?q=Mechelsesteenweg+270+1933+Zaventem" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Garage Zaventem</span><span data-lang="nl">Garage Zaventem</span></span></div>
+    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Garage Zaventem</span><span data-lang="nl">Garage Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
