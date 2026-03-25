@@ -5,4 +5,4 @@ Disallow: /css/design-a.css
 Disallow: /css/design-b.css
 Disallow: /css/design-c.css
 
-Sitemap: https://www.dmtautogroup.be/sitemap.xml
+Sitemap: https://www.dmt-autogroup.be/sitemap.xml
