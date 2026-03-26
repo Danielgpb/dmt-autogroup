@@ -1265,3 +1265,102 @@ a[data-lang].active-lang { display: revert; }
 
 .service-card[data-lang].active-lang { display: flex; }
 .areas__item[data-lang].active-lang { display: inline-block; }
+
+/* --- Mega Menu Dropdown --- */
+.nav__dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav__dropdown-trigger {
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-white, #fff);
+  cursor: pointer;
+  position: relative;
+  transition: color 0.15s ease;
+}
+
+.nav__dropdown-trigger:hover {
+  color: var(--yellow, #EAB308);
+}
+
+.nav__dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  min-width: 650px;
+  z-index: 1001;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.nav__dropdown:hover .nav__dropdown-menu {
+  display: grid;
+}
+
+.nav__dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-bottom: none;
+  border-right: none;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.nav__dropdown-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__dropdown-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.nav__dropdown-menu a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  padding: 0.3rem 0;
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+
+.nav__dropdown-menu a:hover {
+  color: #EAB308;
+}
+
+.nav__dropdown-menu a::after {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav__dropdown-menu {
+    display: none !important;
+  }
+}
