@@ -4,4 +4,6 @@
 /services/mecanique-automobile.html /mecanique-automobile.html  301
 /services/vidange-huile.html        /vidange-huile.html        301
 /services/controle-technique.html   /controle-technique.html   301
-/services/boite-dsg.html            /boite-dsg.html            301
+/services/reparation-boite-dsg.html            /reparation-boite-dsg.html            301
+/boite-dsg    /reparation-boite-dsg    301
+/boite-dsg.html    /reparation-boite-dsg    301
