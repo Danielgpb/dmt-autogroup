@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/direction-suspension">
   <meta property="og:image" content="https://dmt-autogroup.be/img/atelier-vue.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Direction et suspension Zaventem | DMT AUTOGROUP">
+  <meta name="twitter:description" content="Réparation direction et suspension. Amortisseurs, rotules, silent blocs, géométrie, direction assistée. Garage spécialisé Zaventem.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/atelier-vue.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/direction-suspension">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,10 +32,12 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
     "name": "DMT AUTOGROUP 1,2,3 AutoService",
-    "url": "https://dmt-autogroup.be/direction-suspension",
+    "url": "https://dmt-autogroup.be/",
     "image": "https://dmt-autogroup.be/img/atelier-vue.webp",
     "telephone": "+32484115813",
+    "sameAs": ["https://www.google.com/maps?cid=9711024847498784016"],
     "address": { "@type": "PostalAddress", "streetAddress": "Mechelsesteenweg 270", "addressLocality": "Zaventem", "postalCode": "1933", "addressCountry": "BE" },
     "geo": { "@type": "GeoCoordinates", "latitude": 50.8639552, "longitude": 4.5159167 },
     "areaServed": [
@@ -43,7 +53,19 @@
       { "@type": "City", "name": "Vilvoorde" },
       { "@type": "City", "name": "Kortenberg" }
     ],
-    "serviceType": ["Réparation de directions et suspensions", "Remplacement amortisseurs", "Remplacement rotules", "Géométrie et parallélisme"]
+    "serviceType": ["Réparation de directions et suspensions", "Remplacement amortisseurs", "Remplacement rotules", "Géométrie et parallélisme"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 30,
+      "bestRating": "5"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -104,91 +126,97 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/atelier-vue.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/direction-suspension">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/stuurinrichting-ophanging">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/direction-suspension">
 </head>
 <body>
   <header class="nav"><div class="nav__inner">
-    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
     <nav class="nav__links">
-      <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+      <a href="index.html">Accueil</a>
 
       <!-- Services dropdown -->
       <div class="nav__dropdown">
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+        <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
         <div class="nav__dropdown-menu">
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-            <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-            <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+            <span class="nav__dropdown-title">Entretien</span>
+            <a href="garage-automobile.html">Garage automobile</a>
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+            <a href="freins.html">Freins</a>
+            <a href="controle-technique.html">Contrôle technique</a>
+            <a href="climatisation.html">Climatisation</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-            <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-            <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-            <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-            <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+            <span class="nav__dropdown-title">Mécanique</span>
+            <a href="mecanique-automobile.html">Mécanique auto</a>
+            <a href="reparation-moteur.html">Réparation moteur</a>
+            <a href="remplacement-turbo.html">Turbo</a>
+            <a href="embrayage.html">Embrayage</a>
+            <a href="courroie-distribution.html">Courroie distribution</a>
+            <a href="reparation-boite-dsg.html">Boîte DSG</a>
+            <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+            <a href="filtre-particules.html">Filtre à particules</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-            <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-            <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-            <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-            <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+            <span class="nav__dropdown-title">Électrique & Diag</span>
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+            <a href="reparation-electrique.html">Réparation électrique</a>
+            <a href="batterie.html">Batterie</a>
+            <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+            <a href="carrosserie.html">Carrosserie</a>
+            <a href="pneus.html">Pneus</a>
+            <a href="direction-suspension.html">Direction & Suspension</a>
           </div>
         </div>
       </div>
 
-      <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+      <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
     </nav>
     <div class="nav__actions">
-      <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+      <div class="lang-switch"><a class="active">FR</a><a href="nl/stuurinrichting-ophanging.html">NL</a></div>
       <a href="tel:+32484115813" class="btn btn--phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="phone-text">0484 11 58 13</span></a>
     </div>
     <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div></header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--yellow, #EAB308)">0484 11 58 13</a>
   </div>
 
   <!-- HERO -->
-  <section class="service-hero" style="background: url('img/atelier-vue.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/atelier-vue.webp" alt="Atelier mécanique garage DMT AUTOGROUP Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
-      <span class="label"><span data-lang="fr">Direction & suspension — Zaventem</span><span data-lang="nl">Stuurinrichting & ophanging — Zaventem</span></span>
-      <h1><span data-lang="fr">Réparation direction et suspension<br>à Zaventem</span><span data-lang="nl">Stuurinrichting en ophanging herstelling<br>in Zaventem</span></h1>
+      <span class="label"><span>Direction & suspension — Zaventem</span></span>
+      <h1><span>Réparation direction et suspension<br>à Zaventem</span></h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">Votre voiture tire à droite ? Bruit de claquement dans les virages ? Volant qui vibre sur autoroute ? Chez DMT AUTOGROUP, on diagnostique et on répare tout ce qui touche à la direction et la suspension. Amortisseurs, rotules, silent blocs, direction assistée, géométrie. <strong>Toutes marques.</strong></span>
-        <span data-lang="nl">Trekt uw auto naar rechts? Kloppend geluid in de bochten? Stuur dat trilt op de snelweg? Bij DMT AUTOGROUP diagnosticeren en herstellen we alles wat met stuurinrichting en ophanging te maken heeft. Schokdempers, kogellagers, silentblokken, stuurbekrachtiging, uitlijning. <strong>Alle merken.</strong></span>
+        <span>Votre voiture tire à droite ? Bruit de claquement dans les virages ? Volant qui vibre sur autoroute ? Chez DMT AUTOGROUP, on diagnostique et on répare tout ce qui touche à la direction et la suspension. Amortisseurs, rotules, silent blocs, direction assistée, géométrie. <strong>Toutes marques.</strong></span>
+        
       </p>
     </div>
   </section>
@@ -198,76 +226,76 @@
     <div class="service-content__main">
 
       <!-- SECTION 1: Amortisseurs -->
-      <h2><span data-lang="fr">Amortisseurs — quand les changer et combien ça coûte</span><span data-lang="nl">Schokdempers — wanneer vervangen en wat kost het</span></h2>
+      <h2><span>Amortisseurs — quand les changer et combien ça coûte</span></h2>
 
-      <p><span data-lang="fr">Un amortisseur ne casse pas du jour au lendemain. Il meurt lentement. Et c'est justement le piège : vous vous habituez à une tenue de route dégradée sans vous en rendre compte. Jusqu'au jour où vous freinez d'urgence et la voiture met 5 mètres de plus à s'arrêter. Ou vous prenez un rond-point un peu vite et la voiture tangue comme un bateau.</span>
-      <span data-lang="nl">Een schokdemper gaat niet van de ene dag op de andere kapot. Hij sterft langzaam. En dat is precies de val: u went aan een verslechterd weggedrag zonder het te beseffen. Tot de dag dat u noodremming maakt en de auto 5 meter langer nodig heeft om te stoppen. Of u neemt een rotonde iets te snel en de auto slingert als een boot.</span></p>
+      <p><span>Un amortisseur ne casse pas du jour au lendemain. Il meurt lentement. Et c'est justement le piège : vous vous habituez à une tenue de route dégradée sans vous en rendre compte. Jusqu'au jour où vous freinez d'urgence et la voiture met 5 mètres de plus à s'arrêter. Ou vous prenez un rond-point un peu vite et la voiture tangue comme un bateau.</span>
+      </p>
 
-      <p><span data-lang="fr">Les signes qui ne trompent pas : la voiture rebondit après un dos d'âne au lieu de se stabiliser en un mouvement. Vos <a href="pneus.html">pneus</a> s'usent de façon irrégulière — plus d'un côté que de l'autre, ou avec des zones lisses et des zones encore bonnes. La voiture "plonge" fort du nez au freinage.</span>
-      <span data-lang="nl">De tekens die niet liegen: de auto blijft stuiteren na een verkeersdrempel in plaats van in één beweging te stabiliseren. Uw <a href="pneus.html">banden</a> slijten onregelmatig — meer aan één kant dan de andere, of met kale plekken naast nog goede zones. De auto "duikt" hard met de neus bij het remmen.</span></p>
+      <p><span>Les signes qui ne trompent pas : la voiture rebondit après un dos d'âne au lieu de se stabiliser en un mouvement. Vos <a href="pneus.html">pneus</a> s'usent de façon irrégulière — plus d'un côté que de l'autre, ou avec des zones lisses et des zones encore bonnes. La voiture "plonge" fort du nez au freinage.</span>
+      </p>
 
-      <p><span data-lang="fr">On change toujours les amortisseurs par paire — gauche et droite du même essieu. Mettre un amortisseur neuf à gauche et garder le vieux à droite, c'est créer un déséquilibre. Ça ne se fait pas.</span>
-      <span data-lang="nl">We vervangen schokdempers altijd per paar — links en rechts van dezelfde as. Een nieuwe schokdemper links plaatsen en de oude rechts laten zitten, dat creëert een onevenwicht. Dat doen we niet.</span></p>
+      <p><span>On change toujours les amortisseurs par paire — gauche et droite du même essieu. Mettre un amortisseur neuf à gauche et garder le vieux à droite, c'est créer un déséquilibre. Ça ne se fait pas.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Côté prix :</strong> chez un concessionnaire, comptez 800 à 1400€ pour le remplacement d'une paire d'amortisseurs avant (pièces + main d'oeuvre). Chez un indépendant comme nous, c'est nettement en dessous avec des pièces de qualité équivalente — Sachs, Monroe, Bilstein, les mêmes marques que ce qu'on trouve en première monte. La différence, c'est qu'on ne facture pas le taux horaire d'un concessionnaire premium.</span>
-      <span data-lang="nl"><strong>Qua prijs:</strong> bij een concessie rekent u 800 tot 1400€ voor de vervanging van een paar schokdempers vooraan (onderdelen + arbeid). Bij een onafhankelijke garage zoals de onze is het beduidend minder met onderdelen van gelijkwaardige kwaliteit — Sachs, Monroe, Bilstein, dezelfde merken als in de originele montage. Het verschil is dat we niet het uurtarief van een premium concessie aanrekenen.</span></p>
+      <p><span><strong>Côté prix :</strong> chez un concessionnaire, comptez 800 à 1400€ pour le remplacement d'une paire d'amortisseurs avant (pièces + main d'oeuvre). Chez un indépendant comme nous, c'est nettement en dessous avec des pièces de qualité équivalente — Sachs, Monroe, Bilstein, les mêmes marques que ce qu'on trouve en première monte. La différence, c'est qu'on ne facture pas le taux horaire d'un concessionnaire premium.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/atelier-vue.webp" alt="Atelier réparation direction suspension garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/atelier-vue.webp" alt="Atelier réparation direction suspension garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <!-- SECTION 2: Rotules et silent blocs -->
-      <h2><span data-lang="fr">Rotules et silent blocs — les pièces qu'on oublie toujours</span><span data-lang="nl">Kogellagers en silentblokken — de onderdelen die iedereen vergeet</span></h2>
+      <h2><span>Rotules et silent blocs — les pièces qu'on oublie toujours</span></h2>
 
-      <p><span data-lang="fr">Personne ne pense aux rotules. Jusqu'au jour où ça claque dans les virages.</span>
-      <span data-lang="nl">Niemand denkt aan kogellagers. Tot de dag dat het klopt in de bochten.</span></p>
+      <p><span>Personne ne pense aux rotules. Jusqu'au jour où ça claque dans les virages.</span>
+      </p>
 
-      <p><span data-lang="fr">Les rotules de suspension et de direction sont des articulations — elles permettent aux roues de tourner et de monter/descendre sur les bosses. Quand le caoutchouc de protection se déchire, la graisse part et l'eau entre. La rotule prend du jeu. Résultat : des claquements sourds quand vous passez sur un nid de poule, un volant qui a du "mou" au centre, et un <a href="controle-technique.html">contrôle technique</a> qui refuse votre voiture pour "jeu excessif dans les articulations de direction".</span>
-      <span data-lang="nl">Draagarm- en stuurkogellagers zijn scharnieren — ze laten de wielen draaien en op en neer bewegen over hobbels. Als het beschermrubber scheurt, verdwijnt het vet en komt er water binnen. Het kogellager krijgt speling. Resultaat: doffe klappen als u over een kuil rijdt, een stuur dat "los" aanvoelt in het midden, en een <a href="controle-technique.html">technische keuring</a> die uw auto weigert voor "overmatige speling in de stuurgewrichten".</span></p>
+      <p><span>Les rotules de suspension et de direction sont des articulations — elles permettent aux roues de tourner et de monter/descendre sur les bosses. Quand le caoutchouc de protection se déchire, la graisse part et l'eau entre. La rotule prend du jeu. Résultat : des claquements sourds quand vous passez sur un nid de poule, un volant qui a du "mou" au centre, et un <a href="controle-technique.html">contrôle technique</a> qui refuse votre voiture pour "jeu excessif dans les articulations de direction".</span>
+      </p>
 
-      <p><span data-lang="fr">C'est d'ailleurs une des causes de refus les plus fréquentes au CT en Belgique. On voit régulièrement des clients débarquer avec leur rapport CT rouge à la main : "jeu rotule avant gauche". On change la pièce, on renvoie au CT, c'est réglé.</span>
-      <span data-lang="nl">Het is trouwens een van de meest voorkomende redenen voor afkeuring bij de keuring in België. We zien regelmatig klanten binnenstappen met hun rode keuringsrapport in de hand: "speling kogellager linksvoor". We vervangen het onderdeel, sturen terug naar de keuring, opgelost.</span></p>
+      <p><span>C'est d'ailleurs une des causes de refus les plus fréquentes au CT en Belgique. On voit régulièrement des clients débarquer avec leur rapport CT rouge à la main : "jeu rotule avant gauche". On change la pièce, on renvoie au CT, c'est réglé.</span>
+      </p>
 
-      <p><span data-lang="fr">Les silent blocs, c'est la même logique. Ce sont des blocs de caoutchouc qui absorbent les vibrations entre le châssis et les bras de suspension. Après 80 000-120 000 km, le caoutchouc se fissure, durcit, et ne fait plus son travail. Vous sentez toutes les imperfections de la route dans le volant. La voiture devient bruyante sur autoroute. Et les pneus s'usent en biais parce que la géométrie part en vrille.</span>
-      <span data-lang="nl">Silentblokken volgen dezelfde logica. Het zijn rubberen blokken die trillingen opvangen tussen het chassis en de draagamen. Na 80 000-120 000 km barst het rubber, verhardt het, en doet het zijn werk niet meer. U voelt elke oneffenheid van de weg in het stuur. De auto wordt luidruchtig op de snelweg. En de banden slijten schuin omdat de uitlijning compleet scheefloopt.</span></p>
+      <p><span>Les silent blocs, c'est la même logique. Ce sont des blocs de caoutchouc qui absorbent les vibrations entre le châssis et les bras de suspension. Après 80 000-120 000 km, le caoutchouc se fissure, durcit, et ne fait plus son travail. Vous sentez toutes les imperfections de la route dans le volant. La voiture devient bruyante sur autoroute. Et les pneus s'usent en biais parce que la géométrie part en vrille.</span>
+      </p>
 
       <!-- SECTION 3: Direction assistée -->
-      <h2><span data-lang="fr">Direction assistée — hydraulique et électrique</span><span data-lang="nl">Stuurbekrachtiging — hydraulisch en elektrisch</span></h2>
+      <h2><span>Direction assistée — hydraulique et électrique</span></h2>
 
-      <p><span data-lang="fr">La direction de votre voiture est devenue dure ? Il faut forcer pour tourner le volant, surtout en manoeuvre de parking ? Deux possibilités : direction hydraulique ou électrique. Le diagnostic est différent pour chaque.</span>
-      <span data-lang="nl">Is het stuur van uw auto hard geworden? Moet u kracht zetten om te draaien, vooral bij een parkeerbeweging? Twee mogelijkheden: hydraulische of elektrische stuurbekrachtiging. De diagnose is verschillend voor elk type.</span></p>
+      <p><span>La direction de votre voiture est devenue dure ? Il faut forcer pour tourner le volant, surtout en manoeuvre de parking ? Deux possibilités : direction hydraulique ou électrique. Le diagnostic est différent pour chaque.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Direction hydraulique :</strong> c'est le système classique qu'on trouve sur la majorité des voitures jusqu'au milieu des années 2010. Une pompe entraînée par le moteur envoie de l'huile sous pression dans la crémaillère de direction. Quand la pompe fatigue, le volant devient dur et vous entendez un gémissement quand vous braquez à fond. Quand la crémaillère fuit, vous trouvez des taches d'huile rouge sous la voiture. Et le niveau du réservoir de direction assistée baisse.</span>
-      <span data-lang="nl"><strong>Hydraulische stuurbekrachtiging:</strong> dat is het klassieke systeem dat u vindt op de meeste auto's tot het midden van de jaren 2010. Een pomp aangedreven door de motor stuurt olie onder druk naar het stuurhuis. Als de pomp vermoeid raakt, wordt het stuur hard en hoort u een jankend geluid als u volledig indraait. Als het stuurhuis lekt, vindt u rode olievlekken onder de auto. En het niveau van het reservoir stuurbekrachtiging daalt.</span></p>
+      <p><span><strong>Direction hydraulique :</strong> c'est le système classique qu'on trouve sur la majorité des voitures jusqu'au milieu des années 2010. Une pompe entraînée par le moteur envoie de l'huile sous pression dans la crémaillère de direction. Quand la pompe fatigue, le volant devient dur et vous entendez un gémissement quand vous braquez à fond. Quand la crémaillère fuit, vous trouvez des taches d'huile rouge sous la voiture. Et le niveau du réservoir de direction assistée baisse.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Direction électrique (EPS) :</strong> les voitures récentes utilisent un moteur électrique directement sur la colonne de direction. Pas d'huile, pas de pompe. Quand ça tombe en panne, c'est souvent le module électronique ou le capteur de couple. Le voyant de direction s'allume au tableau de bord et le volant devient très lourd d'un coup. On diagnostique ça avec l'outil constructeur.</span>
-      <span data-lang="nl"><strong>Elektrische stuurbekrachtiging (EPS):</strong> recente auto's gebruiken een elektromotor rechtstreeks op de stuurkolom. Geen olie, geen pomp. Als het uitvalt, is het vaak de elektronische module of de koppelsensor. Het stuurlampje gaat branden op het dashboard en het stuur wordt plots heel zwaar. We diagnosticeren dit met het constructeurtool.</span></p>
+      <p><span><strong>Direction électrique (EPS) :</strong> les voitures récentes utilisent un moteur électrique directement sur la colonne de direction. Pas d'huile, pas de pompe. Quand ça tombe en panne, c'est souvent le module électronique ou le capteur de couple. Le voyant de direction s'allume au tableau de bord et le volant devient très lourd d'un coup. On diagnostique ça avec l'outil constructeur.</span>
+      </p>
 
-      <p><span data-lang="fr">Dans les deux cas, ne traînez pas. Conduire sans direction assistée, c'est faisable sur route droite. Mais une manoeuvre d'évitement en urgence avec un volant dur, c'est dangereux. Point.</span>
-      <span data-lang="nl">In beide gevallen: wacht niet te lang. Rijden zonder stuurbekrachtiging lukt op een recht stuk. Maar een nooduitwijkmanoeuvre met een zwaar stuur is gevaarlijk. Punt.</span></p>
+      <p><span>Dans les deux cas, ne traînez pas. Conduire sans direction assistée, c'est faisable sur route droite. Mais une manoeuvre d'évitement en urgence avec un volant dur, c'est dangereux. Point.</span>
+      </p>
 
       <!-- SECTION 4: Géométrie et parallélisme -->
-      <h2><span data-lang="fr">Géométrie et parallélisme</span><span data-lang="nl">Uitlijning en sporing</span></h2>
+      <h2><span>Géométrie et parallélisme</span></h2>
 
-      <p><span data-lang="fr">La géométrie, c'est l'alignement de vos roues par rapport au châssis. Quand elle est déréglée, votre voiture vous le dit de plusieurs façons : elle tire à droite ou à gauche, le volant est de travers quand vous roulez droit, vos pneus s'usent d'un seul côté (l'intérieur ou l'extérieur).</span>
-      <span data-lang="nl">De uitlijning is de stand van uw wielen ten opzichte van het chassis. Als die niet meer klopt, vertelt uw auto u dat op verschillende manieren: ze trekt naar rechts of links, het stuur staat scheef als u rechtdoor rijdt, uw banden slijten aan één kant (de binnen- of buitenkant).</span></p>
+      <p><span>La géométrie, c'est l'alignement de vos roues par rapport au châssis. Quand elle est déréglée, votre voiture vous le dit de plusieurs façons : elle tire à droite ou à gauche, le volant est de travers quand vous roulez droit, vos pneus s'usent d'un seul côté (l'intérieur ou l'extérieur).</span>
+      </p>
 
-      <p><span data-lang="fr">On fait la géométrie systématiquement après chaque remplacement de pièce de suspension — rotule, triangle, biellette, amortisseur. Changer un triangle sans refaire la géométrie, c'est comme changer des <a href="pneus.html">pneus</a> neufs et les laisser s'user de travers. Ça n'a aucun sens. Et pourtant, on voit des voitures arriver avec des pneus neufs déjà mangés sur le bord intérieur après 10 000 km, parce que la géométrie n'a jamais été refaite après un changement de rotule.</span>
-      <span data-lang="nl">We doen de uitlijning systematisch na elke vervanging van een ophangonderdeel — kogellager, draagarmen, stabilisatorstang, schokdemper. Een draagarmen vervangen zonder de uitlijning te hernieuwen, is alsof u nieuwe <a href="pneus.html">banden</a> monteert en ze scheef laat afslijten. Dat slaat nergens op. En toch zien we auto's binnenkomen met nieuwe banden die al aan de binnenkant zijn opgegeten na 10 000 km, omdat de uitlijning nooit hernieuwd is na een kogellagersvervanging.</span></p>
+      <p><span>On fait la géométrie systématiquement après chaque remplacement de pièce de suspension — rotule, triangle, biellette, amortisseur. Changer un triangle sans refaire la géométrie, c'est comme changer des <a href="pneus.html">pneus</a> neufs et les laisser s'user de travers. Ça n'a aucun sens. Et pourtant, on voit des voitures arriver avec des pneus neufs déjà mangés sur le bord intérieur après 10 000 km, parce que la géométrie n'a jamais été refaite après un changement de rotule.</span>
+      </p>
 
-      <p><span data-lang="fr">La géométrie se dérègle aussi après un choc : trottoir tapé un peu fort, nid de poule violent, accrochage. Si votre volant n'est plus droit après un incident comme ça, venez faire vérifier. C'est rapide et ça peut vous éviter de ruiner un jeu de pneus à 600€.</span>
-      <span data-lang="nl">De uitlijning raakt ook verstoord na een klap: een stoep te hard geraakt, een forse kuil, een aanrijding. Als uw stuur niet meer recht staat na zo'n incident, kom het laten controleren. Het is snel gedaan en het kan u behoeden voor het ruïneren van een set banden van 600€.</span></p>
+      <p><span>La géométrie se dérègle aussi après un choc : trottoir tapé un peu fort, nid de poule violent, accrochage. Si votre volant n'est plus droit après un incident comme ça, venez faire vérifier. C'est rapide et ça peut vous éviter de ruiner un jeu de pneus à 600€.</span>
+      </p>
 
-      <p><span data-lang="fr">Chez DMT AUTOGROUP, on a 15 ans d'expérience sur les trains roulants, toutes marques confondues. On sait ce qu'on cherche et on ne remplace que ce qui doit l'être. Pas de devis gonflé, pas de pièces changées "par précaution" sans raison.</span>
-      <span data-lang="nl">Bij DMT AUTOGROUP hebben we 15 jaar ervaring met wielophangingen, alle merken. We weten wat we zoeken en vervangen alleen wat nodig is. Geen opgeblazen offertes, geen onderdelen die "uit voorzorg" vervangen worden zonder reden.</span></p>
+      <p><span>Chez DMT AUTOGROUP, on a 15 ans d'expérience sur les trains roulants, toutes marques confondues. On sait ce qu'on cherche et on ne remplace que ce qui doit l'être. Pas de devis gonflé, pas de pièces changées "par précaution" sans raison.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/atelier-vue.webp" alt="Géométrie et parallélisme atelier DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/atelier-vue.webp" alt="Géométrie et parallélisme atelier DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <div class="photo-gallery" style="grid-template-columns:1fr 1fr">
-        <img src="img/suspension-amortisseur.webp" alt="Remplacement amortisseur suspension garage Zaventem" loading="lazy" width="800" height="533">
-        <img src="img/direction-geometrie.webp" alt="Géométrie parallélisme roues garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/suspension-amortisseur.webp" alt="Remplacement amortisseur suspension garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
+        <img src="img/direction-geometrie.webp" alt="Géométrie parallélisme roues garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
     </div>
@@ -275,49 +303,45 @@
     <!-- SIDEBAR -->
     <aside class="service-sidebar">
       <div class="sidebar-card sidebar-card--cta">
-        <span class="label"><span data-lang="fr">Problème de direction ou suspension ?</span><span data-lang="nl">Probleem met stuur of ophanging?</span></span>
+        <span class="label"><span>Problème de direction ou suspension ?</span></span>
         <span class="phone"><a href="tel:+32484115813">0484 11 58 13</a></span>
-        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span data-lang="fr">Diagnostic rapide, devis gratuit</span><span data-lang="nl">Snelle diagnose, gratis offerte</span></p>
-        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></a>
+        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span>Diagnostic rapide, devis gratuit</span></p>
+        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span>Appelez maintenant</span></a>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">On intervient sur</span><span data-lang="nl">We werken aan</span></h4>
+        <h4><span>On intervient sur</span></h4>
         <p style="color:var(--text-secondary, #4B5563);font-size:0.85rem;line-height:1.6;padding:0.3rem 0;">
-          <span data-lang="fr"><strong>Amortisseurs</strong> avant et arrière<br>
+          <span><strong>Amortisseurs</strong> avant et arrière<br>
           <strong>Rotules</strong> direction et suspension<br>
           <strong>Silent blocs</strong> et triangles<br>
           <strong>Direction assistée</strong> hydraulique et EPS<br>
           <strong>Géométrie</strong> et parallélisme</span>
-          <span data-lang="nl"><strong>Schokdempers</strong> voor en achter<br>
-          <strong>Kogellagers</strong> stuur en ophanging<br>
-          <strong>Silentblokken</strong> en draagarmen<br>
-          <strong>Stuurbekrachtiging</strong> hydraulisch en EPS<br>
-          <strong>Uitlijning</strong> en sporing</span>
+          
         </p>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Autres services</span><span data-lang="nl">Andere diensten</span></h4>
-        <a href="garage-automobile.html" data-lang="fr">Entretien & Réparation</a><a href="garage-automobile.html" data-lang="nl">Onderhoud & Herstelling</a>
-        <a href="mecanique-automobile.html" data-lang="fr">Mécanique automobile</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-        <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-        <a href="carrosserie.html" data-lang="fr">Carrosserie & Peinture</a><a href="carrosserie.html" data-lang="nl">Carrosserie & Lak</a>
-        <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing & Filters</a>
-        <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-      
-        <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-        <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-        <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
+        <h4><span>Autres services</span></h4>
+        <a href="garage-automobile.html">Entretien & Réparation</a>
+        <a href="mecanique-automobile.html">Mécanique automobile</a>
+        <a href="pneus.html">Pneus</a>
+        <a href="carrosserie.html">Carrosserie & Peinture</a>
+        <a href="vidange-huile.html">Vidange & Filtres</a>
+        <a href="controle-technique.html">Contrôle technique</a>
+
+        <a href="freins.html">Freins</a>
+        <a href="reparation-moteur.html">Réparation moteur</a>
+        <a href="diagnostic-moteur.html">Diagnostic moteur</a>
       </div>
     </aside>
   </div></div></section>
 
   <!-- RELATED SERVICES -->
   <section class="related-services section--lg"><div class="container">
-    <div class="related-services__header reveal"><span class="label"><span data-lang="fr">Services liés</span><span data-lang="nl">Gerelateerde diensten</span></span><h2><span data-lang="fr">Voir aussi</span><span data-lang="nl">Zie ook</span></h2></div>
+    <div class="related-services__header reveal"><span class="label"><span>Services liés</span></span><h2><span>Voir aussi</span></h2></div>
     <div class="related-services__grid">
-      <a href="pneus.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h3><span data-lang="fr">Pneus</span><span data-lang="nl">Banden</span></h3><p><span data-lang="fr">Usure pneus liée à la suspension.</span><span data-lang="nl">Bandenslijtage gerelateerd aan ophanging.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="controle-technique.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3><span data-lang="fr">Contrôle technique</span><span data-lang="nl">Technische keuring</span></h3><p><span data-lang="fr">Refus CT pour suspension ? On répare.</span><span data-lang="nl">Afgekeurd voor ophanging? Wij herstellen.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="mecanique-automobile.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3><span data-lang="fr">Mécanique automobile</span><span data-lang="nl">Automechaniek</span></h3><p><span data-lang="fr">Réparations mécaniques toutes marques.</span><span data-lang="nl">Mechanische herstellingen alle merken.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="pneus.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h3><span>Pneus</span></h3><p><span>Usure pneus liée à la suspension.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="controle-technique.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3><span>Contrôle technique</span></h3><p><span>Refus CT pour suspension ? On répare.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="mecanique-automobile.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3><span>Mécanique automobile</span></h3><p><span>Réparations mécaniques toutes marques.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
     </div>
   </div></section>
 
@@ -325,63 +349,63 @@
   <section class="section--lg" style="background: var(--gray-50, #F9FAFB);">
     <div class="container">
       <div class="services__header">
-        <span class="label"><span data-lang="fr">Questions fréquentes</span><span data-lang="nl">Veelgestelde vragen</span></span>
-        <h2><span data-lang="fr">FAQ — Direction et suspension à Zaventem</span><span data-lang="nl">FAQ — Stuurinrichting en ophanging in Zaventem</span></h2>
+        <span class="label"><span>Questions fréquentes</span></span>
+        <h2><span>FAQ — Direction et suspension à Zaventem</span></h2>
       </div>
       <div style="max-width:800px;margin:0 auto;">
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ma voiture tire à droite, c'est quoi ?</span><span data-lang="nl">Mijn auto trekt naar rechts, wat is dat?</span>
+            <span>Ma voiture tire à droite, c'est quoi ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Une voiture qui tire d'un côté, c'est presque toujours un problème de géométrie ou une pièce de suspension usée — rotule, silent bloc, triangle. Parfois c'est juste un parallélisme à refaire après avoir touché un trottoir. On vérifie tout ça en 30 minutes et on vous dit exactement ce qu'il faut changer.</span>
-            <span data-lang="nl">Een auto die naar één kant trekt, is bijna altijd een probleem met de uitlijning of een versleten ophangonderdeel — kogellager, silentblok, draagarmen. Soms is het gewoon een sporing die hernieuwd moet worden na het raken van een stoep. We controleren alles in 30 minuten en vertellen u precies wat er vervangen moet worden.</span>
+            <span>Une voiture qui tire d'un côté, c'est presque toujours un problème de géométrie ou une pièce de suspension usée — rotule, silent bloc, triangle. Parfois c'est juste un parallélisme à refaire après avoir touché un trottoir. On vérifie tout ça en 30 minutes et on vous dit exactement ce qu'il faut changer.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">C'est quoi ce bruit de claquement dans les virages ?</span><span data-lang="nl">Wat is dat kloppend geluid in de bochten?</span>
+            <span>C'est quoi ce bruit de claquement dans les virages ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Un claquement dans les virages, c'est typiquement une rotule de direction ou un silent bloc de triangle qui a du jeu. Ça peut aussi être une biellette de barre stabilisatrice cassée. C'est le genre de truc qui se voit direct sur le pont. Si le bruit est récent, faites-le vérifier rapidement — une rotule qui lâche complètement, c'est la roue qui part.</span>
-            <span data-lang="nl">Een kloppend geluid in de bochten is typisch een stuurkogellager of een silentblok van de draagarmen dat speling heeft. Het kan ook een gebroken stabilisatorstang zijn. Dat soort dingen zien we meteen op de brug. Als het geluid recent is, laat het snel controleren — een kogellager dat volledig loslaat, betekent een wiel dat loskomt.</span>
+            <span>Un claquement dans les virages, c'est typiquement une rotule de direction ou un silent bloc de triangle qui a du jeu. Ça peut aussi être une biellette de barre stabilisatrice cassée. C'est le genre de truc qui se voit direct sur le pont. Si le bruit est récent, faites-le vérifier rapidement — une rotule qui lâche complètement, c'est la roue qui part.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Combien coûte un remplacement d'amortisseurs ?</span><span data-lang="nl">Hoeveel kost het vervangen van schokdempers?</span>
+            <span>Combien coûte un remplacement d'amortisseurs ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Chez un concessionnaire, comptez 800 à 1400€ pour une paire avant ou arrière. Chez nous, c'est en dessous avec des pièces de marque (Sachs, Monroe, Bilstein). Le prix exact dépend de votre modèle — un amortisseur de Polo ne coûte pas le même prix qu'un amortisseur de Tiguan. Appelez-nous avec votre plaque, on vous donne un prix en 5 minutes.</span>
-            <span data-lang="nl">Bij een concessie rekent u 800 tot 1400€ voor een paar voor of achter. Bij ons is het minder met merkonderdelen (Sachs, Monroe, Bilstein). De exacte prijs hangt af van uw model — een schokdemper voor een Polo kost niet hetzelfde als voor een Tiguan. Bel ons met uw nummerplaat, we geven u een prijs in 5 minuten.</span>
+            <span>Chez un concessionnaire, comptez 800 à 1400€ pour une paire avant ou arrière. Chez nous, c'est en dessous avec des pièces de marque (Sachs, Monroe, Bilstein). Le prix exact dépend de votre modèle — un amortisseur de Polo ne coûte pas le même prix qu'un amortisseur de Tiguan. Appelez-nous avec votre plaque, on vous donne un prix en 5 minutes.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ma voiture rebondit après un dos d'âne, c'est les amortisseurs ?</span><span data-lang="nl">Mijn auto stuitert na een verkeersdrempel, zijn dat de schokdempers?</span>
+            <span>Ma voiture rebondit après un dos d'âne, c'est les amortisseurs ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Oui, c'est le test classique. Un amortisseur en bon état stabilise la voiture en un seul mouvement. S'il rebondit plusieurs fois, vos amortisseurs sont HS. Autres signes : la voiture plonge au freinage, tangue dans les virages, et vos pneus montrent une usure irrégulière. On les change toujours par paire — gauche et droite du même essieu.</span>
-            <span data-lang="nl">Ja, dat is de klassieke test. Een schokdemper in goede staat stabiliseert de auto in één beweging. Als hij meerdere keren stuitert, zijn uw schokdempers versleten. Andere tekens: de auto duikt bij het remmen, slingert in de bochten, en uw banden vertonen onregelmatige slijtage. We vervangen ze altijd per paar — links en rechts van dezelfde as.</span>
+            <span>Oui, c'est le test classique. Un amortisseur en bon état stabilise la voiture en un seul mouvement. S'il rebondit plusieurs fois, vos amortisseurs sont HS. Autres signes : la voiture plonge au freinage, tangue dans les virages, et vos pneus montrent une usure irrégulière. On les change toujours par paire — gauche et droite du même essieu.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Le contrôle technique peut refuser ma voiture pour la suspension ?</span><span data-lang="nl">Kan de technische keuring mijn auto weigeren voor de ophanging?</span>
+            <span>Le contrôle technique peut refuser ma voiture pour la suspension ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Absolument. Rotules avec du jeu, amortisseurs qui fuient, silent blocs déchirés — tout ça c'est un refus au CT. On voit régulièrement des clients qui arrivent après un refus pour "jeu excessif dans la direction". On remplace ce qu'il faut et on vous renvoie au CT avec la certitude que ça passe.</span>
-            <span data-lang="nl">Absoluut. Kogellagers met speling, lekkende schokdempers, gescheurde silentblokken — dat alles is een afkeuring bij de keuring. We zien regelmatig klanten die binnenkomen na een afkeuring voor "overmatige speling in de stuurinrichting". We vervangen wat nodig is en sturen u terug naar de keuring met de zekerheid dat het goedkomt.</span>
+            <span>Absolument. Rotules avec du jeu, amortisseurs qui fuient, silent blocs déchirés — tout ça c'est un refus au CT. On voit régulièrement des clients qui arrivent après un refus pour "jeu excessif dans la direction". On remplace ce qu'il faut et on vous renvoie au CT avec la certitude que ça passe.</span>
+
           </p>
         </details>
 
@@ -391,21 +415,21 @@
 
   <!-- CTA -->
   <section class="cta-section section--lg"><div class="container">
-    <span class="label reveal"><span data-lang="fr">Direction & suspension Zaventem</span><span data-lang="nl">Stuurinrichting & ophanging Zaventem</span></span>
-    <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+    <span class="label reveal"><span>Direction & suspension Zaventem</span></span>
+    <h2 class="reveal"><span>Appelez maintenant</span></h2>
     <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
-    <p class="cta-section__hours reveal reveal-delay-2"><span data-lang="fr">Diagnostic suspension et direction — toutes marques<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span><span data-lang="nl">Diagnose ophanging en stuurinrichting — alle merken<br>Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
+    <p class="cta-section__hours reveal reveal-delay-2"><span>Diagnostic suspension et direction — toutes marques<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
   </div></section>
 
   <!-- FOOTER -->
   <footer class="footer"><div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37"><p><span data-lang="fr">Garage automobile à Zaventem. Direction, suspension, géométrie. Toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Stuurinrichting, ophanging, uitlijning. Alle merken.</span></p></div>
-      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html" data-lang="fr">Entretien</a><a href="garage-automobile.html" data-lang="nl">Onderhoud</a><a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a><a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a><a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a><a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
-      <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a><a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a><a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a><a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a><a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a></div>
+      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async"><p><span>Garage automobile à Zaventem. Direction, suspension, géométrie. Toutes marques.</span></p></div>
+      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html">Entretien</a><a href="pneus.html">Pneus</a><a href="carrosserie.html">Carrosserie</a><a href="vidange-huile.html">Vidange</a><a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
+      <div class="footer__col"><h4><span>Plus</span></h4><a href="mecanique-automobile.html">Mécanique</a><a href="reparation-boite-dsg.html">Boîte DSG</a><a href="reparation-boite-vitesse.html">Boîte de vitesse</a><a href="controle-technique.html">Contrôle technique</a><a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a><a href="embrayage.html">Embrayage</a><a href="remplacement-turbo.html">Turbo</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a><a href="https://www.google.com/maps/search/?api=1&query=DMT+AUTOGROUP+1,2,3+AutoService&query_place_id=ChIJZYxTG37fw0cREIle6gqXy4Y" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Direction et suspension Zaventem</span><span data-lang="nl">Stuurinrichting en ophanging Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
+    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span><span><span>Direction et suspension Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
   <script src="js/main.js" defer></script>
 </body>

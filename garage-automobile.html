@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/garage-automobile">
   <meta property="og:image" content="https://dmt-autogroup.be/img/facade-garage.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Garage automobile Zaventem | DMT AUTOGROUP">
+  <meta name="twitter:description" content="Garage automobile à Zaventem. Entretien, réparation, diagnostic, freins, embrayage, ABS et systèmes électriques. Toutes marques. DMT AUTOGROUP — 0484 11 58 13.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/facade-garage.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/garage-automobile">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,14 +33,28 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
     "name": "DMT AUTOGROUP 1,2,3 AutoService",
     "telephone": "+32484115813",
-    "url": "https://dmt-autogroup.be/garage-automobile",
+    "sameAs": ["https://www.google.com/maps?cid=9711024847498784016"],
+    "url": "https://dmt-autogroup.be/",
     "image": "https://dmt-autogroup.be/img/atelier-vue.webp",
     "address": { "@type": "PostalAddress", "streetAddress": "Mechelsesteenweg 270", "addressLocality": "Zaventem", "postalCode": "1933", "addressCountry": "BE" },
     "geo": { "@type": "GeoCoordinates", "latitude": 50.8639552, "longitude": 4.5159167 },
     "areaServed": ["Zaventem","Diegem","Sterrebeek","Nossegem","Kraainem","Wezembeek-Oppem","Woluwe-Saint-Lambert","Woluwe-Saint-Pierre","Evere","Machelen","Vilvoorde","Kortenberg"],
-    "serviceType": ["Entretien automobile","Réparation automobile","Diagnostic informatique","Réparation de freins","Réparation embrayage","Réparation ABS"]
+    "serviceType": ["Entretien automobile","Réparation automobile","Diagnostic informatique","Réparation de freins","Réparation embrayage","Réparation ABS"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 30,
+      "bestRating": "5"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -93,57 +115,62 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/atelier-vue.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/garage-automobile">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/autogarage">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/garage-automobile">
 </head>
 <body>
 
   <!-- NAV -->
   <header class="nav">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+      <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
       <nav class="nav__links">
-        <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+        <a href="index.html">Accueil</a>
 
         <!-- Services dropdown -->
         <div class="nav__dropdown">
-          <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-          <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+          <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
           <div class="nav__dropdown-menu">
             <div class="nav__dropdown-col">
-              <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-              <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-              <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-              <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-              <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-              <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+              <span class="nav__dropdown-title">Entretien</span>
+              <a href="garage-automobile.html">Garage automobile</a>
+              <a href="vidange-huile.html">Vidange & Filtres</a>
+              <a href="freins.html">Freins</a>
+              <a href="controle-technique.html">Contrôle technique</a>
+              <a href="climatisation.html">Climatisation</a>
             </div>
             <div class="nav__dropdown-col">
-              <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-              <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-              <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-              <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-              <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-              <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-              <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-              <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-              <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+              <span class="nav__dropdown-title">Mécanique</span>
+              <a href="mecanique-automobile.html">Mécanique auto</a>
+              <a href="reparation-moteur.html">Réparation moteur</a>
+              <a href="remplacement-turbo.html">Turbo</a>
+              <a href="embrayage.html">Embrayage</a>
+              <a href="courroie-distribution.html">Courroie distribution</a>
+              <a href="reparation-boite-dsg.html">Boîte DSG</a>
+              <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+              <a href="filtre-particules.html">Filtre à particules</a>
             </div>
             <div class="nav__dropdown-col">
-              <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-              <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-              <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-              <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-              <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-              <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-              <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-              <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+              <span class="nav__dropdown-title">Électrique & Diag</span>
+              <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+              <a href="reparation-electrique.html">Réparation électrique</a>
+              <a href="batterie.html">Batterie</a>
+              <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+              <a href="carrosserie.html">Carrosserie</a>
+              <a href="pneus.html">Pneus</a>
+              <a href="direction-suspension.html">Direction & Suspension</a>
             </div>
           </div>
         </div>
 
-        <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+        <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
       </nav>
       <div class="nav__actions">
-        <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+        <div class="lang-switch"><a class="active">FR</a><a href="nl/autogarage.html">NL</a></div>
         <a href="tel:+32484115813" class="btn btn--phone">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span class="phone-text">0484 11 58 13</span>
@@ -153,44 +180,45 @@
     </div>
   </header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--bronze)">0484 11 58 13</a>
   </div>
 
   <!-- HERO -->
-  <section class="service-hero" style="background: url('img/atelier-vue.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/atelier-vue.webp" alt="Atelier mécanique garage DMT AUTOGROUP Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
       <span class="label">
-        <span data-lang="fr">Garage automobile Zaventem</span>
-        <span data-lang="nl">Autogarage Zaventem</span>
+        <span>Garage automobile Zaventem</span>
+
       </span>
       <h1>
-        <span data-lang="fr">Entretien & réparation<br>automobile à Zaventem</span>
-        <span data-lang="nl">Onderhoud & herstelling<br>auto in Zaventem</span>
+        <span>Entretien & réparation<br>automobile à Zaventem</span>
+
       </h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">Votre voiture a besoin d'un entretien? Un voyant s'allume sur le tableau de bord? Chez DMT AUTOGROUP sur la Mechelsesteenweg à Zaventem, on diagnostique le problème et on le règle — rapidement, honnêtement, sans surprise sur la facture. 15 ans d'expérience, toutes marques confondues.</span>
-        <span data-lang="nl">Heeft uw auto onderhoud nodig? Brandt er een waarschuwingslampje op het dashboard? Bij DMT AUTOGROUP op de Mechelsesteenweg in Zaventem diagnosticeren we het probleem en lossen we het op — snel, eerlijk, zonder verrassingen op de factuur. 15 jaar ervaring, alle merken.</span>
+        <span>Votre voiture a besoin d'un entretien? Un voyant s'allume sur le tableau de bord? Chez DMT AUTOGROUP sur la Mechelsesteenweg à Zaventem, on diagnostique le problème et on le règle — rapidement, honnêtement, sans surprise sur la facture. 15 ans d'expérience, toutes marques confondues.</span>
+
       </p>
     </div>
   </section>
@@ -202,152 +230,152 @@
         <div class="service-content__main">
 
           <h2>
-            <span data-lang="fr">Entretien des véhicules</span>
-            <span data-lang="nl">Voertuigonderhoud</span>
+            <span>Entretien des véhicules</span>
+
           </h2>
           <p>
-            <span data-lang="fr">Un entretien régulier, c'est ce qui fait la différence entre une voiture qui roule 10 ans et une qui vous lâche sur le Ring un lundi matin. Chez DMT AUTOGROUP, on fait l'entretien complet selon les recommandations du constructeur : <a href="vidange-huile.html">vidange</a>, filtres, courroies, bougies, liquides — tout est vérifié. Que vous rouliez en diesel ou en essence, que votre voiture ait 20 000 ou 200 000 km, on adapte l'entretien à votre situation.</span>
-            <span data-lang="nl">Regelmatig onderhoud maakt het verschil tussen een auto die 10 jaar meegaat en eentje die u in de steek laat op de Ring op maandagochtend. Bij DMT AUTOGROUP doen we een volledig onderhoud volgens de aanbevelingen van de fabrikant: <a href="vidange-huile.html">olieverversing</a>, filters, riemen, bougies, vloeistoffen — alles wordt gecontroleerd. Of u nu diesel of benzine rijdt, of uw auto 20.000 of 200.000 km heeft, wij passen het onderhoud aan uw situatie aan.</span>
+            <span>Un entretien régulier, c'est ce qui fait la différence entre une voiture qui roule 10 ans et une qui vous lâche sur le Ring un lundi matin. Chez DMT AUTOGROUP, on fait l'entretien complet selon les recommandations du constructeur : <a href="vidange-huile.html">vidange</a>, filtres, courroies, bougies, liquides — tout est vérifié. Que vous rouliez en diesel ou en essence, que votre voiture ait 20 000 ou 200 000 km, on adapte l'entretien à votre situation.</span>
+            
           </p>
           <p>
-            <span data-lang="fr">Avant l'hiver, on vous recommande un check complet : batterie, antigel, essuie-glaces, niveau de liquide de frein. Quand l'été arrive, on vérifie la climatisation, le liquide de refroidissement et l'état des pneus.</span>
-            <span data-lang="nl">Voor de winter raden we een volledige check aan: accu, antivries, ruitenwissers, remvloeistofniveau. Als de zomer komt, controleren we de airconditioning, koelvloeistof en de staat van de banden.</span>
+            <span>Avant l'hiver, on vous recommande un check complet : batterie, antigel, essuie-glaces, niveau de liquide de frein. Quand l'été arrive, on vérifie la climatisation, le liquide de refroidissement et l'état des pneus.</span>
+
           </p>
           <p>
-            <span data-lang="fr">Ces petits gestes saisonniers évitent les grosses pannes. Un entretien fait à temps, c'est aussi moins cher qu'une réparation en urgence.</span>
-            <span data-lang="nl">Deze kleine seizoensgebonden ingrepen voorkomen grote pechgevallen. Onderhoud op tijd is ook goedkoper dan een noodreparatie.</span>
+            <span>Ces petits gestes saisonniers évitent les grosses pannes. Un entretien fait à temps, c'est aussi moins cher qu'une réparation en urgence.</span>
+
           </p>
 
           <div class="photo-section">
-            <img src="img/atelier-vue.webp" alt="Atelier garage automobile DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533">
+            <img src="img/atelier-vue.webp" alt="Atelier garage automobile DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533" decoding="async">
           </div>
 
           <h2>
-            <span data-lang="fr">Diagnostics informatiques</span>
-            <span data-lang="nl">Computerdiagnose</span>
+            <span>Diagnostics informatiques</span>
+
           </h2>
           <p>
-            <span data-lang="fr">On voit souvent des gens qui arrivent paniqués parce qu'un voyant s'allume. Dans 90% des cas, c'est un capteur à 30 euros — pas un moteur à remplacer. Notre garage à Zaventem est équipé d'outils de diagnostic professionnel Launch et Omnitech qui lisent tous les calculateurs de votre véhicule. On trouve la panne, on vous explique ce qu'il en est, et on répare.</span>
-            <span data-lang="nl">We zien het vaak: mensen die in paniek binnenkomen omdat er een lampje brandt. In 90% van de gevallen is het een sensor van 30 euro — geen motor die vervangen moet worden. Onze autogarage in Zaventem is uitgerust met professionele diagnosetools van Launch en Omnitech die alle computers van uw voertuig uitlezen. We vinden de storing, leggen het uit, en herstellen.</span>
+            <span>On voit souvent des gens qui arrivent paniqués parce qu'un voyant s'allume. Dans 90% des cas, c'est un capteur à 30 euros — pas un moteur à remplacer. Notre garage à Zaventem est équipé d'outils de diagnostic professionnel Launch et Omnitech qui lisent tous les calculateurs de votre véhicule. On trouve la panne, on vous explique ce qu'il en est, et on répare.</span>
+
           </p>
           <p>
-            <span data-lang="fr">Pas de devinettes, pas de pièces changées pour rien. On lit les codes erreur précis — P0300 pour un raté d'allumage, P0171 pour un mélange trop pauvre, P0420 pour le catalyseur. Notre outil couvre les diagnostics spécifiques par marque : BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault.</span>
-            <span data-lang="nl">Geen giswerk, geen onderdelen die voor niets vervangen worden. We lezen de exacte foutcodes uit — P0300 voor ontsteking, P0171 voor een te mager mengsel, P0420 voor de katalysator. Onze tools dekken merkspecifieke diagnose: BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault.</span>
+            <span>Pas de devinettes, pas de pièces changées pour rien. On lit les codes erreur précis — P0300 pour un raté d'allumage, P0171 pour un mélange trop pauvre, P0420 pour le catalyseur. Notre outil couvre les diagnostics spécifiques par marque : BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault.</span>
+
           </p>
           <p>
-            <span data-lang="fr">On ne se limite pas au moteur. On scanne aussi l'ABS, les airbags, la boîte de vitesses et la climatisation. Vous repartez avec un diagnostic clair en 30 minutes.</span>
-            <span data-lang="nl">We beperken ons niet tot de motor. We scannen ook ABS, airbags, versnellingsbak en airconditioning. U vertrekt met een duidelijke diagnose binnen 30 minuten.</span>
+            <span>On ne se limite pas au moteur. On scanne aussi l'ABS, les airbags, la boîte de vitesses et la climatisation. Vous repartez avec un diagnostic clair en 30 minutes.</span>
+
           </p>
 
           <div class="photo-gallery" style="grid-template-columns: 1fr 1fr;">
-            <img src="img/diagnostic-launch.webp" alt="Outil diagnostic automobile Launch SmartLink Zaventem" loading="lazy" width="800" height="533">
-            <img src="img/diagnostic-omnitech.webp" alt="Diagnostic OBD Omnitech garage Zaventem" loading="lazy" width="800" height="533">
+            <img src="img/diagnostic-launch.webp" alt="Outil diagnostic automobile Launch SmartLink Zaventem" loading="lazy" width="800" height="533" decoding="async">
+            <img src="img/diagnostic-omnitech.webp" alt="Diagnostic OBD Omnitech garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
           </div>
 
           <h2>
-            <span data-lang="fr">Dépannage et réparation de freins</span>
-            <span data-lang="nl">Remherstelling en onderhoud</span>
+            <span>Dépannage et réparation de freins</span>
+
           </h2>
           <p>
-            <span data-lang="fr">Les freins, c'est pas un truc qu'on reporte. Si vos freins grincent, vibrent ou que la pédale est molle, passez chez nous à Zaventem. On remplace les plaquettes, les disques, les étriers — on utilise des pièces de qualité comme Brembo. Un truc qu'on voit souvent : des gens qui ont payé 900 euros chez un concessionnaire pour des freins. Chez nous, c'est moitié prix pour la même qualité Brembo.</span>
-            <span data-lang="nl">Remmen zijn niet iets dat je uitstelt. Als uw remmen piepen, trillen of het pedaal zacht aanvoelt, kom langs bij ons in Zaventem. We vervangen remblokken, schijven, remklauwen — we gebruiken kwaliteitsonderdelen zoals Brembo. Iets wat we vaak zien: mensen die 900 euro betaald hebben bij een concessiehouder voor remmen. Bij ons kost dat de helft, voor dezelfde Brembo-kwaliteit.</span>
+            <span>Les freins, c'est pas un truc qu'on reporte. Si vos freins grincent, vibrent ou que la pédale est molle, passez chez nous à Zaventem. On remplace les plaquettes, les disques, les étriers — on utilise des pièces de qualité comme Brembo. Un truc qu'on voit souvent : des gens qui ont payé 900 euros chez un concessionnaire pour des freins. Chez nous, c'est moitié prix pour la même qualité Brembo.</span>
+
           </p>
           <p>
-            <span data-lang="fr">Pas besoin de prendre rendez-vous trois semaines à l'avance. On fait aussi la purge et le remplacement du liquide de frein — un entretien souvent oublié mais qui change tout pour la distance de freinage. Si votre véhicule a aussi subi des dégâts de <a href="carrosserie.html">carrosserie</a> suite à un accrochage, on s'en occupe en même temps.</span>
-            <span data-lang="nl">U hoeft niet drie weken op voorhand een afspraak te maken. We doen ook het ontluchten en vervangen van de remvloeistof — een vaak vergeten onderhoudsbeurt die alles verandert voor de remafstand. Heeft uw voertuig ook <a href="carrosserie.html">carrosserieschade</a> na een aanrijding? Dan pakken we dat tegelijk aan.</span>
+            <span>Pas besoin de prendre rendez-vous trois semaines à l'avance. On fait aussi la purge et le remplacement du liquide de frein — un entretien souvent oublié mais qui change tout pour la distance de freinage. Si votre véhicule a aussi subi des dégâts de <a href="carrosserie.html">carrosserie</a> suite à un accrochage, on s'en occupe en même temps.</span>
+            
           </p>
           <p>
-            <span data-lang="fr">Un bruit de grincement au freinage? C'est souvent un témoin d'usure qui touche le disque. Un bruit sourd ou des vibrations dans le volant? Les disques sont probablement voilés. Plus vous attendez, plus la réparation coûte cher.</span>
-            <span data-lang="nl">Een piepend geluid bij het remmen? Dat is vaak een slijtageindicator die het schijf raakt. Een dof geluid of trillingen in het stuur? Dan zijn de schijven waarschijnlijk vervormd. Hoe langer u wacht, hoe duurder de herstelling wordt.</span>
+            <span>Un bruit de grincement au freinage? C'est souvent un témoin d'usure qui touche le disque. Un bruit sourd ou des vibrations dans le volant? Les disques sont probablement voilés. Plus vous attendez, plus la réparation coûte cher.</span>
+
           </p>
 
           <div class="photo-section">
-            <img src="img/freins-plaquettes.webp" alt="Remplacement plaquettes de freins Brembo garage Zaventem" loading="lazy" width="800" height="533">
+            <img src="img/freins-plaquettes.webp" alt="Remplacement plaquettes de freins Brembo garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
           </div>
 
           <h2>
-            <span data-lang="fr">Entretien et réparation de l'embrayage et la boîte de vitesses</span>
-            <span data-lang="nl">Onderhoud en herstelling koppeling en versnellingsbak</span>
+            <span>Entretien et réparation de l'embrayage et la boîte de vitesses</span>
+
           </h2>
           <p>
-            <span data-lang="fr">L'embrayage patine? La boîte de vitesses craque quand vous passez les rapports? C'est exactement le genre de travaux qu'on fait tous les jours dans notre <a href="mecanique-automobile.html">atelier de mécanique à Zaventem</a>. On démonte, on diagnostique, on remplace ce qu'il faut. Boîte manuelle ou automatique, on gère les deux.</span>
-            <span data-lang="nl">Slipt de koppeling? Kraakt de versnellingsbak bij het schakelen? Dat is precies het soort werk dat we elke dag doen in ons <a href="mecanique-automobile.html">mechanisch atelier in Zaventem</a>. We demonteren, diagnosticeren en vervangen wat nodig is. Manuele of automatische versnellingsbak, we behandelen beide.</span>
+            <span>L'embrayage patine? La boîte de vitesses craque quand vous passez les rapports? C'est exactement le genre de travaux qu'on fait tous les jours dans notre <a href="mecanique-automobile.html">atelier de mécanique à Zaventem</a>. On démonte, on diagnostique, on remplace ce qu'il faut. Boîte manuelle ou automatique, on gère les deux.</span>
+            
           </p>
           <p>
-            <span data-lang="fr">L'embrayage, c'est le genre de réparation où les devis varient du simple au double. On a vu des devis à 3000 euros chez des concessions pour un travail qu'on fait à 1200-1500. On reconnaît les signes d'usure : le point de patinage qui monte, la pédale qui devient dure, une odeur de brûlé dans les côtes.</span>
-            <span data-lang="nl">De koppeling is het soort reparatie waarbij offertes enorm uiteenlopen. We hebben offertes van 3000 euro bij concessiehouders gezien voor werk dat wij doen voor 1200-1500. We herkennen de tekenen van slijtage: het koppelingspunt dat hoger komt te liggen, een pedaal dat stijf wordt, een brandgeur in hellingen.</span>
+            <span>L'embrayage, c'est le genre de réparation où les devis varient du simple au double. On a vu des devis à 3000 euros chez des concessions pour un travail qu'on fait à 1200-1500. On reconnaît les signes d'usure : le point de patinage qui monte, la pédale qui devient dure, une odeur de brûlé dans les côtes.</span>
+
           </p>
           <p>
-            <span data-lang="fr">Si votre régime moteur monte mais que la voiture n'accélère plus comme avant, c'est souvent le disque d'embrayage qui est fini. On remplace le kit complet — disque, mécanisme et butée — pour ne pas devoir tout redémonter six mois plus tard.</span>
-            <span data-lang="nl">Als het toerental stijgt maar de auto niet meer accelereert zoals voorheen, is het koppelingsschijf vaak versleten. We vervangen de volledige kit — schijf, drukgroep en druklager — zodat u niet zes maanden later alles opnieuw moet laten demonteren.</span>
+            <span>Si votre régime moteur monte mais que la voiture n'accélère plus comme avant, c'est souvent le disque d'embrayage qui est fini. On remplace le kit complet — disque, mécanisme et butée — pour ne pas devoir tout redémonter six mois plus tard.</span>
+
           </p>
 
           <div class="photo-section">
-            <img src="img/mecanique-boite.webp" alt="Réparation boîte de vitesses garage Zaventem" loading="lazy" width="800" height="533">
+            <img src="img/mecanique-boite.webp" alt="Réparation boîte de vitesses garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
           </div>
 
           <h2>
-            <span data-lang="fr">Entretien et réparation de systèmes ABS</span>
-            <span data-lang="nl">ABS-systeem onderhoud en herstelling</span>
+            <span>Entretien et réparation de systèmes ABS</span>
+
           </h2>
           <p>
-            <span data-lang="fr">Le voyant ABS reste allumé? C'est souvent un capteur de roue ou le module ABS lui-même. Dans notre garage à Zaventem, on diagnostique le problème avec nos outils informatiques et on remplace uniquement ce qui est défectueux. Ce type de panne, on le voit toutes les semaines.</span>
-            <span data-lang="nl">Blijft het ABS-lampje branden? Meestal is het een wielsensor of de ABS-module zelf. In onze autogarage in Zaventem diagnosticeren we het probleem met onze computertools en vervangen we alleen wat defect is. Dit soort panne zien we elke week.</span>
+            <span>Le voyant ABS reste allumé? C'est souvent un capteur de roue ou le module ABS lui-même. Dans notre garage à Zaventem, on diagnostique le problème avec nos outils informatiques et on remplace uniquement ce qui est défectueux. Ce type de panne, on le voit toutes les semaines.</span>
+
           </p>
           <p>
-            <span data-lang="fr">Notre diagnostic ABS fonctionne en plusieurs étapes. D'abord, on lit le code erreur pour identifier quel capteur ou quel circuit est en cause. Ensuite, on teste le signal de chaque capteur de roue à l'oscilloscope. Si c'est un capteur défectueux, on le remplace en moins d'une heure. Si c'est le bloc hydraulique ou le calculateur ABS, on vous donne un devis détaillé avant d'intervenir.</span>
-            <span data-lang="nl">Onze ABS-diagnose werkt in meerdere stappen. Eerst lezen we de foutcode uit om te bepalen welke sensor of welk circuit het probleem veroorzaakt. Daarna testen we het signaal van elke wielsensor met de oscilloscoop. Als het een defecte sensor is, vervangen we die in minder dan een uur. Als het het hydraulische blok of de ABS-computer is, krijgt u een gedetailleerde offerte vooraf.</span>
+            <span>Notre diagnostic ABS fonctionne en plusieurs étapes. D'abord, on lit le code erreur pour identifier quel capteur ou quel circuit est en cause. Ensuite, on teste le signal de chaque capteur de roue à l'oscilloscope. Si c'est un capteur défectueux, on le remplace en moins d'une heure. Si c'est le bloc hydraulique ou le calculateur ABS, on vous donne un devis détaillé avant d'intervenir.</span>
+
           </p>
           <p>
-            <span data-lang="fr">L'ABS, c'est votre sécurité — surtout en hiver quand les routes sont glissantes. Sans ABS, votre voiture bloque les roues au freinage sur route mouillée. C'est un risque réel en Belgique où il pleut plus de 200 jours par an.</span>
-            <span data-lang="nl">ABS is uw veiligheid — vooral in de winter als de wegen glad zijn. Zonder ABS blokkeert uw auto de wielen bij het remmen op nat wegdek. Dat is een reëel risico in België waar het meer dan 200 dagen per jaar regent.</span>
+            <span>L'ABS, c'est votre sécurité — surtout en hiver quand les routes sont glissantes. Sans ABS, votre voiture bloque les roues au freinage sur route mouillée. C'est un risque réel en Belgique où il pleut plus de 200 jours par an.</span>
+
           </p>
 
           <h2>
-            <span data-lang="fr">Réparation électrique et systèmes électriques</span>
-            <span data-lang="nl">Elektrische herstelling en systemen</span>
+            <span>Réparation électrique et systèmes électriques</span>
+
           </h2>
           <p>
-            <span data-lang="fr">Problème de démarrage? Vitres électriques qui ne marchent plus? Batterie à plat? On gère tout ce qui est électrique et électronique dans votre voiture. Remplacement de batterie, diagnostic du circuit de charge, réparation de faisceaux — notre garage à Zaventem a le matériel pour traiter les pannes électriques de toutes marques.</span>
-            <span data-lang="nl">Startproblemen? Elektrische ramen die niet meer werken? Lege batterij? We behandelen alles wat elektrisch en elektronisch is in uw auto. Batterijvervanging, diagnose van het laadcircuit, reparatie van kabelbomen — onze garage in Zaventem heeft de apparatuur om elektrische storingen van alle merken aan te pakken.</span>
+            <span>Problème de démarrage? Vitres électriques qui ne marchent plus? Batterie à plat? On gère tout ce qui est électrique et électronique dans votre voiture. Remplacement de batterie, diagnostic du circuit de charge, réparation de faisceaux — notre garage à Zaventem a le matériel pour traiter les pannes électriques de toutes marques.</span>
+
           </p>
           <p>
-            <span data-lang="fr">On teste aussi l'alternateur et le démarreur. Un alternateur faible, c'est une batterie qui se vide en quelques jours. Un démarreur qui hésite le matin, c'est une panne qui arrive sans prévenir. On fait le test de charge de la batterie en 5 minutes.</span>
-            <span data-lang="nl">We testen ook de alternator en de startmotor. Een zwakke alternator betekent een accu die binnen een paar dagen leeg is. Een startmotor die 's ochtends aarzelt, is een panne die zonder waarschuwing komt. We doen de accutest in 5 minuten.</span>
+            <span>On teste aussi l'alternateur et le démarreur. Un alternateur faible, c'est une batterie qui se vide en quelques jours. Un démarreur qui hésite le matin, c'est une panne qui arrive sans prévenir. On fait le test de charge de la batterie en 5 minutes.</span>
+
           </p>
           <p>
-            <span data-lang="fr">Les voitures modernes ont des dizaines de modules électroniques. On connaît ces systèmes par coeur, on sait où chercher quand quelque chose tombe en panne.</span>
-            <span data-lang="nl">Moderne auto's hebben tientallen elektronische modules. We kennen deze systemen door en door, we weten waar we moeten zoeken als er iets uitvalt.</span>
+            <span>Les voitures modernes ont des dizaines de modules électroniques. On connaît ces systèmes par coeur, on sait où chercher quand quelque chose tombe en panne.</span>
+
           </p>
 
           <div class="photo-section">
-            <img src="img/garage-electrique.webp" alt="Diagnostic électrique multimètre réparation auto Zaventem" width="800" height="533" loading="lazy">
+            <img src="img/garage-electrique.webp" alt="Diagnostic électrique multimètre réparation auto Zaventem" width="800" height="533" loading="lazy" decoding="async">
           </div>
 
           <h2>
-            <span data-lang="fr">Réglage de moteurs et réparation de moteurs</span>
-            <span data-lang="nl">Motorafstelling en motorherstelling</span>
+            <span>Réglage de moteurs et réparation de moteurs</span>
+
           </h2>
           <p>
-            <span data-lang="fr">Du simple réglage au remplacement complet, notre <a href="mecanique-automobile.html">atelier mécanique</a> gère tous les travaux moteur. Perte de puissance, consommation excessive, fumée à l'échappement — on trouve la cause et on répare. C'est un problème classique sur les diesel après 150 000 km.</span>
-            <span data-lang="nl">Van eenvoudige afstelling tot volledige vervanging, ons <a href="mecanique-automobile.html">mechanisch atelier</a> behandelt alle motorwerken. Vermogensverlies, overmatig verbruik, rook uit de uitlaat — we vinden de oorzaak en herstellen. Dit is een klassiek probleem bij diesels na 150.000 km.</span>
+            <span>Du simple réglage au remplacement complet, notre <a href="mecanique-automobile.html">atelier mécanique</a> gère tous les travaux moteur. Perte de puissance, consommation excessive, fumée à l'échappement — on trouve la cause et on répare. C'est un problème classique sur les diesel après 150 000 km.</span>
+            
           </p>
           <p>
-            <span data-lang="fr">On travaille autant sur les petits moteurs essence que sur les gros diesels, toutes marques confondues. Réglage de la distribution, remplacement de la courroie ou de la chaîne de distribution, nettoyage des injecteurs — on fait tout dans notre garage automobile à Zaventem. Un moteur bien réglé consomme moins et pollue moins. C'est aussi un point vérifié au contrôle technique.</span>
-            <span data-lang="nl">We werken zowel aan kleine benzinemotoren als aan grote diesels, alle merken. Afstelling van de distributie, vervanging van de distributieriem of -ketting, reiniging van de injectoren — we doen het allemaal in onze autogarage in Zaventem. Een goed afgestelde motor verbruikt minder en vervuilt minder. Dat is ook een punt dat bij de technische keuring gecontroleerd wordt.</span>
+            <span>On travaille autant sur les petits moteurs essence que sur les gros diesels, toutes marques confondues. Réglage de la distribution, remplacement de la courroie ou de la chaîne de distribution, nettoyage des injecteurs — on fait tout dans notre garage automobile à Zaventem. Un moteur bien réglé consomme moins et pollue moins. C'est aussi un point vérifié au contrôle technique.</span>
+
           </p>
 
           <h2>
-            <span data-lang="fr">Préparation au contrôle technique</span>
-            <span data-lang="nl">Voorbereiding technische keuring</span>
+            <span>Préparation au contrôle technique</span>
+
           </h2>
           <p>
-            <span data-lang="fr">Votre contrôle technique approche? Passez d'abord chez DMT AUTOGROUP à Zaventem. On fait un <a href="controle-technique.html">pré-contrôle complet</a> : freins, éclairage, émissions, suspension, direction — tout ce que le centre de contrôle va vérifier. Si quelque chose ne passe pas, on le répare avant que vous y alliez.</span>
-            <span data-lang="nl">Technische keuring binnenkort? Kom eerst langs bij DMT AUTOGROUP in Zaventem. We doen een <a href="controle-technique.html">volledige voorcontrole</a>: remmen, verlichting, uitstoot, ophanging, stuurinrichting — alles wat het keuringscentrum controleert. Als er iets niet in orde is, herstellen we het voordat u gaat.</span>
+            <span>Votre contrôle technique approche? Passez d'abord chez DMT AUTOGROUP à Zaventem. On fait un <a href="controle-technique.html">pré-contrôle complet</a> : freins, éclairage, émissions, suspension, direction — tout ce que le centre de contrôle va vérifier. Si quelque chose ne passe pas, on le répare avant que vous y alliez.</span>
+            
           </p>
           <p>
-            <span data-lang="fr">Résultat : vous passez du premier coup et vous évitez la contre-visite. On connaît les points de contrôle par coeur. Les habitants de Sterrebeek, Nossegem et Woluwe-Saint-Lambert qui prennent la E40 passent souvent la semaine avant leur rendez-vous au centre. C'est la meilleure façon d'éviter les mauvaises surprises.</span>
-            <span data-lang="nl">Resultaat: u slaagt in één keer en vermijdt de herkeuring. We kennen de controlepunten uit het hoofd. Inwoners van Sterrebeek, Nossegem en Woluwe-Saint-Lambert die de E40 nemen, komen vaak de week voor hun afspraak bij het keuringscentrum. Dat is de beste manier om verrassingen te vermijden.</span>
+            <span>Résultat : vous passez du premier coup et vous évitez la contre-visite. On connaît les points de contrôle par coeur. Les habitants de Sterrebeek, Nossegem et Woluwe-Saint-Lambert qui prennent la E40 passent souvent la semaine avant leur rendez-vous au centre. C'est la meilleure façon d'éviter les mauvaises surprises.</span>
+
           </p>
 
         </div>
@@ -356,46 +384,45 @@
         <aside class="service-sidebar">
           <div class="sidebar-card sidebar-card--cta">
             <span class="label">
-              <span data-lang="fr">Besoin d'un garagiste?</span>
-              <span data-lang="nl">Garagehouder nodig?</span>
+              <span>Besoin d'un garagiste?</span>
+
             </span>
             <span class="phone"><a href="tel:+32484115813">0484 11 58 13</a></span>
             <p style="color:var(--smoke);font-size:0.85rem;">
-              <span data-lang="fr">Lun–Ven · 08:30–18:00</span>
-              <span data-lang="nl">Ma–Vr · 08:30–18:00</span>
+              <span>Lun–Ven · 08:30–18:00</span>
+
             </p>
             <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm);">
-              <span data-lang="fr">Appelez maintenant</span>
-              <span data-lang="nl">Bel nu</span>
+              <span>Appelez maintenant</span>
+
             </a>
           </div>
 
           <div class="sidebar-card">
             <h4>
-              <span data-lang="fr">Autres services</span>
-              <span data-lang="nl">Andere diensten</span>
+              <span>Autres services</span>
+
             </h4>
-            <a href="pneus.html" data-lang="fr">Pneus — Vente & Montage</a>
-            <a href="pneus.html" data-lang="nl">Banden — Verkoop & Montage</a>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie & Peinture</a>
-            <a href="carrosserie.html" data-lang="nl">Carrosserie & Lak</a>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique — Moteur & Turbo</a>
-            <a href="mecanique-automobile.html" data-lang="nl">Mechaniek — Motor & Turbo</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a>
-            <a href="vidange-huile.html" data-lang="nl">Olieverversing & Filters</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a>
-            <a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG — Réparation & Vidange</a>
-            <a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak — Herstelling & Olie</a>
-          
-            <a href="freins.html" data-lang="fr">Freins</a>
-            <a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a>
-            <a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a>
-            <a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a>
-            <a href="climatisation.html" data-lang="nl">Airco</a>
+            <a href="pneus.html">Pneus — Vente & Montage</a>
+
+            <a href="carrosserie.html">Carrosserie & Peinture</a>
+
+            <a href="mecanique-automobile.html">Mécanique — Moteur & Turbo</a>
+
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+
+            <a href="controle-technique.html">Contrôle technique</a>
+
+            <a href="reparation-boite-dsg.html">Boîte DSG — Réparation & Vidange</a>
+
+            <a href="freins.html">Freins</a>
+
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+
+            <a href="reparation-moteur.html">Réparation moteur</a>
+
+            <a href="climatisation.html">Climatisation</a>
+
       </div>
         </aside>
       </div>
@@ -407,32 +434,32 @@
     <div class="container">
       <div class="related-services__header reveal">
         <span class="label">
-          <span data-lang="fr">Services liés</span>
-          <span data-lang="nl">Gerelateerde diensten</span>
+          <span>Services liés</span>
+
         </span>
         <h2>
-          <span data-lang="fr">Voir aussi</span>
-          <span data-lang="nl">Zie ook</span>
+          <span>Voir aussi</span>
+
         </h2>
       </div>
       <div class="related-services__grid">
         <a href="pneus.html" class="service-card reveal">
           <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
-          <h3><span data-lang="fr">Pneus</span><span data-lang="nl">Banden</span></h3>
-          <p><span data-lang="fr">Vente, montage, équilibrage et permutation été/hiver.</span><span data-lang="nl">Verkoop, montage, balancering en seizoenswisseling.</span></p>
-          <span class="service-card__link"><span data-lang="fr">Voir les détails</span><span data-lang="nl">Meer details</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          <h3><span>Pneus</span></h3>
+          <p><span>Vente, montage, équilibrage et permutation été/hiver.</span></p>
+          <span class="service-card__link"><span>Voir les détails</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
         <a href="vidange-huile.html" class="service-card reveal reveal-delay-1">
           <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
-          <h3><span data-lang="fr">Vidange & Filtres</span><span data-lang="nl">Olieverversing</span></h3>
-          <p><span data-lang="fr">Vidange huile moteur et remplacement de tous les filtres.</span><span data-lang="nl">Motorolie verversen en alle filters vervangen.</span></p>
-          <span class="service-card__link"><span data-lang="fr">Voir les détails</span><span data-lang="nl">Meer details</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          <h3><span>Vidange & Filtres</span></h3>
+          <p><span>Vidange huile moteur et remplacement de tous les filtres.</span></p>
+          <span class="service-card__link"><span>Voir les détails</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
         <a href="controle-technique.html" class="service-card reveal reveal-delay-2">
           <div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-          <h3><span data-lang="fr">Contrôle technique</span><span data-lang="nl">Technische keuring</span></h3>
-          <p><span data-lang="fr">Préparation CT pour passer du premier coup.</span><span data-lang="nl">Voorbereiding keuring om in één keer te slagen.</span></p>
-          <span class="service-card__link"><span data-lang="fr">Voir les détails</span><span data-lang="nl">Meer details</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          <h3><span>Contrôle technique</span></h3>
+          <p><span>Préparation CT pour passer du premier coup.</span></p>
+          <span class="service-card__link"><span>Voir les détails</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
       </div>
     </div>
@@ -442,58 +469,58 @@
   <section class="section--lg" style="background: var(--gray-50, #F9FAFB);">
     <div class="container">
       <div class="services__header">
-        <span class="label"><span data-lang="fr">Questions fréquentes</span><span data-lang="nl">Veelgestelde vragen</span></span>
-        <h2><span data-lang="fr">FAQ — Garage automobile à Zaventem</span><span data-lang="nl">FAQ — Autogarage in Zaventem</span></h2>
+        <span class="label"><span>Questions fréquentes</span></span>
+        <h2><span>FAQ — Garage automobile à Zaventem</span></h2>
       </div>
       <div style="max-width:800px;margin:0 auto;">
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Mon voyant moteur s'allume et s'éteint, c'est grave ?</span><span data-lang="nl">Mijn motorlampje gaat aan en uit, is dat erg?</span>
+            <span>Mon voyant moteur s'allume et s'éteint, c'est grave ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Pas forcément. Dans la grande majorité des cas, c'est un capteur qui déconne ou un petit souci électronique — pas un moteur à remplacer. Chez DMT AUTOGROUP à Zaventem, on branche la valise diagnostic et en 30 minutes on sait exactement ce qui se passe. Souvent, c'est une réparation à 30-80 euros — parfois c'est juste un filtre à changer lors d'une <a href="vidange-huile.html">vidange</a>. Appelez-nous au 0484 11 58 13 avant de paniquer.</span>
-            <span data-lang="nl">Niet per se. In de meeste gevallen is het een sensor die kuren heeft of een klein elektronisch probleem — geen motor die vervangen moet worden. Bij DMT AUTOGROUP in Zaventem sluiten we de diagnosetool aan en binnen 30 minuten weten we precies wat er aan de hand is. Vaak gaat het om een reparatie van 30-80 euro — soms is het gewoon een filter dat vervangen moet worden tijdens een <a href="vidange-huile.html">olieverversing</a>. Bel ons op 0484 11 58 13 voor u in paniek raakt.</span>
+            <span>Pas forcément. Dans la grande majorité des cas, c'est un capteur qui déconne ou un petit souci électronique — pas un moteur à remplacer. Chez DMT AUTOGROUP à Zaventem, on branche la valise diagnostic et en 30 minutes on sait exactement ce qui se passe. Souvent, c'est une réparation à 30-80 euros — parfois c'est juste un filtre à changer lors d'une <a href="vidange-huile.html">vidange</a>. Appelez-nous au 0484 11 58 13 avant de paniquer.</span>
+            
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">J'ai un bruit bizarre quand je freine, c'est quoi ?</span><span data-lang="nl">Ik hoor een raar geluid als ik rem, wat is dat?</span>
+            <span>J'ai un bruit bizarre quand je freine, c'est quoi ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Un grincement aigu, c'est souvent le témoin d'usure des plaquettes qui touche le disque — il est temps de les changer. Un bruit sourd avec des vibrations dans le volant, ce sont plutôt les disques qui sont voilés. Dans les deux cas, ne tardez pas : plus vous roulez avec des freins usés, plus la réparation coûte cher. Si c'est après un choc, ça peut aussi être un problème de <a href="carrosserie.html">carrosserie</a>. Passez chez nous à Zaventem, on vérifie gratuitement.</span>
-            <span data-lang="nl">Een hoog piepend geluid is vaak de slijtage-indicator die het schijf raakt — tijd om te vervangen. Een dof geluid met trillingen in het stuur wijst eerder op vervormde schijven. In beide gevallen: wacht niet te lang. Hoe langer u rijdt met versleten remmen, hoe duurder de herstelling wordt. Als het na een botsing is, kan het ook een <a href="carrosserie.html">carrosserie</a>probleem zijn. Kom langs in Zaventem, we controleren gratis.</span>
+            <span>Un grincement aigu, c'est souvent le témoin d'usure des plaquettes qui touche le disque — il est temps de les changer. Un bruit sourd avec des vibrations dans le volant, ce sont plutôt les disques qui sont voilés. Dans les deux cas, ne tardez pas : plus vous roulez avec des freins usés, plus la réparation coûte cher. Si c'est après un choc, ça peut aussi être un problème de <a href="carrosserie.html">carrosserie</a>. Passez chez nous à Zaventem, on vérifie gratuitement.</span>
+            
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Est-ce que vous travaillez sur toutes les marques ?</span><span data-lang="nl">Werken jullie aan alle automerken?</span>
+            <span>Est-ce que vous travaillez sur toutes les marques ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Oui, toutes les marques sans exception — BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault, Toyota, Hyundai, et les autres. On connaît les spécificités de chaque constructeur. Certaines pannes reviennent souvent sur certains modèles, et à force on les repère très vite.</span>
-            <span data-lang="nl">Ja, alle merken zonder uitzondering — BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault, Toyota, Hyundai, en de rest. We kennen de eigenheden van elke fabrikant. Bepaalde storingen komen vaak terug bij bepaalde modellen, en door ervaring herkennen we die heel snel.</span>
+            <span>Oui, toutes les marques sans exception — BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault, Toyota, Hyundai, et les autres. On connaît les spécificités de chaque constructeur. Certaines pannes reviennent souvent sur certains modèles, et à force on les repère très vite.</span>
+
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Mon garagiste veut tout changer, c'est normal ?</span><span data-lang="nl">Mijn garagehouder wil alles vervangen, is dat normaal?</span>
+            <span>Mon garagiste veut tout changer, c'est normal ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">C'est un classique. On voit régulièrement des gens qui arrivent avec un devis d'un autre garage où on leur propose de tout remplacer. Souvent, la moitié des pièces listées n'ont pas besoin d'être changées. Chez nous, on vous montre la pièce usée, on vous explique pourquoi elle doit être remplacée, et on ne touche pas au reste. Si c'est bon, c'est bon.</span>
-            <span data-lang="nl">Dat is een klassieker. We zien regelmatig mensen die binnenkomen met een offerte van een andere garage waar alles vervangen moet worden. Vaak hoeft de helft van de onderdelen op die lijst helemaal niet vervangen te worden. Bij ons tonen we u het versleten onderdeel, leggen we uit waarom het vervangen moet worden, en raken we de rest niet aan. Wat goed is, is goed.</span>
+            <span>C'est un classique. On voit régulièrement des gens qui arrivent avec un devis d'un autre garage où on leur propose de tout remplacer. Souvent, la moitié des pièces listées n'ont pas besoin d'être changées. Chez nous, on vous montre la pièce usée, on vous explique pourquoi elle doit être remplacée, et on ne touche pas au reste. Si c'est bon, c'est bon.</span>
+
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">C'est quoi la différence de prix entre un concessionnaire et votre garage ?</span><span data-lang="nl">Wat is het prijsverschil tussen een concessiehouder en jullie garage?</span>
+            <span>C'est quoi la différence de prix entre un concessionnaire et votre garage ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">En moyenne, nos tarifs sont 30 à 50% moins chers qu'en concession. La raison est simple : on a moins de frais de structure, et on utilise des pièces de qualité équivalente (OEM ou marques comme Brembo, Bosch, Mann) sans la marge du constructeur. Le travail est le même, souvent fait par des mécaniciens plus expérimentés — que ce soit pour une <a href="vidange-huile.html">vidange</a>, un <a href="controle-technique.html">contrôle technique</a> ou une réparation.</span>
-            <span data-lang="nl">Gemiddeld liggen onze tarieven 30 tot 50% lager dan bij een concessiehouder. De reden is simpel: we hebben minder overheadkosten en gebruiken onderdelen van gelijkwaardige kwaliteit (OEM of merken zoals Brembo, Bosch, Mann) zonder de marge van de fabrikant. Het werk is hetzelfde, vaak uitgevoerd door meer ervaren monteurs — of het nu gaat om een <a href="vidange-huile.html">olieverversing</a>, een <a href="controle-technique.html">technische keuring</a> of een herstelling.</span>
+            <span>En moyenne, nos tarifs sont 30 à 50% moins chers qu'en concession. La raison est simple : on a moins de frais de structure, et on utilise des pièces de qualité équivalente (OEM ou marques comme Brembo, Bosch, Mann) sans la marge du constructeur. Le travail est le même, souvent fait par des mécaniciens plus expérimentés — que ce soit pour une <a href="vidange-huile.html">vidange</a>, un <a href="controle-technique.html">contrôle technique</a> ou une réparation.</span>
+            
           </p>
         </details>
       </div>
@@ -503,12 +530,12 @@
   <!-- CTA -->
   <section class="cta-section section--lg">
     <div class="container">
-      <span class="label reveal"><span data-lang="fr">Garage automobile Zaventem</span><span data-lang="nl">Autogarage Zaventem</span></span>
-      <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+      <span class="label reveal"><span>Garage automobile Zaventem</span></span>
+      <h2 class="reveal"><span>Appelez maintenant</span></h2>
       <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
       <p class="cta-section__hours reveal reveal-delay-2">
-        <span data-lang="fr">Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span>
-        <span data-lang="nl">Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span>
+        <span>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span>
+
       </p>
     </div>
   </section>
@@ -518,38 +545,38 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37">
-          <p><span data-lang="fr">Garage automobile à Zaventem. Entretien, réparation, carrosserie et pneus — toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Onderhoud, herstelling, carrosserie en banden — alle merken.</span></p>
+          <img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async">
+          <p><span>Garage automobile à Zaventem. Entretien, réparation, carrosserie et pneus — toutes marques.</span></p>
         </div>
         <div class="footer__col">
           <h4>Services</h4>
-          <a href="garage-automobile.html" data-lang="fr">Entretien & Réparation</a><a href="garage-automobile.html" data-lang="nl">Onderhoud & Herstelling</a>
-          <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-          <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-          <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-        <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
+          <a href="garage-automobile.html">Entretien & Réparation</a>
+          <a href="pneus.html">Pneus</a>
+          <a href="carrosserie.html">Carrosserie</a>
+          <a href="vidange-huile.html">Vidange & Filtres</a>
+        <a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
         <div class="footer__col">
-          <h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4>
-          <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-          <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-          <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a>
-          <a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-          <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-          <a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-          <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-          <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
+          <h4><span>Plus</span></h4>
+          <a href="mecanique-automobile.html">Mécanique</a>
+          <a href="reparation-boite-dsg.html">Boîte DSG</a>
+          <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+
+          <a href="controle-technique.html">Contrôle technique</a>
+          <a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a>
+          <a href="embrayage.html">Embrayage</a>
+          <a href="remplacement-turbo.html">Turbo</a>
         </div>
         <div class="footer__col">
           <h4>Contact</h4>
           <a href="tel:+32484115813">0484 11 58 13</a>
           <a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a>
           <a href="https://maps.google.com/?q=Mechelsesteenweg+270+1933+Zaventem" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a>
-          <p style="color:var(--smoke);font-size:0.9rem;margin-top:0.5rem"><span data-lang="fr">Lun–Ven: 08:30–18:00</span><span data-lang="nl">Ma–Vr: 08:30–18:00</span></p>
+          <p style="color:var(--smoke);font-size:0.9rem;margin-top:0.5rem"><span>Lun–Ven: 08:30–18:00</span></p>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>© 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem.</span>
-        <span><span data-lang="fr">Garage automobile Zaventem</span><span data-lang="nl">Autogarage Zaventem</span></span>
+        <span>© 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span>
+        <span><span>Garage automobile Zaventem</span></span>
         <a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a>
         <a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a>
       </div>

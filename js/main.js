@@ -3,40 +3,10 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initLangSwitch();
   initNavScroll();
   initMobileMenu();
   initScrollReveal();
 });
-
-/* --- Language Switcher --- */
-function initLangSwitch() {
-  const defaultLang = localStorage.getItem('dmt-lang') || 'fr';
-  setLang(defaultLang);
-
-  document.querySelectorAll('.lang-switch button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-      setLang(lang);
-      localStorage.setItem('dmt-lang', lang);
-    });
-  });
-}
-
-function setLang(lang) {
-  // Update buttons
-  document.querySelectorAll('.lang-switch button').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
-  });
-
-  // Toggle content
-  document.querySelectorAll('[data-lang]').forEach(el => {
-    el.classList.toggle('active-lang', el.dataset.lang === lang);
-  });
-
-  // Update html lang attribute
-  document.documentElement.lang = lang;
-}
 
 /* --- Nav Scroll Effect --- */
 function initNavScroll() {

@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/contact">
   <meta property="og:image" content="https://dmt-autogroup.be/img/facade-garage.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — DMT AUTOGROUP Garage Zaventem">
+  <meta name="twitter:description" content="Contactez DMT AUTOGROUP, garage automobile à Zaventem. Mechelsesteenweg 270. ☎ 0484 11 58 13. Lun-Ven 08:30-18:00.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/facade-garage.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/contact">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,11 +32,15 @@
 {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
   "name": "DMT AUTOGROUP 1,2,3 AutoService",
-  "url": "https://dmt-autogroup.be/contact",
+  "url": "https://dmt-autogroup.be/",
   "image": "https://dmt-autogroup.be/img/facade-garage.webp",
   "telephone": "+32484115813",
   "email": "DMT.AUTOGROUP@hotmail.com",
+    "sameAs": [
+      "https://www.google.com/maps?cid=9711024847498784016"
+    ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Mechelsesteenweg 270",
@@ -89,90 +101,96 @@
     .reach-areas span { font-family: var(--font-accent); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; padding: 0.4rem 1rem; border: 1px solid var(--border-color); border-radius: var(--border-radius); color: var(--ash); }
     @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } .map-container iframe { height: 300px; } }
   </style>
+  <link rel="preload" as="image" href="img/facade-garage.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/contact">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/contact">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/contact">
 </head>
 <body>
   <header class="nav"><div class="nav__inner">
-    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
     <nav class="nav__links">
-      <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+      <a href="index.html">Accueil</a>
 
       <!-- Services dropdown -->
       <div class="nav__dropdown">
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+        <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
         <div class="nav__dropdown-menu">
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-            <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-            <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+            <span class="nav__dropdown-title">Entretien</span>
+            <a href="garage-automobile.html">Garage automobile</a>
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+            <a href="freins.html">Freins</a>
+            <a href="controle-technique.html">Contrôle technique</a>
+            <a href="climatisation.html">Climatisation</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-            <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-            <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-            <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-            <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+            <span class="nav__dropdown-title">Mécanique</span>
+            <a href="mecanique-automobile.html">Mécanique auto</a>
+            <a href="reparation-moteur.html">Réparation moteur</a>
+            <a href="remplacement-turbo.html">Turbo</a>
+            <a href="embrayage.html">Embrayage</a>
+            <a href="courroie-distribution.html">Courroie distribution</a>
+            <a href="reparation-boite-dsg.html">Boîte DSG</a>
+            <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+            <a href="filtre-particules.html">Filtre à particules</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-            <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-            <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-            <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-            <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+            <span class="nav__dropdown-title">Électrique & Diag</span>
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+            <a href="reparation-electrique.html">Réparation électrique</a>
+            <a href="batterie.html">Batterie</a>
+            <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+            <a href="carrosserie.html">Carrosserie</a>
+            <a href="pneus.html">Pneus</a>
+            <a href="direction-suspension.html">Direction & Suspension</a>
           </div>
         </div>
       </div>
 
-      <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+      <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
     </nav>
     <div class="nav__actions">
-      <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+      <div class="lang-switch"><a class="active">FR</a><a href="nl/contact.html">NL</a></div>
       <a href="tel:+32484115813" class="btn btn--phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="phone-text">0484 11 58 13</span></a>
     </div>
     <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div></header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--bronze)">0484 11 58 13</a>
   </div>
 
-  <section class="service-hero" style="background: url('img/facade-garage.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/facade-garage.webp" alt="Facade garage DMT AUTOGROUP Mechelsesteenweg 270 Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
-      <span class="label"><span data-lang="fr">Garage automobile Zaventem</span><span data-lang="nl">Autogarage Zaventem</span></span>
-      <h1><span data-lang="fr">Contactez votre garage automobile à Zaventem</span><span data-lang="nl">Contacteer uw autogarage in Zaventem</span></h1>
+      <span class="label"><span>Garage automobile Zaventem</span></span>
+      <h1><span>Contactez votre garage automobile à Zaventem</span></h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">DMT AUTOGROUP 1,2,3 AutoService — votre garage automobile sur la Mechelsesteenweg à Zaventem. Passez nous voir ou appelez directement.</span>
-        <span data-lang="nl">DMT AUTOGROUP 1,2,3 AutoService — uw autogarage op de Mechelsesteenweg in Zaventem. Kom langs of bel ons rechtstreeks.</span>
+        <span>DMT AUTOGROUP 1,2,3 AutoService — votre garage automobile sur la Mechelsesteenweg à Zaventem. Passez nous voir ou appelez directement.</span>
+
       </p>
     </div>
   </section>
@@ -180,63 +198,63 @@
   <section class="section--lg" style="background: var(--graphite);">
     <div class="container">
       <div class="reach-section reveal" style="margin-bottom: var(--space-xl);">
-        <h2><span data-lang="fr">Votre garage automobile à Zaventem vous attend</span><span data-lang="nl">Uw autogarage in Zaventem verwacht u</span></h2>
+        <h2><span>Votre garage automobile à Zaventem vous attend</span></h2>
         <p>
-          <span data-lang="fr">DMT AUTOGROUP, c'est un garage automobile sur la Mechelsesteenweg 270 à Zaventem. Avec 15 ans d'expérience en mécanique, on s'occupe de tout : <a href="garage-automobile.html">entretien</a>, <a href="mecanique-automobile.html">réparation mécanique</a>, <a href="carrosserie.html">carrosserie</a>, <a href="pneus.html">pneus</a>, <a href="vidange-huile.html">vidange</a> et <a href="controle-technique.html">préparation au contrôle technique</a>.</span>
-          <span data-lang="nl">DMT AUTOGROUP is een autogarage op de Mechelsesteenweg 270 in Zaventem. Met 15 jaar ervaring in automechaniek zorgen we voor alles: <a href="garage-automobile.html">onderhoud</a>, <a href="mecanique-automobile.html">mechanische herstelling</a>, <a href="carrosserie.html">carrosserie</a>, <a href="pneus.html">banden</a>, <a href="vidange-huile.html">olieverversing</a> en <a href="controle-technique.html">voorbereiding technische keuring</a>.</span>
+          <span>DMT AUTOGROUP, c'est un garage automobile sur la Mechelsesteenweg 270 à Zaventem. Avec 15 ans d'expérience en mécanique, on s'occupe de tout : <a href="garage-automobile.html">entretien</a>, <a href="mecanique-automobile.html">réparation mécanique</a>, <a href="carrosserie.html">carrosserie</a>, <a href="pneus.html">pneus</a>, <a href="vidange-huile.html">vidange</a> et <a href="controle-technique.html">préparation au contrôle technique</a>.</span>
+          
         </p>
         <p style="margin-top: var(--space-sm);">
-          <span data-lang="fr">Toutes marques : BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault, Citroën, Toyota et plus encore.</span>
-          <span data-lang="nl">Alle merken: BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault, Citroën, Toyota en meer.</span>
+          <span>Toutes marques : BMW, Mercedes, Audi, Volkswagen, Peugeot, Renault, Citroën, Toyota et plus encore.</span>
+
         </p>
         <p style="margin-top: var(--space-sm);">
-          <span data-lang="fr">Quand vous appelez le <strong>0484 11 58 13</strong>, c'est le mécanicien qui répond. Pas un standard, pas un robot. Vous expliquez votre problème, on vous dit tout de suite si vous pouvez passer.</span>
-          <span data-lang="nl">Wanneer u belt naar <strong>0484 11 58 13</strong>, is het de mecanicien die opneemt. Geen telefooncentrale, geen robot. U legt uw probleem uit en we zeggen u meteen of u kunt langskomen.</span>
+          <span>Quand vous appelez le <strong>0484 11 58 13</strong>, c'est le mécanicien qui répond. Pas un standard, pas un robot. Vous expliquez votre problème, on vous dit tout de suite si vous pouvez passer.</span>
+          
         </p>
         <p style="margin-top: var(--space-sm);">
-          <span data-lang="fr">La plupart du temps, vous pouvez venir directement — sans rendez-vous. On diagnostique, on vous donne un devis clair et on répare le jour même quand c'est possible.</span>
-          <span data-lang="nl">Meestal kunt u gewoon binnenwandelen — zonder afspraak. We stellen de diagnose, geven u een duidelijke offerte en herstellen dezelfde dag wanneer het kan.</span>
+          <span>La plupart du temps, vous pouvez venir directement — sans rendez-vous. On diagnostique, on vous donne un devis clair et on répare le jour même quand c'est possible.</span>
+
         </p>
         <p style="margin-top: var(--space-sm);">
-          <span data-lang="fr">Quand vous venez au garage, amenez vos <strong>clés de voiture</strong>, votre <strong>carte grise</strong> et votre <strong>carnet d'entretien</strong> si vous en avez un. Ca nous aide à voir l'historique de votre véhicule rapidement.</span>
-          <span data-lang="nl">Wanneer u naar de garage komt, breng uw <strong>autosleutels</strong>, uw <strong>inschrijvingsbewijs</strong> en uw <strong>onderhoudsboekje</strong> mee als u er een heeft. Dat helpt ons om snel de geschiedenis van uw voertuig te bekijken.</span>
+          <span>Quand vous venez au garage, amenez vos <strong>clés de voiture</strong>, votre <strong>carte grise</strong> et votre <strong>carnet d'entretien</strong> si vous en avez un. Ca nous aide à voir l'historique de votre véhicule rapidement.</span>
+          
         </p>
         <p style="margin-top: var(--space-sm);">
-          <span data-lang="fr">Contrôle technique bientôt ? Apportez aussi votre ancien certificat de contrôle.</span>
-          <span data-lang="nl">Technische keuring binnenkort? Breng dan ook uw vorig keuringsbewijs mee.</span>
+          <span>Contrôle technique bientôt ? Apportez aussi votre ancien certificat de contrôle.</span>
+
         </p>
       </div>
 
       <div class="contact-grid reveal">
         <div class="contact-card">
-          <h3><span data-lang="fr">Coordonnées</span><span data-lang="nl">Contactgegevens</span></h3>
+          <h3><span>Coordonnées</span></h3>
           <p><strong>DMT AUTOGROUP 1,2,3 AutoService</strong></p>
           <p>Mechelsesteenweg 270<br>1933 Zaventem</p>
           <span class="phone-big"><a href="tel:+32484115813">0484 11 58 13</a></span>
           <p style="margin-top:0.3rem"><a href="mailto:DMT.AUTOGROUP@hotmail.com" style="color:var(--bronze)">DMT.AUTOGROUP@hotmail.com</a></p>
           <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm)">
-            <span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span>
+            <span>Appelez maintenant</span>
           </a>
         </div>
         <div class="contact-card">
-          <h3><span data-lang="fr">Horaires d'ouverture</span><span data-lang="nl">Openingsuren</span></h3>
+          <h3><span>Horaires d'ouverture</span></h3>
           <table class="hours-table">
-            <tr><td><span data-lang="fr">Lundi</span><span data-lang="nl">Maandag</span></td><td>08:30 — 18:00</td></tr>
-            <tr><td><span data-lang="fr">Mardi</span><span data-lang="nl">Dinsdag</span></td><td>08:30 — 18:00</td></tr>
-            <tr><td><span data-lang="fr">Mercredi</span><span data-lang="nl">Woensdag</span></td><td>08:30 — 18:00</td></tr>
-            <tr><td><span data-lang="fr">Jeudi</span><span data-lang="nl">Donderdag</span></td><td>08:30 — 18:00</td></tr>
-            <tr><td><span data-lang="fr">Vendredi</span><span data-lang="nl">Vrijdag</span></td><td>08:30 — 18:00</td></tr>
-            <tr class="closed"><td><span data-lang="fr">Samedi</span><span data-lang="nl">Zaterdag</span></td><td><span data-lang="fr">Fermé</span><span data-lang="nl">Gesloten</span></td></tr>
-            <tr class="closed"><td><span data-lang="fr">Dimanche</span><span data-lang="nl">Zondag</span></td><td><span data-lang="fr">Fermé</span><span data-lang="nl">Gesloten</span></td></tr>
+            <tr><td><span>Lundi</span></td><td>08:30 — 18:00</td></tr>
+            <tr><td><span>Mardi</span></td><td>08:30 — 18:00</td></tr>
+            <tr><td><span>Mercredi</span></td><td>08:30 — 18:00</td></tr>
+            <tr><td><span>Jeudi</span></td><td>08:30 — 18:00</td></tr>
+            <tr><td><span>Vendredi</span></td><td>08:30 — 18:00</td></tr>
+            <tr class="closed"><td><span>Samedi</span></td><td><span>Fermé</span></td></tr>
+            <tr class="closed"><td><span>Dimanche</span></td><td><span>Fermé</span></td></tr>
           </table>
         </div>
       </div>
 
       <div class="photo-gallery reveal" style="grid-template-columns:1fr 1fr; margin-bottom: var(--space-xl);">
-        <img src="img/facade-garage.webp" alt="Façade garage DMT AUTOGROUP Mechelsesteenweg Zaventem" loading="lazy" width="800" height="533">
-        <img src="img/bureau.webp" alt="Bureau accueil DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533">
-        <img src="img/accueil-salon.webp" alt="Salle d'attente confortable DMT AUTOGROUP Zaventem" width="800" height="533" loading="lazy">
-        <img src="img/accueil-cafe.webp" alt="Coin café salle d'attente garage Zaventem" width="800" height="533" loading="lazy">
+        <img src="img/facade-garage.webp" alt="Façade garage DMT AUTOGROUP Mechelsesteenweg Zaventem" loading="lazy" width="800" height="533" decoding="async">
+        <img src="img/bureau.webp" alt="Bureau accueil DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533" decoding="async">
+        <img src="img/accueil-salon.webp" alt="Salle d'attente confortable DMT AUTOGROUP Zaventem" width="800" height="533" loading="lazy" decoding="async">
+        <img src="img/accueil-cafe.webp" alt="Coin café salle d'attente garage Zaventem" width="800" height="533" loading="lazy" decoding="async">
       </div>
 
       <div class="map-container reveal">
@@ -254,62 +272,62 @@
         </div>
         <div style="text-align:center;margin-top:1rem;">
           <a href="https://www.google.com/maps/dir/?api=1&destination=DMT+AUTOGROUP+1,2,3+AutoService&destination_place_id=ChIJZYxTG37fw0cREIle6gqXy4Y" target="_blank" rel="noopener" class="btn btn--primary">
-            <span data-lang="fr">Itinéraire Google Maps</span>
-            <span data-lang="nl">Routebeschrijving Google Maps</span>
+            <span>Itinéraire Google Maps</span>
+
           </a>
         </div>
       </div>
 
       <div class="reach-section reveal">
-        <h2><span data-lang="fr">Comment nous trouver — Garage automobile Zaventem</span><span data-lang="nl">Hoe ons te vinden — Autogarage Zaventem</span></h2>
-        <p><span data-lang="fr">Notre garage se trouve sur la Mechelsesteenweg (N1), numéro 270, à Zaventem. Un grand axe, facile à repérer.</span>
-        <span data-lang="nl">Onze garage ligt op de Mechelsesteenweg (N1), nummer 270, in Zaventem. Een grote verkeersader, gemakkelijk te vinden.</span></p>
-        <p style="margin-top: var(--space-sm);"><span data-lang="fr">Depuis <strong>l'autoroute E40</strong> : prenez la sortie Zaventem/Sterrebeek, suivez la direction Mechelen sur la N1. On est à quelques centaines de mètres sur votre droite. Depuis le <strong>centre de Zaventem</strong> : direction Mechelen sur la Mechelsesteenweg. Depuis <strong>Bruxelles</strong> (Woluwe, Evere) : N1 direction Zaventem, comptez 10 minutes hors pointe.</span>
-        <span data-lang="nl">Vanaf de <strong>autosnelweg E40</strong>: neem de afrit Zaventem/Sterrebeek en volg de richting Mechelen op de N1. We zitten na enkele honderden meters aan uw rechterkant. Vanuit het <strong>centrum van Zaventem</strong>: richting Mechelen op de Mechelsesteenweg. Vanuit <strong>Brussel</strong> (Woluwe, Evere): N1 richting Zaventem, reken op 10 minuten buiten de spits.</span></p>
-        <p style="margin-top: var(--space-sm);"><span data-lang="fr">Il y a un parking gratuit juste devant le garage. Vous pouvez vous garer et entrer directement dans l'atelier ou dans notre bureau d'accueil.</span>
-        <span data-lang="nl">Er is een gratis parking vlak voor de garage. U kunt parkeren en meteen binnenwandelen in het atelier of in ons ontvangstbureau.</span></p>
+        <h2><span>Comment nous trouver — Garage automobile Zaventem</span></h2>
+        <p><span>Notre garage se trouve sur la Mechelsesteenweg (N1), numéro 270, à Zaventem. Un grand axe, facile à repérer.</span>
+        </p>
+        <p style="margin-top: var(--space-sm);"><span>Depuis <strong>l'autoroute E40</strong> : prenez la sortie Zaventem/Sterrebeek, suivez la direction Mechelen sur la N1. On est à quelques centaines de mètres sur votre droite. Depuis le <strong>centre de Zaventem</strong> : direction Mechelen sur la Mechelsesteenweg. Depuis <strong>Bruxelles</strong> (Woluwe, Evere) : N1 direction Zaventem, comptez 10 minutes hors pointe.</span>
+        </p>
+        <p style="margin-top: var(--space-sm);"><span>Il y a un parking gratuit juste devant le garage. Vous pouvez vous garer et entrer directement dans l'atelier ou dans notre bureau d'accueil.</span>
+        </p>
         <div class="reach-areas">
           <span>Zaventem</span><span>Diegem</span><span>Sterrebeek</span><span>Nossegem</span><span>Kraainem</span><span>Wezembeek-Oppem</span><span>Woluwe-Saint-Lambert</span><span>Woluwe-Saint-Pierre</span><span>Evere</span><span>Machelen</span><span>Vilvoorde</span><span>Kortenberg</span>
         </div>
       </div>
 
       <div class="reach-section reveal" style="margin-top: var(--space-xl);">
-        <h3><span data-lang="fr">Tous les services auto sous un même toit</span><span data-lang="nl">Alle autodiensten onder één dak</span></h3>
+        <h3><span>Tous les services auto sous un même toit</span></h3>
         <p>
-          <span data-lang="fr">Vous avez besoin d'un <a href="garage-automobile.html">entretien</a> ? D'un <a href="pneus.html">changement de pneus</a> ? D'une <a href="carrosserie.html">réparation après un accrochage</a> ? On s'en occupe. Notre équipe vous accueille du lundi au vendredi de 08:30 à 18:00.</span>
-          <span data-lang="nl">Heeft u <a href="garage-automobile.html">onderhoud</a> nodig? Nieuwe <a href="pneus.html">banden</a>? Een <a href="carrosserie.html">herstelling na een aanrijding</a>? Wij regelen het. Ons team verwelkomt u van maandag tot vrijdag van 08:30 tot 18:00.</span>
+          <span>Vous avez besoin d'un <a href="garage-automobile.html">entretien</a> ? D'un <a href="pneus.html">changement de pneus</a> ? D'une <a href="carrosserie.html">réparation après un accrochage</a> ? On s'en occupe. Notre équipe vous accueille du lundi au vendredi de 08:30 à 18:00.</span>
+          
         </p>
         <p style="margin-top: var(--space-sm);">
-          <span data-lang="fr">On fait aussi la <a href="vidange-huile.html">vidange</a>, la <a href="controle-technique.html">préparation au contrôle technique</a> et toute la <a href="mecanique-automobile.html">mécanique automobile</a>. On connait ces moteurs par coeur.</span>
-          <span data-lang="nl">We doen ook de <a href="vidange-huile.html">olieverversing</a>, <a href="controle-technique.html">voorbereiding technische keuring</a> en alle <a href="mecanique-automobile.html">automechaniek</a>. We kennen die motoren door en door.</span>
+          <span>On fait aussi la <a href="vidange-huile.html">vidange</a>, la <a href="controle-technique.html">préparation au contrôle technique</a> et toute la <a href="mecanique-automobile.html">mécanique automobile</a>. On connait ces moteurs par coeur.</span>
+          
         </p>
         <p style="margin-top: var(--space-sm);">
-          <span data-lang="fr">On diagnostique chaque problème avec un outil professionnel. Freins, embrayages, turbos, boîtes de vitesses, systèmes électriques — on gère.</span>
-          <span data-lang="nl">We stellen elk probleem vast met professioneel apparatuur. Remmen, koppelingen, turbo's, versnellingsbakken, elektrische systemen — wij regelen het.</span>
+          <span>On diagnostique chaque problème avec un outil professionnel. Freins, embrayages, turbos, boîtes de vitesses, systèmes électriques — on gère.</span>
+
         </p>
         <p style="margin-top: var(--space-sm);">
-          <span data-lang="fr">Votre contrôle technique approche ? On prépare votre voiture pour qu'elle passe du premier coup. Appelez le <strong>0484 11 58 13</strong> ou passez directement — Mechelsesteenweg 270, 1933 Zaventem.</span>
-          <span data-lang="nl">Technische keuring in zicht? We bereiden uw auto voor zodat u in één keer slaagt. Bel <strong>0484 11 58 13</strong> of kom gewoon langs — Mechelsesteenweg 270, 1933 Zaventem.</span>
+          <span>Votre contrôle technique approche ? On prépare votre voiture pour qu'elle passe du premier coup. Appelez le <strong>0484 11 58 13</strong> ou passez directement — Mechelsesteenweg 270, 1933 Zaventem.</span>
+          
         </p>
       </div>
     </div>
   </section>
 
   <section class="cta-section section--lg"><div class="container">
-    <span class="label reveal"><span data-lang="fr">Garage automobile Zaventem</span><span data-lang="nl">Autogarage Zaventem</span></span>
-    <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+    <span class="label reveal"><span>Garage automobile Zaventem</span></span>
+    <h2 class="reveal"><span>Appelez maintenant</span></h2>
     <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
-    <p class="cta-section__hours reveal reveal-delay-2"><span data-lang="fr">Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span><span data-lang="nl">Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
+    <p class="cta-section__hours reveal reveal-delay-2"><span>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
   </div></section>
 
   <footer class="footer"><div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37"><p><span data-lang="fr">Garage automobile à Zaventem. Toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Alle merken.</span></p></div>
-      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html" data-lang="fr">Entretien</a><a href="garage-automobile.html" data-lang="nl">Onderhoud</a><a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a><a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a><a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a><a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
-      <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a><a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a><a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a><a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a><a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a></div>
+      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async"><p><span>Garage automobile à Zaventem. Toutes marques.</span></p></div>
+      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html">Entretien</a><a href="pneus.html">Pneus</a><a href="carrosserie.html">Carrosserie</a><a href="vidange-huile.html">Vidange</a><a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
+      <div class="footer__col"><h4><span>Plus</span></h4><a href="mecanique-automobile.html">Mécanique</a><a href="reparation-boite-dsg.html">Boîte DSG</a><a href="reparation-boite-vitesse.html">Boîte de vitesse</a><a href="controle-technique.html">Contrôle technique</a><a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a><a href="embrayage.html">Embrayage</a><a href="remplacement-turbo.html">Turbo</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a><a href="https://maps.google.com/?q=Mechelsesteenweg+270+1933+Zaventem" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Garage Zaventem</span><span data-lang="nl">Garage Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
+    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span><span><span>Garage Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
   <script src="js/main.js" defer></script>
 </body>

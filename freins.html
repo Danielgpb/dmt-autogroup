@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/freins">
   <meta property="og:image" content="https://dmt-autogroup.be/img/freins-plaquettes.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Réparation freins Zaventem | DMT AUTOGROUP">
+  <meta name="twitter:description" content="Plaquettes, disques, purge liquide de frein, diagnostic ABS. Garage indépendant à Zaventem, prix justes.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/freins-plaquettes.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/freins">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,10 +32,12 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
     "name": "DMT AUTOGROUP 1,2,3 AutoService",
-    "url": "https://dmt-autogroup.be/freins",
+    "url": "https://dmt-autogroup.be/",
     "image": "https://dmt-autogroup.be/img/freins-plaquettes.webp",
     "telephone": "+32484115813",
+    "sameAs": ["https://www.google.com/maps?cid=9711024847498784016"],
     "address": { "@type": "PostalAddress", "streetAddress": "Mechelsesteenweg 270", "addressLocality": "Zaventem", "postalCode": "1933", "addressCountry": "BE" },
     "geo": { "@type": "GeoCoordinates", "latitude": 50.8639552, "longitude": 4.5159167 },
     "areaServed": [
@@ -43,7 +53,19 @@
       { "@type": "City", "name": "Vilvoorde" },
       { "@type": "City", "name": "Kortenberg" }
     ],
-    "serviceType": ["Dépannage et réparation de freins", "Remplacement plaquettes de frein", "Remplacement disques de frein", "Purge liquide de frein"]
+    "serviceType": ["Dépannage et réparation de freins", "Remplacement plaquettes de frein", "Remplacement disques de frein", "Purge liquide de frein"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 30,
+      "bestRating": "5"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -104,91 +126,97 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/freins-plaquettes.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/freins">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/remmen">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/freins">
 </head>
 <body>
   <header class="nav"><div class="nav__inner">
-    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
     <nav class="nav__links">
-      <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+      <a href="index.html">Accueil</a>
 
       <!-- Services dropdown -->
       <div class="nav__dropdown">
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+        <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
         <div class="nav__dropdown-menu">
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-            <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-            <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+            <span class="nav__dropdown-title">Entretien</span>
+            <a href="garage-automobile.html">Garage automobile</a>
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+            <a href="freins.html">Freins</a>
+            <a href="controle-technique.html">Contrôle technique</a>
+            <a href="climatisation.html">Climatisation</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-            <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-            <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-            <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-            <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+            <span class="nav__dropdown-title">Mécanique</span>
+            <a href="mecanique-automobile.html">Mécanique auto</a>
+            <a href="reparation-moteur.html">Réparation moteur</a>
+            <a href="remplacement-turbo.html">Turbo</a>
+            <a href="embrayage.html">Embrayage</a>
+            <a href="courroie-distribution.html">Courroie distribution</a>
+            <a href="reparation-boite-dsg.html">Boîte DSG</a>
+            <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+            <a href="filtre-particules.html">Filtre à particules</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-            <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-            <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-            <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-            <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+            <span class="nav__dropdown-title">Électrique & Diag</span>
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+            <a href="reparation-electrique.html">Réparation électrique</a>
+            <a href="batterie.html">Batterie</a>
+            <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+            <a href="carrosserie.html">Carrosserie</a>
+            <a href="pneus.html">Pneus</a>
+            <a href="direction-suspension.html">Direction & Suspension</a>
           </div>
         </div>
       </div>
 
-      <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+      <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
     </nav>
     <div class="nav__actions">
-      <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+      <div class="lang-switch"><a class="active">FR</a><a href="nl/remmen.html">NL</a></div>
       <a href="tel:+32484115813" class="btn btn--phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="phone-text">0484 11 58 13</span></a>
     </div>
     <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div></header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--yellow, #EAB308)">0484 11 58 13</a>
   </div>
 
   <!-- HERO -->
-  <section class="service-hero" style="background: url('img/freins-plaquettes.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/freins-plaquettes.webp" alt="Réparation freins plaquettes DMT AUTOGROUP Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
-      <span class="label"><span data-lang="fr">Freins — Plaquettes, Disques, Purge — Zaventem</span><span data-lang="nl">Remmen — Remblokken, Schijven, Ontluchting — Zaventem</span></span>
-      <h1><span data-lang="fr">Réparation de freins<br>à Zaventem</span><span data-lang="nl">Remherstelling<br>in Zaventem</span></h1>
+      <span class="label"><span>Freins — Plaquettes, Disques, Purge — Zaventem</span></span>
+      <h1><span>Réparation de freins<br>à Zaventem</span></h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">Vos freins grincent ? La pédale s'enfonce trop loin ? Voyant ABS allumé ? Chez DMT AUTOGROUP, on s'occupe de tout votre système de freinage : plaquettes, disques, liquide de frein, capteurs ABS, frein à main. Pièces de qualité, prix d'un garage indépendant. <strong>Pas de devis surprise.</strong></span>
-        <span data-lang="nl">Piepen uw remmen? Gaat het pedaal te ver door? ABS-lampje aan? Bij DMT AUTOGROUP zorgen we voor uw volledige remsysteem: remblokken, schijven, remvloeistof, ABS-sensoren, handrem. Kwaliteitsonderdelen, prijs van een onafhankelijke garage. <strong>Geen verrassingen op de factuur.</strong></span>
+        <span>Vos freins grincent ? La pédale s'enfonce trop loin ? Voyant ABS allumé ? Chez DMT AUTOGROUP, on s'occupe de tout votre système de freinage : plaquettes, disques, liquide de frein, capteurs ABS, frein à main. Pièces de qualité, prix d'un garage indépendant. <strong>Pas de devis surprise.</strong></span>
+        
       </p>
     </div>
   </section>
@@ -198,119 +226,116 @@
     <div class="service-content__main">
 
       <!-- SECTION 1: Plaquettes et disques -->
-      <h2><span data-lang="fr">Remplacement plaquettes et disques de frein</span><span data-lang="nl">Vervanging remblokken en remschijven</span></h2>
+      <h2><span>Remplacement plaquettes et disques de frein</span></h2>
 
-      <p><span data-lang="fr">Les plaquettes de frein, c'est la pièce d'usure numéro un de votre voiture. Chaque fois que vous appuyez sur la pédale, elles se consument un peu. C'est normal, c'est prévu comme ça. Ce qui n'est pas normal, c'est de rouler avec des plaquettes mortes.</span>
-      <span data-lang="nl">Remblokken zijn het slijtageonderdeel nummer één van uw auto. Elke keer dat u op het pedaal trapt, slijten ze een beetje. Dat is normaal, zo is het ontworpen. Wat niet normaal is, is rondrijden met versleten remblokken.</span></p>
+      <p><span>Les plaquettes de frein, c'est la pièce d'usure numéro un de votre voiture. Chaque fois que vous appuyez sur la pédale, elles se consument un peu. C'est normal, c'est prévu comme ça. Ce qui n'est pas normal, c'est de rouler avec des plaquettes mortes.</span>
+      </p>
 
-      <p><span data-lang="fr">On le voit régulièrement : le client arrive avec un bruit métallique aigu à chaque freinage. Les plaquettes sont tellement usées que c'est le métal qui frotte sur le disque. Le disque est rayé, parfois fissuré. Au lieu de changer juste les plaquettes, il faut maintenant remplacer plaquettes ET disques. Le budget double.</span>
-      <span data-lang="nl">We zien het regelmatig: de klant komt binnen met een scherp metaalachtig geluid bij elke rembeweging. De remblokken zijn zo versleten dat het metaal op de schijf schuurt. De schijf is bekrast, soms gescheurd. In plaats van alleen de blokken te vervangen, moeten nu blokken EN schijven eruit. Het budget verdubbelt.</span></p>
+      <p><span>On le voit régulièrement : le client arrive avec un bruit métallique aigu à chaque freinage. Les plaquettes sont tellement usées que c'est le métal qui frotte sur le disque. Le disque est rayé, parfois fissuré. Au lieu de changer juste les plaquettes, il faut maintenant remplacer plaquettes ET disques. Le budget double.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Chez un concessionnaire, un remplacement plaquettes + disques sur un essieu, c'est 450 à 700 euros.</strong> Chez un indépendant comme nous, vous payez 30 à 40% de moins pour la même qualité de pièces. On monte des Brembo, des TRW, des ATE — les marques que les constructeurs utilisent en première monte. La différence, c'est qu'on ne facture pas la marge concessionnaire.</span>
-      <span data-lang="nl"><strong>Bij een concessie kost een vervanging van blokken + schijven op één as 450 tot 700 euro.</strong> Bij een onafhankelijke garage zoals wij betaalt u 30 tot 40% minder voor dezelfde kwaliteit onderdelen. We monteren Brembo, TRW, ATE — de merken die constructeurs gebruiken als eerste montage. Het verschil is dat wij geen concessiemarge aanrekenen.</span></p>
+      <p><span><strong>Chez un concessionnaire, un remplacement plaquettes + disques sur un essieu, c'est 450 à 700 euros.</strong> Chez un indépendant comme nous, vous payez 30 à 40% de moins pour la même qualité de pièces. On monte des Brembo, des TRW, des ATE — les marques que les constructeurs utilisent en première monte. La différence, c'est qu'on ne facture pas la marge concessionnaire.</span>
+      </p>
 
-      <p><span data-lang="fr">Les signes qui doivent vous alerter : un grincement continu (pas juste le matin), des vibrations dans le volant quand vous freinez, une pédale qui s'enfonce plus que d'habitude, la voiture qui tire d'un côté au freinage. Un seul de ces symptômes suffit pour passer nous voir.</span>
-      <span data-lang="nl">De signalen waar u op moet letten: een continu piepend geluid (niet alleen 's ochtends), trillingen in het stuur bij het remmen, een pedaal dat verder doortrapt dan normaal, de auto die naar één kant trekt bij het remmen. Eén enkel symptoom is genoeg om langs te komen.</span></p>
+      <p><span>Les signes qui doivent vous alerter : un grincement continu (pas juste le matin), des vibrations dans le volant quand vous freinez, une pédale qui s'enfonce plus que d'habitude, la voiture qui tire d'un côté au freinage. Un seul de ces symptômes suffit pour passer nous voir.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/freins-plaquettes.webp" alt="Remplacement plaquettes freins Brembo garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/freins-plaquettes.webp" alt="Remplacement plaquettes freins Brembo garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <div class="photo-section">
-        <img src="img/freins-purge-liquide.webp" alt="Purge liquide de frein garage automobile Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/freins-purge-liquide.webp" alt="Purge liquide de frein garage automobile Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <!-- SECTION 2: Diagnostic freinage -->
-      <h2><span data-lang="fr">Diagnostic freinage</span><span data-lang="nl">Remdiagnose</span></h2>
+      <h2><span>Diagnostic freinage</span></h2>
 
-      <p><span data-lang="fr">Le voyant frein qui s'allume sur votre tableau de bord, ça peut être trois choses. Le niveau de liquide de frein est trop bas — souvent parce que les plaquettes sont usées et que le piston a avancé dans l'étrier. Le capteur d'usure a touché le disque — c'est son job, il vous prévient avant qu'il soit trop tard. Ou le frein à main est resté légèrement serré.</span>
-      <span data-lang="nl">Het remlampje dat op uw dashboard oplicht, kan drie dingen betekenen. Het niveau van de remvloeistof is te laag — vaak omdat de remblokken versleten zijn en de zuiger in de remklauw is opgeschoven. De slijtagesensor heeft de schijf geraakt — dat is zijn taak, hij waarschuwt u voordat het te laat is. Of de handrem staat nog licht aangetrokken.</span></p>
+      <p><span>Le voyant frein qui s'allume sur votre tableau de bord, ça peut être trois choses. Le niveau de liquide de frein est trop bas — souvent parce que les plaquettes sont usées et que le piston a avancé dans l'étrier. Le capteur d'usure a touché le disque — c'est son job, il vous prévient avant qu'il soit trop tard. Ou le frein à main est resté légèrement serré.</span>
+      </p>
 
-      <p><span data-lang="fr">Le voyant ABS, c'est autre chose. Le système anti-blocage a détecté un problème — un capteur de roue défaillant, un câblage abîmé, ou un souci au niveau du bloc hydraulique ABS. On branche la valise diagnostic, on lit les codes erreur, et on sait exactement quel capteur ou quel composant pose problème.</span>
-      <span data-lang="nl">Het ABS-lampje is iets anders. Het anti-blokkeersysteem heeft een probleem gedetecteerd — een defecte wielsensor, beschadigde bedrading, of een probleem met het hydraulische ABS-blok. We sluiten de diagnosecomputer aan, lezen de foutcodes uit, en weten precies welke sensor of welk onderdeel het probleem veroorzaakt.</span></p>
+      <p><span>Le voyant ABS, c'est autre chose. Le système anti-blocage a détecté un problème — un capteur de roue défaillant, un câblage abîmé, ou un souci au niveau du bloc hydraulique ABS. On branche la valise diagnostic, on lit les codes erreur, et on sait exactement quel capteur ou quel composant pose problème.</span>
+      </p>
 
-      <p><span data-lang="fr">Notre diagnostic inclut toujours un essai routier. On ne se contente pas de regarder les pièces — on teste le freinage en conditions réelles. La distance de freinage, le comportement de la pédale, la répartition du freinage entre l'avant et l'arrière. C'est comme ça qu'on repère un étrier grippé ou un flexible de frein gonflé qui ne se voit pas à l'oeil nu.</span>
-      <span data-lang="nl">Onze diagnose omvat altijd een proefrit. We kijken niet alleen naar de onderdelen — we testen het remsysteem in echte omstandigheden. De remafstand, het gedrag van het pedaal, de verdeling van de remkracht tussen voor en achter. Zo ontdekken we een vastgelopen remklauw of een opgezwollen remslang die met het blote oog niet te zien is.</span></p>
+      <p><span>Notre diagnostic inclut toujours un essai routier. On ne se contente pas de regarder les pièces — on teste le freinage en conditions réelles. La distance de freinage, le comportement de la pédale, la répartition du freinage entre l'avant et l'arrière. C'est comme ça qu'on repère un étrier grippé ou un flexible de frein gonflé qui ne se voit pas à l'oeil nu.</span>
+      </p>
 
-      <p><span data-lang="fr">Si votre <a href="controle-technique.html">contrôle technique</a> approche, faites vérifier vos freins avant. C'est l'une des premières causes de refus au CT — et la plus facile à anticiper.</span>
-      <span data-lang="nl">Als uw <a href="controle-technique.html">technische keuring</a> nadert, laat uw remmen dan vooraf controleren. Het is een van de eerste redenen voor afkeur bij de keuring — en de makkelijkste om te voorkomen.</span></p>
+      <p><span>Si votre <a href="controle-technique.html">contrôle technique</a> approche, faites vérifier vos freins avant. C'est l'une des premières causes de refus au CT — et la plus facile à anticiper.</span>
+      </p>
 
       <!-- SECTION 3: Purge liquide de frein -->
-      <h2><span data-lang="fr">Purge et remplacement liquide de frein</span><span data-lang="nl">Ontluchting en vervanging remvloeistof</span></h2>
+      <h2><span>Purge et remplacement liquide de frein</span></h2>
 
-      <p><span data-lang="fr">Le liquide de frein est hygroscopique. En français : il absorbe l'humidité de l'air avec le temps. Et quand il contient trop d'eau, son point d'ébullition baisse. C'est un problème. En freinage intense — descente de montagne, autoroute, freinage d'urgence — le liquide peut se mettre à bouillir. Des bulles d'air se forment dans le circuit. Et l'air, contrairement au liquide, ça se comprime.</span>
-      <span data-lang="nl">Remvloeistof is hygroscopisch. In gewone taal: het absorbeert vocht uit de lucht na verloop van tijd. En als het te veel water bevat, daalt het kookpunt. Dat is een probleem. Bij intensief remmen — afdaling in de bergen, snelweg, noodstop — kan de vloeistof beginnen koken. Er vormen zich luchtbellen in het circuit. En lucht, in tegenstelling tot vloeistof, is samendrukbaar.</span></p>
+      <p><span>Le liquide de frein est hygroscopique. En français : il absorbe l'humidité de l'air avec le temps. Et quand il contient trop d'eau, son point d'ébullition baisse. C'est un problème. En freinage intense — descente de montagne, autoroute, freinage d'urgence — le liquide peut se mettre à bouillir. Des bulles d'air se forment dans le circuit. Et l'air, contrairement au liquide, ça se comprime.</span>
+      </p>
 
-      <p><span data-lang="fr">Résultat : votre pédale devient molle. Vous freinez, et la pédale s'enfonce sans résistance. C'est le cauchemar de tout conducteur. Et ça arrive.</span>
-      <span data-lang="nl">Resultaat: uw pedaal wordt zacht. U remt, en het pedaal zakt weg zonder weerstand. Het is de nachtmerrie van elke bestuurder. En het gebeurt.</span></p>
+      <p><span>Résultat : votre pédale devient molle. Vous freinez, et la pédale s'enfonce sans résistance. C'est le cauchemar de tout conducteur. Et ça arrive.</span>
+      </p>
 
-      <p><span data-lang="fr">La recommandation constructeur, c'est de remplacer le liquide de frein tous les 2 ans, quel que soit le kilométrage. On utilise un appareil de purge sous pression — pas la méthode "un qui pompe pendant que l'autre ouvre la vis". On mesure le taux d'humidité du liquide avant et après. Si vous roulez beaucoup ou si vous tracez votre voiture, on peut vous recommander du DOT 5.1 au lieu du DOT 4 standard.</span>
-      <span data-lang="nl">De aanbeveling van de constructeur is om de remvloeistof om de 2 jaar te vervangen, ongeacht de kilometerstand. We gebruiken een drukapparaat voor het ontluchten — niet de methode "de ene pompt terwijl de andere het ventiel opendraait". We meten het vochtgehalte van de vloeistof voor en na. Als u veel rijdt of uw auto op circuit gebruikt, kunnen we DOT 5.1 aanbevelen in plaats van standaard DOT 4.</span></p>
+      <p><span>La recommandation constructeur, c'est de remplacer le liquide de frein tous les 2 ans, quel que soit le kilométrage. On utilise un appareil de purge sous pression — pas la méthode "un qui pompe pendant que l'autre ouvre la vis". On mesure le taux d'humidité du liquide avant et après. Si vous roulez beaucoup ou si vous tracez votre voiture, on peut vous recommander du DOT 5.1 au lieu du DOT 4 standard.</span>
+      </p>
 
-      <p><span data-lang="fr">C'est un entretien qui prend 30 minutes et qui coûte une fraction de ce qu'un problème de freinage peut vous coûter en dégâts — ou en accident.</span>
-      <span data-lang="nl">Het is een onderhoud dat 30 minuten duurt en een fractie kost van wat een remprobleem u kan kosten aan schade — of aan een ongeval.</span></p>
+      <p><span>C'est un entretien qui prend 30 minutes et qui coûte une fraction de ce qu'un problème de freinage peut vous coûter en dégâts — ou en accident.</span>
+      </p>
 
       <!-- SECTION 4: Freins arrière et frein à main -->
-      <h2><span data-lang="fr">Freins arrière et frein à main</span><span data-lang="nl">Achterremmen en handrem</span></h2>
+      <h2><span>Freins arrière et frein à main</span></h2>
 
-      <p><span data-lang="fr">Les freins arrière, on les oublie souvent. Pourtant, ils bossent aussi. Sur beaucoup de voitures, l'arrière c'est encore des tambours — surtout sur les citadines et les petites berlines. Les mâchoires de frein s'usent, les cylindres de roue fuient, le réglage automatique se bloque. Et un jour, le frein à main ne tient plus en côte.</span>
-      <span data-lang="nl">De achterremmen worden vaak vergeten. Toch doen ze ook hun werk. Op veel auto's zitten er achteraan nog steeds trommelremmen — vooral op stadsauto's en kleine sedans. De remschoenen slijten, de wielcilinders lekken, de automatische afstelling blokkeert. En op een dag houdt de handrem niet meer op een helling.</span></p>
+      <p><span>Les freins arrière, on les oublie souvent. Pourtant, ils bossent aussi. Sur beaucoup de voitures, l'arrière c'est encore des tambours — surtout sur les citadines et les petites berlines. Les mâchoires de frein s'usent, les cylindres de roue fuient, le réglage automatique se bloque. Et un jour, le frein à main ne tient plus en côte.</span>
+      </p>
 
-      <p><span data-lang="fr">Le frein à main lui-même, c'est soit un câble mécanique, soit un frein à main électrique (EPB). Le câble, ça se détend avec le temps. On le retend, on le graisse, on vérifie que les leviers de rattrapage fonctionnent. Le frein à main électrique, c'est plus complexe — un moteur électrique sur chaque étrier arrière, piloté par un calculateur. Quand ça tombe en panne, il faut la valise pour diagnostiquer et recalibrer.</span>
-      <span data-lang="nl">De handrem zelf is ofwel een mechanische kabel, ofwel een elektrische parkeerrem (EPB). De kabel rekt uit na verloop van tijd. We spannen hem bij, smeren hem, en controleren of de naste mechanismen werken. De elektrische parkeerrem is complexer — een elektromotor op elke achterremklauw, aangestuurd door een computer. Als dat uitvalt, hebben we de diagnosecomputer nodig om te diagnosticeren en te herkalibreren.</span></p>
+      <p><span>Le frein à main lui-même, c'est soit un câble mécanique, soit un frein à main électrique (EPB). Le câble, ça se détend avec le temps. On le retend, on le graisse, on vérifie que les leviers de rattrapage fonctionnent. Le frein à main électrique, c'est plus complexe — un moteur électrique sur chaque étrier arrière, piloté par un calculateur. Quand ça tombe en panne, il faut la valise pour diagnostiquer et recalibrer.</span>
+      </p>
 
-      <p><span data-lang="fr">On intervient sur les deux systèmes. Et si vos freins arrière sont des disques — ce qui est le cas sur la plupart des voitures récentes — on les traite exactement comme l'avant : plaquettes, disques, capteurs, étriers. Chez DMT AUTOGROUP, on a 15 ans d'expérience sur tous types de systèmes de freinage. On ne fait pas de raccourcis.</span>
-      <span data-lang="nl">We werken op beide systemen. En als uw achterremmen schijfremmen zijn — wat het geval is bij de meeste recente auto's — behandelen we ze precies zoals de voorremmen: blokken, schijven, sensoren, klauwen. Bij DMT AUTOGROUP hebben we 15 jaar ervaring met alle types remsystemen. We nemen geen shortcuts.</span></p>
+      <p><span>On intervient sur les deux systèmes. Et si vos freins arrière sont des disques — ce qui est le cas sur la plupart des voitures récentes — on les traite exactement comme l'avant : plaquettes, disques, capteurs, étriers. Chez DMT AUTOGROUP, on a 15 ans d'expérience sur tous types de systèmes de freinage. On ne fait pas de raccourcis.</span>
+      </p>
 
-      <p><span data-lang="fr">Pour un entretien complet de votre voiture — freins, vidange, filtres — consultez notre page <a href="garage-automobile.html">garage automobile</a>. On peut tout combiner en un seul rendez-vous.</span>
-      <span data-lang="nl">Voor een volledig onderhoud van uw auto — remmen, olieverversing, filters — bekijk onze pagina <a href="garage-automobile.html">autogarage</a>. We kunnen alles combineren in één afspraak.</span></p>
+      <p><span>Pour un entretien complet de votre voiture — freins, vidange, filtres — consultez notre page <a href="garage-automobile.html">garage automobile</a>. On peut tout combiner en un seul rendez-vous.</span>
+      </p>
 
     </div>
 
     <!-- SIDEBAR -->
     <aside class="service-sidebar">
       <div class="sidebar-card sidebar-card--cta">
-        <span class="label"><span data-lang="fr">Problème de freins ?</span><span data-lang="nl">Remprobleem?</span></span>
+        <span class="label"><span>Problème de freins ?</span></span>
         <span class="phone"><a href="tel:+32484115813">0484 11 58 13</a></span>
-        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span data-lang="fr">Diagnostic freinage rapide</span><span data-lang="nl">Snelle remdiagnose</span></p>
-        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></a>
+        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span>Diagnostic freinage rapide</span></p>
+        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span>Appelez maintenant</span></a>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Nos interventions freins</span><span data-lang="nl">Onze reminterventies</span></h4>
+        <h4><span>Nos interventions freins</span></h4>
         <p style="color:var(--text-secondary, #4B5563);font-size:0.85rem;line-height:1.6;padding:0.3rem 0;">
-          <span data-lang="fr"><strong>Plaquettes</strong> — Brembo, TRW, ATE<br>
+          <span><strong>Plaquettes</strong> — Brembo, TRW, ATE<br>
           <strong>Disques</strong> — Ventilés, pleins, percés<br>
           <strong>Liquide</strong> — DOT 4 / DOT 5.1<br>
           <strong>ABS</strong> — Capteurs, bloc hydraulique</span>
-          <span data-lang="nl"><strong>Remblokken</strong> — Brembo, TRW, ATE<br>
-          <strong>Schijven</strong> — Geventileerd, vol, geperforeerd<br>
-          <strong>Vloeistof</strong> — DOT 4 / DOT 5.1<br>
-          <strong>ABS</strong> — Sensoren, hydraulisch blok</span>
+          
         </p>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Autres services</span><span data-lang="nl">Andere diensten</span></h4>
-        <a href="garage-automobile.html" data-lang="fr">Entretien & Réparation</a><a href="garage-automobile.html" data-lang="nl">Onderhoud & Herstelling</a>
-        <a href="mecanique-automobile.html" data-lang="fr">Mécanique automobile</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-        <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-        <a href="carrosserie.html" data-lang="fr">Carrosserie & Peinture</a><a href="carrosserie.html" data-lang="nl">Carrosserie & Lak</a>
-        <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing & Filters</a>
-        <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-      
-        <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
-        <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-        <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
+        <h4><span>Autres services</span></h4>
+        <a href="garage-automobile.html">Entretien & Réparation</a>
+        <a href="mecanique-automobile.html">Mécanique automobile</a>
+        <a href="pneus.html">Pneus</a>
+        <a href="carrosserie.html">Carrosserie & Peinture</a>
+        <a href="vidange-huile.html">Vidange & Filtres</a>
+        <a href="controle-technique.html">Contrôle technique</a>
+
+        <a href="direction-suspension.html">Direction & Suspension</a>
+        <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+        <a href="reparation-electrique.html">Réparation électrique</a>
       </div>
     </aside>
   </div></div></section>
 
   <!-- RELATED SERVICES -->
   <section class="related-services section--lg"><div class="container">
-    <div class="related-services__header reveal"><span class="label"><span data-lang="fr">Services liés</span><span data-lang="nl">Gerelateerde diensten</span></span><h2><span data-lang="fr">Voir aussi</span><span data-lang="nl">Zie ook</span></h2></div>
+    <div class="related-services__header reveal"><span class="label"><span>Services liés</span></span><h2><span>Voir aussi</span></h2></div>
     <div class="related-services__grid">
-      <a href="garage-automobile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span data-lang="fr">Garage automobile</span><span data-lang="nl">Autogarage</span></h3><p><span data-lang="fr">Entretien complet toutes marques.</span><span data-lang="nl">Volledig onderhoud alle merken.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="controle-technique.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3><span data-lang="fr">Contrôle technique</span><span data-lang="nl">Technische keuring</span></h3><p><span data-lang="fr">Préparation CT, pré-contrôle.</span><span data-lang="nl">Voorbereiding keuring, pre-check.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="pneus.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h3><span data-lang="fr">Pneus</span><span data-lang="nl">Banden</span></h3><p><span data-lang="fr">Montage, équilibrage, parallélisme.</span><span data-lang="nl">Montage, balanceren, uitlijning.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="garage-automobile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span>Garage automobile</span></h3><p><span>Entretien complet toutes marques.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="controle-technique.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3><span>Contrôle technique</span></h3><p><span>Préparation CT, pré-contrôle.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="pneus.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h3><span>Pneus</span></h3><p><span>Montage, équilibrage, parallélisme.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
     </div>
   </div></section>
 
@@ -318,63 +343,63 @@
   <section class="section--lg" style="background: var(--gray-50, #F9FAFB);">
     <div class="container">
       <div class="services__header">
-        <span class="label"><span data-lang="fr">Questions fréquentes</span><span data-lang="nl">Veelgestelde vragen</span></span>
-        <h2><span data-lang="fr">FAQ — Freins à Zaventem</span><span data-lang="nl">FAQ — Remmen in Zaventem</span></h2>
+        <span class="label"><span>Questions fréquentes</span></span>
+        <h2><span>FAQ — Freins à Zaventem</span></h2>
       </div>
       <div style="max-width:800px;margin:0 auto;">
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Mes freins grincent le matin, c'est normal ?</span><span data-lang="nl">Mijn remmen piepen 's ochtends, is dat normaal?</span>
+            <span>Mes freins grincent le matin, c'est normal ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Un léger grincement à froid le matin, surtout après une nuit humide, c'est souvent juste une fine couche de rouille sur les disques. Ça part après deux ou trois freinages. Par contre, si le bruit persiste toute la journée ou s'accompagne de vibrations, c'est un signe d'usure. Passez chez nous, on vérifie gratuitement.</span>
-            <span data-lang="nl">Een licht gepiep bij koude remmen 's ochtends, vooral na een vochtige nacht, is vaak gewoon een dun laagje roest op de schijven. Dat verdwijnt na twee of drie rembewegingen. Maar als het geluid de hele dag aanhoudt of gepaard gaat met trillingen, is het een teken van slijtage. Kom langs, we controleren het gratis.</span>
+            <span>Un léger grincement à froid le matin, surtout après une nuit humide, c'est souvent juste une fine couche de rouille sur les disques. Ça part après deux ou trois freinages. Par contre, si le bruit persiste toute la journée ou s'accompagne de vibrations, c'est un signe d'usure. Passez chez nous, on vérifie gratuitement.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Combien coûte un changement de plaquettes de frein ?</span><span data-lang="nl">Hoeveel kost het vervangen van remblokken?</span>
+            <span>Combien coûte un changement de plaquettes de frein ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Chez un concessionnaire, comptez entre 250 et 450 euros par essieu. Chez nous, c'est nettement moins — avec des plaquettes de qualité identique (Brembo, TRW, ATE). On vous donne un prix exact avant de commencer. Pas de surprise sur la facture.</span>
-            <span data-lang="nl">Bij een concessie rekent u op 250 tot 450 euro per as. Bij ons is het merkbaar goedkoper — met remblokken van identieke kwaliteit (Brembo, TRW, ATE). We geven u een exacte prijs voor we beginnen. Geen verrassingen op de factuur.</span>
+            <span>Chez un concessionnaire, comptez entre 250 et 450 euros par essieu. Chez nous, c'est nettement moins — avec des plaquettes de qualité identique (Brembo, TRW, ATE). On vous donne un prix exact avant de commencer. Pas de surprise sur la facture.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Quand faut-il changer les disques de frein ?</span><span data-lang="nl">Wanneer moeten de remschijven vervangen worden?</span>
+            <span>Quand faut-il changer les disques de frein ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">En général, les disques tiennent deux jeux de plaquettes — environ 60 000 à 80 000 km. Si vos disques ont un rebord marqué ou des rainures profondes, c'est le moment. On mesure l'épaisseur : si c'est en-dessous du minimum constructeur, on vous le montre pièce en main.</span>
-            <span data-lang="nl">In het algemeen gaan schijven twee sets remblokken mee — ongeveer 60 000 tot 80 000 km. Als uw schijven een uitgesproken rand hebben of diepe groeven, is het tijd. We meten de dikte: als het onder het minimum van de constructeur zit, laten we het u zien met het onderdeel in de hand.</span>
+            <span>En général, les disques tiennent deux jeux de plaquettes — environ 60 000 à 80 000 km. Si vos disques ont un rebord marqué ou des rainures profondes, c'est le moment. On mesure l'épaisseur : si c'est en-dessous du minimum constructeur, on vous le montre pièce en main.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ma pédale de frein est molle, c'est grave ?</span><span data-lang="nl">Mijn rempedaal is zacht, is dat erg?</span>
+            <span>Ma pédale de frein est molle, c'est grave ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Une pédale molle, c'est souvent de l'air dans le circuit ou du liquide de frein trop vieux. Si la pédale s'enfonce jusqu'au plancher, ne roulez pas — faites-vous remorquer. Si elle est juste un peu spongieuse, une purge du circuit résout le problème dans la majorité des cas.</span>
-            <span data-lang="nl">Een zacht pedaal is vaak lucht in het circuit of te oude remvloeistof. Als het pedaal tot op de bodem doortrapt, rij dan niet — laat u wegslepen. Als het gewoon een beetje sponsachtig aanvoelt, lost een ontluchting van het circuit het probleem in de meeste gevallen op.</span>
+            <span>Une pédale molle, c'est souvent de l'air dans le circuit ou du liquide de frein trop vieux. Si la pédale s'enfonce jusqu'au plancher, ne roulez pas — faites-vous remorquer. Si elle est juste un peu spongieuse, une purge du circuit résout le problème dans la majorité des cas.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Le voyant ABS est allumé, je peux encore rouler ?</span><span data-lang="nl">Het ABS-lampje brandt, kan ik nog rijden?</span>
+            <span>Le voyant ABS est allumé, je peux encore rouler ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Vous pouvez rouler, mais votre système anti-blocage est désactivé. Ça veut dire qu'en freinage d'urgence, vos roues risquent de bloquer — surtout sur route mouillée. La cause la plus fréquente : un capteur ABS encrassé ou défaillant. On diagnostique ça en 20 minutes. Ne laissez pas traîner.</span>
-            <span data-lang="nl">U kunt rijden, maar uw anti-blokkeersysteem is uitgeschakeld. Dat betekent dat bij een noodstop uw wielen kunnen blokkeren — vooral op nat wegdek. De meest voorkomende oorzaak: een vuile of defecte ABS-sensor. We diagnosticeren dat in 20 minuten. Laat het niet aanslepen.</span>
+            <span>Vous pouvez rouler, mais votre système anti-blocage est désactivé. Ça veut dire qu'en freinage d'urgence, vos roues risquent de bloquer — surtout sur route mouillée. La cause la plus fréquente : un capteur ABS encrassé ou défaillant. On diagnostique ça en 20 minutes. Ne laissez pas traîner.</span>
+
           </p>
         </details>
 
@@ -384,21 +409,21 @@
 
   <!-- CTA -->
   <section class="cta-section section--lg"><div class="container">
-    <span class="label reveal"><span data-lang="fr">Freins — Zaventem</span><span data-lang="nl">Remmen — Zaventem</span></span>
-    <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+    <span class="label reveal"><span>Freins — Zaventem</span></span>
+    <h2 class="reveal"><span>Appelez maintenant</span></h2>
     <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
-    <p class="cta-section__hours reveal reveal-delay-2"><span data-lang="fr">Plaquettes, disques, purge, diagnostic ABS<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span><span data-lang="nl">Remblokken, schijven, ontluchting, ABS-diagnose<br>Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
+    <p class="cta-section__hours reveal reveal-delay-2"><span>Plaquettes, disques, purge, diagnostic ABS<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
   </div></section>
 
   <!-- FOOTER -->
   <footer class="footer"><div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37"><p><span data-lang="fr">Garage automobile à Zaventem. Spécialiste freins. Toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Remspecialist. Alle merken.</span></p></div>
-      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html" data-lang="fr">Entretien</a><a href="garage-automobile.html" data-lang="nl">Onderhoud</a><a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a><a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a><a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a><a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
-      <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a><a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a><a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a><a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a><a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a></div>
+      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async"><p><span>Garage automobile à Zaventem. Spécialiste freins. Toutes marques.</span></p></div>
+      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html">Entretien</a><a href="pneus.html">Pneus</a><a href="carrosserie.html">Carrosserie</a><a href="vidange-huile.html">Vidange</a><a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
+      <div class="footer__col"><h4><span>Plus</span></h4><a href="mecanique-automobile.html">Mécanique</a><a href="reparation-boite-dsg.html">Boîte DSG</a><a href="reparation-boite-vitesse.html">Boîte de vitesse</a><a href="controle-technique.html">Contrôle technique</a><a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a><a href="embrayage.html">Embrayage</a><a href="remplacement-turbo.html">Turbo</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a><a href="https://www.google.com/maps/search/?api=1&query=DMT+AUTOGROUP+1,2,3+AutoService&query_place_id=ChIJZYxTG37fw0cREIle6gqXy4Y" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>&copy; 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Réparation freins Zaventem</span><span data-lang="nl">Remherstelling Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
+    <div class="footer__bottom"><span>&copy; 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span><span><span>Réparation freins Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
   <script src="js/main.js" defer></script>
 </body>

@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/courroie-distribution">
   <meta property="og:image" content="https://dmt-autogroup.be/img/mecanique-distribution.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Courroie de distribution Zaventem | DMT AUTOGROUP">
+  <meta name="twitter:description" content="Remplacement courroie de distribution. Kit complet avec pompe à eau. Toutes marques. Garage spécialisé Zaventem.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/mecanique-distribution.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/courroie-distribution">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,10 +32,12 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
     "name": "DMT AUTOGROUP 1,2,3 AutoService",
-    "url": "https://dmt-autogroup.be/courroie-distribution",
+    "url": "https://dmt-autogroup.be/",
     "image": "https://dmt-autogroup.be/img/mecanique-distribution.webp",
     "telephone": "+32484115813",
+    "sameAs": ["https://www.google.com/maps?cid=9711024847498784016"],
     "address": { "@type": "PostalAddress", "streetAddress": "Mechelsesteenweg 270", "addressLocality": "Zaventem", "postalCode": "1933", "addressCountry": "BE" },
     "geo": { "@type": "GeoCoordinates", "latitude": 50.8639552, "longitude": 4.5159167 },
     "areaServed": [
@@ -43,7 +53,19 @@
       { "@type": "City", "name": "Vilvoorde" },
       { "@type": "City", "name": "Kortenberg" }
     ],
-    "serviceType": ["Remplacement courroie de distribution", "Remplacement kit de distribution", "Remplacement chaîne de distribution"]
+    "serviceType": ["Remplacement courroie de distribution", "Remplacement kit de distribution", "Remplacement chaîne de distribution"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 30,
+      "bestRating": "5"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -104,91 +126,97 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/mecanique-distribution.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/courroie-distribution">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/distributieriem">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/courroie-distribution">
 </head>
 <body>
   <header class="nav"><div class="nav__inner">
-    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
     <nav class="nav__links">
-      <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+      <a href="index.html">Accueil</a>
 
       <!-- Services dropdown -->
       <div class="nav__dropdown">
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+        <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
         <div class="nav__dropdown-menu">
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-            <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-            <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+            <span class="nav__dropdown-title">Entretien</span>
+            <a href="garage-automobile.html">Garage automobile</a>
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+            <a href="freins.html">Freins</a>
+            <a href="controle-technique.html">Contrôle technique</a>
+            <a href="climatisation.html">Climatisation</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-            <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-            <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-            <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-            <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+            <span class="nav__dropdown-title">Mécanique</span>
+            <a href="mecanique-automobile.html">Mécanique auto</a>
+            <a href="reparation-moteur.html">Réparation moteur</a>
+            <a href="remplacement-turbo.html">Turbo</a>
+            <a href="embrayage.html">Embrayage</a>
+            <a href="courroie-distribution.html">Courroie distribution</a>
+            <a href="reparation-boite-dsg.html">Boîte DSG</a>
+            <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+            <a href="filtre-particules.html">Filtre à particules</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-            <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-            <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-            <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-            <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+            <span class="nav__dropdown-title">Électrique & Diag</span>
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+            <a href="reparation-electrique.html">Réparation électrique</a>
+            <a href="batterie.html">Batterie</a>
+            <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+            <a href="carrosserie.html">Carrosserie</a>
+            <a href="pneus.html">Pneus</a>
+            <a href="direction-suspension.html">Direction & Suspension</a>
           </div>
         </div>
       </div>
 
-      <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+      <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
     </nav>
     <div class="nav__actions">
-      <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+      <div class="lang-switch"><a class="active">FR</a><a href="nl/distributieriem.html">NL</a></div>
       <a href="tel:+32484115813" class="btn btn--phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="phone-text">0484 11 58 13</span></a>
     </div>
     <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div></header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--yellow, #EAB308)">0484 11 58 13</a>
   </div>
 
   <!-- HERO -->
-  <section class="service-hero" style="background: url('img/mecanique-distribution.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/mecanique-distribution.webp" alt="Courroie de distribution DMT AUTOGROUP Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
-      <span class="label"><span data-lang="fr">Distribution — Zaventem</span><span data-lang="nl">Distributie — Zaventem</span></span>
-      <h1><span data-lang="fr">Courroie de distribution<br>à Zaventem</span><span data-lang="nl">Distributieriem<br>in Zaventem</span></h1>
+      <span class="label"><span>Distribution — Zaventem</span></span>
+      <h1><span>Courroie de distribution<br>à Zaventem</span></h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">La courroie de distribution, c'est la pièce que vous ne voyez jamais mais qui peut détruire votre moteur en une seconde si elle casse. Chez DMT AUTOGROUP, on remplace la distribution avec le kit complet — courroie, galets tendeur, pompe à eau — pour que ce soit fait une fois et bien fait. <strong>Toutes marques.</strong></span>
-        <span data-lang="nl">De distributieriem is het onderdeel dat u nooit ziet, maar dat uw motor in één seconde kan vernietigen als hij breekt. Bij DMT AUTOGROUP vervangen we de distributie met het complete kit — riem, spanrollen, waterpomp — zodat het in één keer goed gedaan is. <strong>Alle merken.</strong></span>
+        <span>La courroie de distribution, c'est la pièce que vous ne voyez jamais mais qui peut détruire votre moteur en une seconde si elle casse. Chez DMT AUTOGROUP, on remplace la distribution avec le kit complet — courroie, galets tendeur, pompe à eau — pour que ce soit fait une fois et bien fait. <strong>Toutes marques.</strong></span>
+        
       </p>
     </div>
   </section>
@@ -198,89 +226,89 @@
     <div class="service-content__main">
 
       <!-- SECTION 1: Remplacement courroie de distribution -->
-      <h2><span data-lang="fr">Remplacement courroie de distribution — pourquoi c'est la réparation la plus importante</span><span data-lang="nl">Vervanging distributieriem — waarom het de belangrijkste reparatie is</span></h2>
+      <h2><span>Remplacement courroie de distribution — pourquoi c'est la réparation la plus importante</span></h2>
 
-      <p><span data-lang="fr">On va être direct : si votre courroie de distribution casse, votre moteur est mort.</span>
-      <span data-lang="nl">We zijn er direct over: als uw distributieriem breekt, is uw motor kapot.</span></p>
+      <p><span>On va être direct : si votre courroie de distribution casse, votre moteur est mort.</span>
+      </p>
 
-      <p><span data-lang="fr">Pas "endommagé". Pas "à réparer". Mort. Sur la quasi-totalité des moteurs modernes — ce qu'on appelle des moteurs à interférence — les pistons et les soupapes partagent le même espace dans le cylindre. La courroie de distribution synchronise leurs mouvements pour qu'ils ne se rencontrent jamais. Quand la courroie lâche, cette synchronisation disparaît instantanément. Les pistons tapent dans les soupapes ouvertes à pleine vitesse. Les soupapes se tordent. Les pistons se fissurent. La culasse est détruite.</span>
-      <span data-lang="nl">Niet "beschadigd". Niet "te herstellen". Kapot. Op vrijwel alle moderne motoren — zogenaamde interferentiemotoren — delen de zuigers en kleppen dezelfde ruimte in de cilinder. De distributieriem synchroniseert hun bewegingen zodat ze elkaar nooit raken. Als de riem het begeeft, verdwijnt die synchronisatie onmiddellijk. De zuigers slaan op volle snelheid tegen de geopende kleppen. De kleppen verbuigen. De zuigers barsten. De cilinderkop is vernietigd.</span></p>
+      <p><span>Pas "endommagé". Pas "à réparer". Mort. Sur la quasi-totalité des moteurs modernes — ce qu'on appelle des moteurs à interférence — les pistons et les soupapes partagent le même espace dans le cylindre. La courroie de distribution synchronise leurs mouvements pour qu'ils ne se rencontrent jamais. Quand la courroie lâche, cette synchronisation disparaît instantanément. Les pistons tapent dans les soupapes ouvertes à pleine vitesse. Les soupapes se tordent. Les pistons se fissurent. La culasse est détruite.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Facture typique après une casse de courroie : 3000 à 6000€.</strong> Parfois plus que la valeur de la voiture. On a vu des clients pleurer dans l'atelier en apprenant le montant. Une Peugeot 308 de 8 ans avec 150 000 km — le moteur vaut plus cher à réparer que ce que la voiture vaut sur le marché. Direction la casse.</span>
-      <span data-lang="nl"><strong>Typische factuur na een gebroken distributieriem: 3000 tot 6000€.</strong> Soms meer dan de waarde van de auto. We hebben klanten zien huilen in de werkplaats toen ze het bedrag hoorden. Een Peugeot 308 van 8 jaar oud met 150 000 km — de motorreparatie kost meer dan wat de auto waard is op de markt. Richting sloop.</span></p>
+      <p><span><strong>Facture typique après une casse de courroie : 3000 à 6000€.</strong> Parfois plus que la valeur de la voiture. On a vu des clients pleurer dans l'atelier en apprenant le montant. Une Peugeot 308 de 8 ans avec 150 000 km — le moteur vaut plus cher à réparer que ce que la voiture vaut sur le marché. Direction la casse.</span>
+      </p>
 
-      <p><span data-lang="fr">Un remplacement préventif de la distribution ? Une fraction de ce montant. C'est probablement l'entretien le plus rentable que vous ferez sur votre voiture.</span>
-      <span data-lang="nl">Een preventieve vervanging van de distributie? Een fractie van dat bedrag. Het is waarschijnlijk het meest rendabele onderhoud dat u aan uw auto zult doen.</span></p>
+      <p><span>Un remplacement préventif de la distribution ? Une fraction de ce montant. C'est probablement l'entretien le plus rentable que vous ferez sur votre voiture.</span>
+      </p>
 
-      <p><span data-lang="fr">Les constructeurs recommandent un remplacement entre 80 000 et 120 000 km, ou tous les 5 à 6 ans — selon ce qui arrive en premier. Le caoutchouc de la courroie vieillit même si vous ne roulez pas beaucoup. Une voiture qui a 8 ans et seulement 60 000 km au compteur a quand même besoin d'une nouvelle courroie. Le temps fait autant de dégâts que les kilomètres.</span>
-      <span data-lang="nl">De constructeurs raden vervanging aan tussen 80 000 en 120 000 km, of elke 5 tot 6 jaar — wat het eerst komt. Het rubber van de riem veroudert zelfs als u niet veel rijdt. Een auto van 8 jaar oud met maar 60 000 km op de teller heeft toch een nieuwe riem nodig. Tijd doet evenveel schade als kilometers.</span></p>
+      <p><span>Les constructeurs recommandent un remplacement entre 80 000 et 120 000 km, ou tous les 5 à 6 ans — selon ce qui arrive en premier. Le caoutchouc de la courroie vieillit même si vous ne roulez pas beaucoup. Une voiture qui a 8 ans et seulement 60 000 km au compteur a quand même besoin d'une nouvelle courroie. Le temps fait autant de dégâts que les kilomètres.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/mecanique-distribution.webp" alt="Courroie distribution remplacement garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/mecanique-distribution.webp" alt="Courroie distribution remplacement garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <!-- SECTION 2: Chaîne de distribution -->
-      <h2><span data-lang="fr">Chaîne de distribution — elle dure plus longtemps, mais elle n'est pas éternelle</span><span data-lang="nl">Distributieketting — ze gaat langer mee, maar niet eeuwig</span></h2>
+      <h2><span>Chaîne de distribution — elle dure plus longtemps, mais elle n'est pas éternelle</span></h2>
 
-      <p><span data-lang="fr">Courroie ou chaîne ? C'est la question qu'on nous pose tout le temps. La différence est simple : une courroie est en caoutchouc renforcé, une chaîne est en métal. La chaîne est conçue pour durer toute la vie du moteur. En théorie.</span>
-      <span data-lang="nl">Riem of ketting? Dat is de vraag die we de hele tijd krijgen. Het verschil is simpel: een riem is van versterkt rubber, een ketting is van metaal. De ketting is ontworpen om de hele levensduur van de motor mee te gaan. In theorie.</span></p>
+      <p><span>Courroie ou chaîne ? C'est la question qu'on nous pose tout le temps. La différence est simple : une courroie est en caoutchouc renforcé, une chaîne est en métal. La chaîne est conçue pour durer toute la vie du moteur. En théorie.</span>
+      </p>
 
-      <p><span data-lang="fr">En pratique, certaines chaînes s'étirent. Et quand une chaîne s'étire, le calage de la distribution se décale. Le moteur perd en puissance, la consommation augmente, et vous entendez un bruit de cliquetis métallique au démarrage à froid — comme un petit bruit de ferraille pendant 2-3 secondes qui disparaît quand l'huile monte en pression.</span>
-      <span data-lang="nl">In de praktijk rekken sommige kettingen uit. En als een ketting uitrekt, verschuift de timing van de distributie. De motor verliest vermogen, het verbruik stijgt, en u hoort een metaalachtig tikgeluid bij koude start — als een klein ratelend geluid gedurende 2-3 seconden dat verdwijnt als de olie op druk komt.</span></p>
+      <p><span>En pratique, certaines chaînes s'étirent. Et quand une chaîne s'étire, le calage de la distribution se décale. Le moteur perd en puissance, la consommation augmente, et vous entendez un bruit de cliquetis métallique au démarrage à froid — comme un petit bruit de ferraille pendant 2-3 secondes qui disparaît quand l'huile monte en pression.</span>
+      </p>
 
-      <p><span data-lang="fr">Le cas le plus connu ? Le VW/Audi 1.4 TSI (moteur CAXA, 2007-2014). La chaîne de distribution de ce moteur est un problème connu dans toute l'industrie. Elle s'étire prématurément, parfois dès 60 000 km. Les forums sont remplis de propriétaires de Golf VI, Audi A1, Seat Ibiza et Skoda Fabia avec ce souci. On en répare plusieurs par mois.</span>
-      <span data-lang="nl">Het bekendste geval? De VW/Audi 1.4 TSI (CAXA-motor, 2007-2014). De distributieketting van deze motor is een bekend probleem in de hele industrie. Ze rekt voortijdig uit, soms al vanaf 60 000 km. De forums staan vol eigenaren van Golf VI, Audi A1, Seat Ibiza en Skoda Fabia met dit probleem. We herstellen er meerdere per maand.</span></p>
+      <p><span>Le cas le plus connu ? Le VW/Audi 1.4 TSI (moteur CAXA, 2007-2014). La chaîne de distribution de ce moteur est un problème connu dans toute l'industrie. Elle s'étire prématurément, parfois dès 60 000 km. Les forums sont remplis de propriétaires de Golf VI, Audi A1, Seat Ibiza et Skoda Fabia avec ce souci. On en répare plusieurs par mois.</span>
+      </p>
 
-      <p><span data-lang="fr">Autre exemple : les BMW N47 diesel (2007-2014). La chaîne est montée à l'arrière du moteur, côté boîte de vitesses. Quand elle s'étire, le remplacement demande beaucoup plus de travail que sur un moteur classique. Chez un concessionnaire BMW, la facture dépasse facilement les 3000€. Chez un indépendant comme nous, c'est une autre histoire.</span>
-      <span data-lang="nl">Nog een voorbeeld: de BMW N47 diesel (2007-2014). De ketting zit aan de achterkant van de motor, aan de versnellingsbakkant. Als ze uitrekt, vraagt de vervanging veel meer werk dan bij een klassieke motor. Bij een BMW-concessie loopt de factuur makkelijk boven de 3000€. Bij een onafhankelijke garage zoals de onze is dat een ander verhaal.</span></p>
+      <p><span>Autre exemple : les BMW N47 diesel (2007-2014). La chaîne est montée à l'arrière du moteur, côté boîte de vitesses. Quand elle s'étire, le remplacement demande beaucoup plus de travail que sur un moteur classique. Chez un concessionnaire BMW, la facture dépasse facilement les 3000€. Chez un indépendant comme nous, c'est une autre histoire.</span>
+      </p>
 
-      <p><span data-lang="fr">Si vous avez un bruit de cliquetis au démarrage qui disparaît après quelques secondes, ne traînez pas. Une chaîne étirée peut sauter un cran — et là, c'est le même scénario que la courroie qui casse. Soupapes tordues, moteur détruit.</span>
-      <span data-lang="nl">Als u een tikgeluid bij het starten hoort dat na een paar seconden verdwijnt, wacht dan niet. Een uitgerekte ketting kan een tand overslaan — en dan is het hetzelfde scenario als een gebroken riem. Verbogen kleppen, motor vernietigd.</span></p>
+      <p><span>Si vous avez un bruit de cliquetis au démarrage qui disparaît après quelques secondes, ne traînez pas. Une chaîne étirée peut sauter un cran — et là, c'est le même scénario que la courroie qui casse. Soupapes tordues, moteur détruit.</span>
+      </p>
 
       <!-- SECTION 3: Kit de distribution + pompe à eau -->
-      <h2><span data-lang="fr">Kit de distribution + pompe à eau — pourquoi on change TOUJOURS les deux ensemble</span><span data-lang="nl">Distributiekit + waterpomp — waarom we ALTIJD beide tegelijk vervangen</span></h2>
+      <h2><span>Kit de distribution + pompe à eau — pourquoi on change TOUJOURS les deux ensemble</span></h2>
 
-      <p><span data-lang="fr">Chez DMT AUTOGROUP, on ne remplace jamais la courroie seule. On fait le kit complet : courroie de distribution, galet tendeur, galet enrouleur, et pompe à eau. À chaque fois. Sans exception.</span>
-      <span data-lang="nl">Bij DMT AUTOGROUP vervangen we nooit alleen de riem. We doen het complete kit: distributieriem, spanrol, geleidingsrol, en waterpomp. Elke keer. Zonder uitzondering.</span></p>
+      <p><span>Chez DMT AUTOGROUP, on ne remplace jamais la courroie seule. On fait le kit complet : courroie de distribution, galet tendeur, galet enrouleur, et pompe à eau. À chaque fois. Sans exception.</span>
+      </p>
 
-      <p><span data-lang="fr">Pourquoi ? Parce que la pompe à eau est entraînée par la courroie de distribution sur la majorité des moteurs. Pour y accéder, il faut démonter toute la distribution — c'est 80% du travail et du coût. Si vous changez la courroie aujourd'hui sans toucher à la pompe, et que la pompe lâche dans 2 ans, il faut tout redémonter. Vous payez la main d'oeuvre deux fois pour accéder au même endroit.</span>
-      <span data-lang="nl">Waarom? Omdat de waterpomp op de meeste motoren aangedreven wordt door de distributieriem. Om erbij te komen, moet de hele distributie gedemonteerd worden — dat is 80% van het werk en de kost. Als u vandaag de riem vervangt zonder de pomp aan te raken, en de pomp begeeft het over 2 jaar, moet alles opnieuw gedemonteerd worden. U betaalt het arbeidsloon twee keer om op dezelfde plek te geraken.</span></p>
+      <p><span>Pourquoi ? Parce que la pompe à eau est entraînée par la courroie de distribution sur la majorité des moteurs. Pour y accéder, il faut démonter toute la distribution — c'est 80% du travail et du coût. Si vous changez la courroie aujourd'hui sans toucher à la pompe, et que la pompe lâche dans 2 ans, il faut tout redémonter. Vous payez la main d'oeuvre deux fois pour accéder au même endroit.</span>
+      </p>
 
-      <p><span data-lang="fr">On a vu ça arriver. Un client qui était allé dans un autre garage qui lui avait changé "juste la courroie" pour faire un prix. Dix-huit mois plus tard, la pompe à eau fuit. Retour à la case départ, tout redémonter, nouvelle facture. Au total, il a payé presque le double de ce qu'un kit complet aurait coûté dès le départ.</span>
-      <span data-lang="nl">We hebben het zien gebeuren. Een klant die naar een andere garage was geweest die "alleen de riem" had vervangen om een lagere prijs te bieden. Achttien maanden later lekt de waterpomp. Terug naar af, alles opnieuw demonteren, nieuwe factuur. In totaal heeft hij bijna het dubbele betaald van wat een compleet kit vanaf het begin had gekost.</span></p>
+      <p><span>On a vu ça arriver. Un client qui était allé dans un autre garage qui lui avait changé "juste la courroie" pour faire un prix. Dix-huit mois plus tard, la pompe à eau fuit. Retour à la case départ, tout redémonter, nouvelle facture. Au total, il a payé presque le double de ce qu'un kit complet aurait coûté dès le départ.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Le kit complet, c'est la seule façon logique de faire.</strong> On remplit aussi le circuit de refroidissement avec de l'antigel neuf — parce que quand on ouvre le circuit pour la pompe, autant tout remettre à neuf. Chez un concessionnaire, le kit complet avec pompe à eau coûte entre 800 et 1800€ selon le modèle. Chez nous, c'est en dessous, avec les mêmes marques de pièces : Gates, Contitech, SKF, INA — les références de l'industrie.</span>
-      <span data-lang="nl"><strong>Het complete kit is de enige logische manier.</strong> We vullen ook het koelcircuit met nieuwe koelvloeistof — want als we het circuit openen voor de pomp, kunnen we net zo goed alles vernieuwen. Bij een concessie kost het complete kit met waterpomp tussen 800 en 1800€ afhankelijk van het model. Bij ons is het minder, met dezelfde merken onderdelen: Gates, Contitech, SKF, INA — de referenties in de industrie.</span></p>
+      <p><span><strong>Le kit complet, c'est la seule façon logique de faire.</strong> On remplit aussi le circuit de refroidissement avec de l'antigel neuf — parce que quand on ouvre le circuit pour la pompe, autant tout remettre à neuf. Chez un concessionnaire, le kit complet avec pompe à eau coûte entre 800 et 1800€ selon le modèle. Chez nous, c'est en dessous, avec les mêmes marques de pièces : Gates, Contitech, SKF, INA — les références de l'industrie.</span>
+      </p>
 
-      <p><span data-lang="fr">Et si votre <a href="vidange-huile.html">vidange moteur</a> approche aussi, on combine les deux en une seule visite. Autant profiter du fait que la voiture est déjà sur le pont.</span>
-      <span data-lang="nl">En als uw <a href="vidange-huile.html">motorolie</a> ook aan vervanging toe is, combineren we beide in één bezoek. U kunt er maar beter van profiteren dat de auto al op de brug staat.</span></p>
+      <p><span>Et si votre <a href="vidange-huile.html">vidange moteur</a> approche aussi, on combine les deux en une seule visite. Autant profiter du fait que la voiture est déjà sur le pont.</span>
+      </p>
 
       <!-- SECTION 4: Quand changer sa distribution -->
-      <h2><span data-lang="fr">Quand changer sa distribution — les intervalles par marque</span><span data-lang="nl">Wanneer de distributie vervangen — intervallen per merk</span></h2>
+      <h2><span>Quand changer sa distribution — les intervalles par marque</span></h2>
 
-      <p><span data-lang="fr">Chaque constructeur a ses propres intervalles. Et ils varient énormément d'une marque à l'autre. Voici ce qu'on voit le plus souvent dans notre atelier :</span>
-      <span data-lang="nl">Elke constructeur heeft zijn eigen intervallen. En die variëren enorm van merk tot merk. Dit is wat we het vaakst zien in onze werkplaats:</span></p>
+      <p><span>Chaque constructeur a ses propres intervalles. Et ils varient énormément d'une marque à l'autre. Voici ce qu'on voit le plus souvent dans notre atelier :</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Volkswagen / Audi / Seat / Skoda (groupe VAG)</strong> — Les TDI (1.9 et 2.0) : 120 000 km ou 5 ans. Les anciens 1.6 TDI : 90 000 km. Les TSI essence avec courroie : 90 000-120 000 km. Attention, beaucoup de TSI récents ont une chaîne, pas une courroie — on vérifie pour vous.</span>
-      <span data-lang="nl"><strong>Volkswagen / Audi / Seat / Skoda (VAG-groep)</strong> — De TDI's (1.9 en 2.0): 120 000 km of 5 jaar. De oude 1.6 TDI: 90 000 km. De TSI-benzinemotoren met riem: 90 000-120 000 km. Let op, veel recente TSI's hebben een ketting, geen riem — we controleren dat voor u.</span></p>
+      <p><span><strong>Volkswagen / Audi / Seat / Skoda (groupe VAG)</strong> — Les TDI (1.9 et 2.0) : 120 000 km ou 5 ans. Les anciens 1.6 TDI : 90 000 km. Les TSI essence avec courroie : 90 000-120 000 km. Attention, beaucoup de TSI récents ont une chaîne, pas une courroie — on vérifie pour vous.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Renault / Dacia</strong> — Les 1.5 dCi (K9K) : 90 000 km ou 5 ans. Le 1.5 dCi est probablement le moteur le plus répandu en Belgique. On en fait des dizaines par an. Les 1.2 TCe essence récents ont une chaîne — mais c'est une chaîne qui pose problème (étirement), donc à surveiller aussi.</span>
-      <span data-lang="nl"><strong>Renault / Dacia</strong> — De 1.5 dCi (K9K): 90 000 km of 5 jaar. De 1.5 dCi is waarschijnlijk de meest verspreide motor in België. We doen er tientallen per jaar. De recente 1.2 TCe benzinemotoren hebben een ketting — maar het is een ketting die problemen geeft (uitrekken), dus ook in de gaten te houden.</span></p>
+      <p><span><strong>Renault / Dacia</strong> — Les 1.5 dCi (K9K) : 90 000 km ou 5 ans. Le 1.5 dCi est probablement le moteur le plus répandu en Belgique. On en fait des dizaines par an. Les 1.2 TCe essence récents ont une chaîne — mais c'est une chaîne qui pose problème (étirement), donc à surveiller aussi.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Peugeot / Citroën / DS (groupe PSA)</strong> — Les 1.6 HDI et 2.0 HDI : 160 000 km ou 10 ans pour les versions récentes, 120 000 km pour les plus anciennes. PSA est plus généreux sur les intervalles, mais on recommande de ne pas pousser jusqu'au maximum. Le 1.2 PureTech essence a une chaîne — et c'est un dossier connu pour les étirements de chaîne.</span>
-      <span data-lang="nl"><strong>Peugeot / Citroën / DS (PSA-groep)</strong> — De 1.6 HDI en 2.0 HDI: 160 000 km of 10 jaar voor de recente versies, 120 000 km voor de oudere. PSA is ruimer met de intervallen, maar wij raden aan om niet tot het maximum te wachten. De 1.2 PureTech benzinemotor heeft een ketting — en dat is een bekend dossier voor kettinguitrekking.</span></p>
+      <p><span><strong>Peugeot / Citroën / DS (groupe PSA)</strong> — Les 1.6 HDI et 2.0 HDI : 160 000 km ou 10 ans pour les versions récentes, 120 000 km pour les plus anciennes. PSA est plus généreux sur les intervalles, mais on recommande de ne pas pousser jusqu'au maximum. Le 1.2 PureTech essence a une chaîne — et c'est un dossier connu pour les étirements de chaîne.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>BMW</strong> — La majorité des BMW ont une chaîne de distribution. Mais "chaîne" ne veut pas dire "on n'y touche jamais". Les N47 diesel sont connus pour leurs problèmes de chaîne. Les N20 essence aussi. Si vous entendez un bruit de cliquetis au démarrage sur votre BMW, faites vérifier la chaîne.</span>
-      <span data-lang="nl"><strong>BMW</strong> — De meeste BMW's hebben een distributieketting. Maar "ketting" betekent niet "nooit aanraken". De N47 diesel staat bekend om kettingproblemen. De N20 benzine ook. Als u een tikgeluid hoort bij het starten van uw BMW, laat de ketting controleren.</span></p>
+      <p><span><strong>BMW</strong> — La majorité des BMW ont une chaîne de distribution. Mais "chaîne" ne veut pas dire "on n'y touche jamais". Les N47 diesel sont connus pour leurs problèmes de chaîne. Les N20 essence aussi. Si vous entendez un bruit de cliquetis au démarrage sur votre BMW, faites vérifier la chaîne.</span>
+      </p>
 
-      <p><span data-lang="fr">Vous ne savez pas quand votre distribution a été changée pour la dernière fois ? Appelez-nous avec votre plaque d'immatriculation. On vérifie dans l'historique technique du véhicule et on vous dit exactement où vous en êtes. Et si vous avez un doute, passez chez nous — on peut inspecter visuellement l'état de la courroie en quelques minutes sur la plupart des moteurs.</span>
-      <span data-lang="nl">Weet u niet wanneer uw distributie voor het laatst vervangen is? Bel ons met uw nummerplaat. We controleren de technische geschiedenis van het voertuig en vertellen u precies waar u staat. En bij twijfel, kom langs — we kunnen de staat van de riem op de meeste motoren in enkele minuten visueel inspecteren.</span></p>
+      <p><span>Vous ne savez pas quand votre distribution a été changée pour la dernière fois ? Appelez-nous avec votre plaque d'immatriculation. On vérifie dans l'historique technique du véhicule et on vous dit exactement où vous en êtes. Et si vous avez un doute, passez chez nous — on peut inspecter visuellement l'état de la courroie en quelques minutes sur la plupart des moteurs.</span>
+      </p>
 
-      <p><span data-lang="fr">Chez DMT AUTOGROUP, on a 15 ans d'expérience sur les distributions de toutes marques. On sait exactement quelles pièces poser, quels pièges éviter sur chaque moteur, et comment faire le travail proprement. Un remplacement de distribution, c'est un travail de précision — le calage doit être parfait au degré près. Pas de place pour l'approximation.</span>
-      <span data-lang="nl">Bij DMT AUTOGROUP hebben we 15 jaar ervaring met distributies van alle merken. We weten precies welke onderdelen te plaatsen, welke valkuilen te vermijden per motor, en hoe het werk proper uit te voeren. Een distributievervanging is precisiewerk — de timing moet perfect zijn op de graad nauwkeurig. Geen ruimte voor benadering.</span></p>
+      <p><span>Chez DMT AUTOGROUP, on a 15 ans d'expérience sur les distributions de toutes marques. On sait exactement quelles pièces poser, quels pièges éviter sur chaque moteur, et comment faire le travail proprement. Un remplacement de distribution, c'est un travail de précision — le calage doit être parfait au degré près. Pas de place pour l'approximation.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/mecanique-distribution.webp" alt="Kit de distribution complet courroie pompe à eau DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/mecanique-distribution.webp" alt="Kit de distribution complet courroie pompe à eau DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
     </div>
@@ -288,49 +316,45 @@
     <!-- SIDEBAR -->
     <aside class="service-sidebar">
       <div class="sidebar-card sidebar-card--cta">
-        <span class="label"><span data-lang="fr">Distribution à remplacer ?</span><span data-lang="nl">Distributie te vervangen?</span></span>
+        <span class="label"><span>Distribution à remplacer ?</span></span>
         <span class="phone"><a href="tel:+32484115813">0484 11 58 13</a></span>
-        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span data-lang="fr">Kit complet, toutes marques</span><span data-lang="nl">Compleet kit, alle merken</span></p>
-        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></a>
+        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span>Kit complet, toutes marques</span></p>
+        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span>Appelez maintenant</span></a>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Kit complet inclus</span><span data-lang="nl">Compleet kit inbegrepen</span></h4>
+        <h4><span>Kit complet inclus</span></h4>
         <p style="color:var(--text-secondary, #4B5563);font-size:0.85rem;line-height:1.6;padding:0.3rem 0;">
-          <span data-lang="fr"><strong>Courroie</strong> de distribution<br>
+          <span><strong>Courroie</strong> de distribution<br>
           <strong>Galet tendeur</strong> et enrouleur<br>
           <strong>Pompe à eau</strong><br>
           <strong>Antigel</strong> neuf<br>
           <strong>Chaîne</strong> si applicable</span>
-          <span data-lang="nl"><strong>Distributieriem</strong><br>
-          <strong>Spanrol</strong> en geleidingsrol<br>
-          <strong>Waterpomp</strong><br>
-          <strong>Koelvloeistof</strong> nieuw<br>
-          <strong>Ketting</strong> indien van toepassing</span>
+          
         </p>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Autres services</span><span data-lang="nl">Andere diensten</span></h4>
-        <a href="garage-automobile.html" data-lang="fr">Entretien & Réparation</a><a href="garage-automobile.html" data-lang="nl">Onderhoud & Herstelling</a>
-        <a href="mecanique-automobile.html" data-lang="fr">Mécanique automobile</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-        <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-        <a href="carrosserie.html" data-lang="fr">Carrosserie & Peinture</a><a href="carrosserie.html" data-lang="nl">Carrosserie & Lak</a>
-        <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing & Filters</a>
-        <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-      
-        <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-        <a href="filtre-particules.html" data-lang="fr">Filtre à particules (FAP)</a><a href="filtre-particules.html" data-lang="nl">Roetfilter (DPF)</a>
-        <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
+        <h4><span>Autres services</span></h4>
+        <a href="garage-automobile.html">Entretien & Réparation</a>
+        <a href="mecanique-automobile.html">Mécanique automobile</a>
+        <a href="pneus.html">Pneus</a>
+        <a href="carrosserie.html">Carrosserie & Peinture</a>
+        <a href="vidange-huile.html">Vidange & Filtres</a>
+        <a href="controle-technique.html">Contrôle technique</a>
+
+        <a href="reparation-moteur.html">Réparation moteur</a>
+        <a href="filtre-particules.html">Filtre à particules (FAP)</a>
+        <a href="freins.html">Freins</a>
       </div>
     </aside>
   </div></div></section>
 
   <!-- RELATED SERVICES -->
   <section class="related-services section--lg"><div class="container">
-    <div class="related-services__header reveal"><span class="label"><span data-lang="fr">Services liés</span><span data-lang="nl">Gerelateerde diensten</span></span><h2><span data-lang="fr">Voir aussi</span><span data-lang="nl">Zie ook</span></h2></div>
+    <div class="related-services__header reveal"><span class="label"><span>Services liés</span></span><h2><span>Voir aussi</span></h2></div>
     <div class="related-services__grid">
-      <a href="mecanique-automobile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3><span data-lang="fr">Mécanique automobile</span><span data-lang="nl">Automechaniek</span></h3><p><span data-lang="fr">Moteur, turbo, embrayage.</span><span data-lang="nl">Motor, turbo, koppeling.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="vidange-huile.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><h3><span data-lang="fr">Vidange & Filtres</span><span data-lang="nl">Olieverversing</span></h3><p><span data-lang="fr">Vidange moteur et huile.</span><span data-lang="nl">Motor- en olie verversen.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="garage-automobile.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span data-lang="fr">Diagnostic auto</span><span data-lang="nl">Autodiagnose</span></h3><p><span data-lang="fr">Diagnostic complet toutes marques.</span><span data-lang="nl">Volledige diagnose alle merken.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="mecanique-automobile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3><span>Mécanique automobile</span></h3><p><span>Moteur, turbo, embrayage.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="vidange-huile.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><h3><span>Vidange & Filtres</span></h3><p><span>Vidange moteur et huile.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="garage-automobile.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span>Diagnostic auto</span></h3><p><span>Diagnostic complet toutes marques.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
     </div>
   </div></section>
 
@@ -338,63 +362,63 @@
   <section class="section--lg" style="background: var(--gray-50, #F9FAFB);">
     <div class="container">
       <div class="services__header">
-        <span class="label"><span data-lang="fr">Questions fréquentes</span><span data-lang="nl">Veelgestelde vragen</span></span>
-        <h2><span data-lang="fr">FAQ — Courroie de distribution à Zaventem</span><span data-lang="nl">FAQ — Distributieriem in Zaventem</span></h2>
+        <span class="label"><span>Questions fréquentes</span></span>
+        <h2><span>FAQ — Courroie de distribution à Zaventem</span></h2>
       </div>
       <div style="max-width:800px;margin:0 auto;">
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Combien coûte un changement de courroie de distribution ?</span><span data-lang="nl">Hoeveel kost het vervangen van een distributieriem?</span>
+            <span>Combien coûte un changement de courroie de distribution ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Chez un concessionnaire, le kit complet (courroie + galets + pompe à eau) coûte entre 800 et 1800€ selon le modèle. Chez nous, c'est en dessous avec des pièces de qualité équivalente — Gates, Contitech, SKF, INA. Le prix dépend du modèle : un 1.6 HDI ne demande pas le même travail qu'un 2.0 TDI. Appelez-nous avec votre plaque, on donne un prix exact.</span>
-            <span data-lang="nl">Bij een concessie kost het complete kit (riem + rollen + waterpomp) tussen 800 en 1800€ afhankelijk van het model. Bij ons is het minder met onderdelen van gelijkwaardige kwaliteit — Gates, Contitech, SKF, INA. De prijs hangt af van het model: een 1.6 HDI vraagt niet hetzelfde werk als een 2.0 TDI. Bel ons met uw nummerplaat, we geven een exacte prijs.</span>
+            <span>Chez un concessionnaire, le kit complet (courroie + galets + pompe à eau) coûte entre 800 et 1800€ selon le modèle. Chez nous, c'est en dessous avec des pièces de qualité équivalente — Gates, Contitech, SKF, INA. Le prix dépend du modèle : un 1.6 HDI ne demande pas le même travail qu'un 2.0 TDI. Appelez-nous avec votre plaque, on donne un prix exact.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Comment savoir si ma courroie de distribution est usée ?</span><span data-lang="nl">Hoe weet ik of mijn distributieriem versleten is?</span>
+            <span>Comment savoir si ma courroie de distribution est usée ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">La courroie de distribution ne donne presque aucun signe d'usure visible — elle est cachée derrière un carter. C'est pour ça qu'on la remplace selon les intervalles du constructeur, pas quand elle montre des signes. Quand vous voyez des signes, c'est déjà trop tard. Vérifiez votre carnet d'entretien ou appelez-nous avec votre kilométrage.</span>
-            <span data-lang="nl">De distributieriem geeft bijna geen zichtbare slijtage — ze zit verborgen achter een deksel. Daarom vervangen we ze volgens de intervallen van de constructeur, niet wanneer ze tekenen vertoont. Als u tekenen ziet, is het al te laat. Controleer uw onderhoudsboekje of bel ons met uw kilometerstand.</span>
+            <span>La courroie de distribution ne donne presque aucun signe d'usure visible — elle est cachée derrière un carter. C'est pour ça qu'on la remplace selon les intervalles du constructeur, pas quand elle montre des signes. Quand vous voyez des signes, c'est déjà trop tard. Vérifiez votre carnet d'entretien ou appelez-nous avec votre kilométrage.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ma voiture a une chaîne ou une courroie de distribution ?</span><span data-lang="nl">Heeft mijn auto een ketting of een distributieriem?</span>
+            <span>Ma voiture a une chaîne ou une courroie de distribution ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Ça dépend du moteur, pas de la marque. Un VW 1.4 TSI a une chaîne, un VW 1.9 TDI a une courroie. Un BMW essence a généralement une chaîne, un Renault 1.5 dCi a une courroie. Donnez-nous votre plaque d'immatriculation, on vérifie immédiatement quel système équipe votre moteur.</span>
-            <span data-lang="nl">Dat hangt af van de motor, niet van het merk. Een VW 1.4 TSI heeft een ketting, een VW 1.9 TDI heeft een riem. Een BMW benzine heeft meestal een ketting, een Renault 1.5 dCi heeft een riem. Geef ons uw nummerplaat, we controleren meteen welk systeem uw motor heeft.</span>
+            <span>Ça dépend du moteur, pas de la marque. Un VW 1.4 TSI a une chaîne, un VW 1.9 TDI a une courroie. Un BMW essence a généralement une chaîne, un Renault 1.5 dCi a une courroie. Donnez-nous votre plaque d'immatriculation, on vérifie immédiatement quel système équipe votre moteur.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Que se passe-t-il si la courroie de distribution casse ?</span><span data-lang="nl">Wat gebeurt er als de distributieriem breekt?</span>
+            <span>Que se passe-t-il si la courroie de distribution casse ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Sur les moteurs à interférence (la grande majorité), les pistons tapent dans les soupapes. Soupapes tordues, pistons fissurés, culasse détruite. Facture : 3000 à 6000€, parfois plus que la valeur de la voiture. Un remplacement préventif coûte une fraction de ça. C'est la réparation la plus importante à ne jamais repousser.</span>
-            <span data-lang="nl">Bij interferentiemotoren (de overgrote meerderheid) slaan de zuigers tegen de kleppen. Verbogen kleppen, gebarsten zuigers, vernielde cilinderkop. Factuur: 3000 tot 6000€, soms meer dan de waarde van de auto. Een preventieve vervanging kost een fractie daarvan. Het is de belangrijkste reparatie om nooit uit te stellen.</span>
+            <span>Sur les moteurs à interférence (la grande majorité), les pistons tapent dans les soupapes. Soupapes tordues, pistons fissurés, culasse détruite. Facture : 3000 à 6000€, parfois plus que la valeur de la voiture. Un remplacement préventif coûte une fraction de ça. C'est la réparation la plus importante à ne jamais repousser.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Pourquoi changer la pompe à eau avec la courroie ?</span><span data-lang="nl">Waarom de waterpomp samen met de riem vervangen?</span>
+            <span>Pourquoi changer la pompe à eau avec la courroie ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Parce que la pompe à eau est entraînée par la courroie sur la plupart des moteurs. Pour y accéder, il faut démonter toute la distribution — c'est 80% du travail. Si la pompe lâche dans 2 ans, il faut tout redémonter et repayer la main d'oeuvre. Chez nous, on fait toujours le kit complet : courroie, galets, pompe à eau, antigel neuf. Une seule intervention.</span>
-            <span data-lang="nl">Omdat de waterpomp op de meeste motoren door de riem wordt aangedreven. Om erbij te komen moet de hele distributie gedemonteerd worden — dat is 80% van het werk. Als de pomp over 2 jaar begeeft, moet alles opnieuw gedemonteerd en het arbeidsloon opnieuw betaald worden. Bij ons doen we altijd het complete kit: riem, rollen, waterpomp, nieuwe koelvloeistof. Eén ingreep.</span>
+            <span>Parce que la pompe à eau est entraînée par la courroie sur la plupart des moteurs. Pour y accéder, il faut démonter toute la distribution — c'est 80% du travail. Si la pompe lâche dans 2 ans, il faut tout redémonter et repayer la main d'oeuvre. Chez nous, on fait toujours le kit complet : courroie, galets, pompe à eau, antigel neuf. Une seule intervention.</span>
+
           </p>
         </details>
 
@@ -404,21 +428,21 @@
 
   <!-- CTA -->
   <section class="cta-section section--lg"><div class="container">
-    <span class="label reveal"><span data-lang="fr">Distribution Zaventem</span><span data-lang="nl">Distributie Zaventem</span></span>
-    <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+    <span class="label reveal"><span>Distribution Zaventem</span></span>
+    <h2 class="reveal"><span>Appelez maintenant</span></h2>
     <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
-    <p class="cta-section__hours reveal reveal-delay-2"><span data-lang="fr">Kit de distribution complet — toutes marques<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span><span data-lang="nl">Compleet distributiekit — alle merken<br>Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
+    <p class="cta-section__hours reveal reveal-delay-2"><span>Kit de distribution complet — toutes marques<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
   </div></section>
 
   <!-- FOOTER -->
   <footer class="footer"><div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37"><p><span data-lang="fr">Garage automobile à Zaventem. Courroie et chaîne de distribution. Toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Distributieriem en -ketting. Alle merken.</span></p></div>
-      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html" data-lang="fr">Entretien</a><a href="garage-automobile.html" data-lang="nl">Onderhoud</a><a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a><a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a><a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a><a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
-      <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a><a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a><a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a><a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a><a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a></div>
+      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async"><p><span>Garage automobile à Zaventem. Courroie et chaîne de distribution. Toutes marques.</span></p></div>
+      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html">Entretien</a><a href="pneus.html">Pneus</a><a href="carrosserie.html">Carrosserie</a><a href="vidange-huile.html">Vidange</a><a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
+      <div class="footer__col"><h4><span>Plus</span></h4><a href="mecanique-automobile.html">Mécanique</a><a href="reparation-boite-dsg.html">Boîte DSG</a><a href="reparation-boite-vitesse.html">Boîte de vitesse</a><a href="controle-technique.html">Contrôle technique</a><a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a><a href="embrayage.html">Embrayage</a><a href="remplacement-turbo.html">Turbo</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a><a href="https://www.google.com/maps/search/?api=1&query=DMT+AUTOGROUP+1,2,3+AutoService&query_place_id=ChIJZYxTG37fw0cREIle6gqXy4Y" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Courroie de distribution Zaventem</span><span data-lang="nl">Distributieriem Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
+    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span><span><span>Courroie de distribution Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
   <script src="js/main.js" defer></script>
 </body>

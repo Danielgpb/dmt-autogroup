@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/climatisation">
   <meta property="og:image" content="https://dmt-autogroup.be/img/atelier-vue.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Climatisation auto Zaventem | DMT AUTOGROUP">
+  <meta name="twitter:description" content="Recharge clim R134a / R1234yf, réparation compresseur, condenseur, désinfection circuit. Garage indépendant Zaventem.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/atelier-vue.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/climatisation">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,10 +32,12 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
     "name": "DMT AUTOGROUP 1,2,3 AutoService",
-    "url": "https://dmt-autogroup.be/climatisation",
+    "url": "https://dmt-autogroup.be/",
     "image": "https://dmt-autogroup.be/img/atelier-vue.webp",
     "telephone": "+32484115813",
+    "sameAs": ["https://www.google.com/maps?cid=9711024847498784016"],
     "address": { "@type": "PostalAddress", "streetAddress": "Mechelsesteenweg 270", "addressLocality": "Zaventem", "postalCode": "1933", "addressCountry": "BE" },
     "geo": { "@type": "GeoCoordinates", "latitude": 50.8639552, "longitude": 4.5159167 },
     "areaServed": [
@@ -43,7 +53,19 @@
       { "@type": "City", "name": "Vilvoorde" },
       { "@type": "City", "name": "Kortenberg" }
     ],
-    "serviceType": ["Recharge de climatisation", "Réparation de climatisation", "Installation de climatiseurs automobile"]
+    "serviceType": ["Recharge de climatisation", "Réparation de climatisation", "Installation de climatiseurs automobile"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 30,
+      "bestRating": "5"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -104,91 +126,97 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/atelier-vue.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/climatisation">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/airconditioning">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/climatisation">
 </head>
 <body>
   <header class="nav"><div class="nav__inner">
-    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
     <nav class="nav__links">
-      <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+      <a href="index.html">Accueil</a>
 
       <!-- Services dropdown -->
       <div class="nav__dropdown">
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+        <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
         <div class="nav__dropdown-menu">
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-            <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-            <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+            <span class="nav__dropdown-title">Entretien</span>
+            <a href="garage-automobile.html">Garage automobile</a>
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+            <a href="freins.html">Freins</a>
+            <a href="controle-technique.html">Contrôle technique</a>
+            <a href="climatisation.html">Climatisation</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-            <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-            <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-            <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-            <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+            <span class="nav__dropdown-title">Mécanique</span>
+            <a href="mecanique-automobile.html">Mécanique auto</a>
+            <a href="reparation-moteur.html">Réparation moteur</a>
+            <a href="remplacement-turbo.html">Turbo</a>
+            <a href="embrayage.html">Embrayage</a>
+            <a href="courroie-distribution.html">Courroie distribution</a>
+            <a href="reparation-boite-dsg.html">Boîte DSG</a>
+            <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+            <a href="filtre-particules.html">Filtre à particules</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-            <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-            <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-            <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-            <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+            <span class="nav__dropdown-title">Électrique & Diag</span>
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+            <a href="reparation-electrique.html">Réparation électrique</a>
+            <a href="batterie.html">Batterie</a>
+            <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+            <a href="carrosserie.html">Carrosserie</a>
+            <a href="pneus.html">Pneus</a>
+            <a href="direction-suspension.html">Direction & Suspension</a>
           </div>
         </div>
       </div>
 
-      <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+      <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
     </nav>
     <div class="nav__actions">
-      <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+      <div class="lang-switch"><a class="active">FR</a><a href="nl/airconditioning.html">NL</a></div>
       <a href="tel:+32484115813" class="btn btn--phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="phone-text">0484 11 58 13</span></a>
     </div>
     <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div></header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--yellow, #EAB308)">0484 11 58 13</a>
   </div>
 
   <!-- HERO -->
-  <section class="service-hero" style="background: url('img/atelier-vue.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/atelier-vue.webp" alt="Atelier mécanique garage DMT AUTOGROUP Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
-      <span class="label"><span data-lang="fr">Climatisation auto — Recharge & Réparation — Zaventem</span><span data-lang="nl">Autoairco — Bijvulling & Herstelling — Zaventem</span></span>
-      <h1><span data-lang="fr">Climatisation automobile<br>à Zaventem</span><span data-lang="nl">Autoairco<br>in Zaventem</span></h1>
+      <span class="label"><span>Climatisation auto — Recharge & Réparation — Zaventem</span></span>
+      <h1><span>Climatisation automobile<br>à Zaventem</span></h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">Votre clim souffle tiède ? Mauvaises odeurs quand vous l'allumez ? Bruit suspect ? Chez DMT AUTOGROUP, on fait la recharge, la réparation et la désinfection de votre climatisation auto. R134a et R1234yf. Toutes marques. <strong>Diagnostic clim offert avec chaque recharge.</strong></span>
-        <span data-lang="nl">Blaast uw airco lauw? Vieze geur als u hem aanzet? Verdacht geluid? Bij DMT AUTOGROUP doen we het bijvullen, herstellen en desinfecteren van uw autoairco. R134a en R1234yf. Alle merken. <strong>Gratis aircodiagnose bij elke bijvulling.</strong></span>
+        <span>Votre clim souffle tiède ? Mauvaises odeurs quand vous l'allumez ? Bruit suspect ? Chez DMT AUTOGROUP, on fait la recharge, la réparation et la désinfection de votre climatisation auto. R134a et R1234yf. Toutes marques. <strong>Diagnostic clim offert avec chaque recharge.</strong></span>
+        
       </p>
     </div>
   </section>
@@ -198,124 +226,121 @@
     <div class="service-content__main">
 
       <!-- SECTION 1: Recharge -->
-      <h2><span data-lang="fr">Recharge de climatisation</span><span data-lang="nl">Airco bijvullen</span></h2>
+      <h2><span>Recharge de climatisation</span></h2>
 
-      <p><span data-lang="fr">Votre clim ne refroidit plus comme avant. Vous montez le ventilateur à fond, vous baissez la température au minimum, et l'air qui sort est tiède. Peut-être même chaud. C'est le signe le plus courant : le gaz réfrigérant est en dessous du niveau nécessaire.</span>
-      <span data-lang="nl">Uw airco koelt niet meer zoals vroeger. U zet de ventilator op volle kracht, draait de temperatuur helemaal omlaag, en de lucht die eruit komt is lauw. Misschien zelfs warm. Het is het meest voorkomende teken: het koelmiddel zit onder het noodzakelijke niveau.</span></p>
+      <p><span>Votre clim ne refroidit plus comme avant. Vous montez le ventilateur à fond, vous baissez la température au minimum, et l'air qui sort est tiède. Peut-être même chaud. C'est le signe le plus courant : le gaz réfrigérant est en dessous du niveau nécessaire.</span>
+      </p>
 
-      <p><span data-lang="fr">Ce n'est pas un défaut. Le circuit de clim perd naturellement 10 à 15% de gaz par an — par les joints toriques, les raccords, les flexibles. Après 2 à 3 ans, il n'y a plus assez de gaz pour que le compresseur puisse travailler correctement. Le système se met en sécurité et le compresseur ne s'enclenche plus.</span>
-      <span data-lang="nl">Het is geen defect. Het aircosysteem verliest van nature 10 tot 15% gas per jaar — via de O-ringen, aansluitingen, slangen. Na 2 tot 3 jaar is er niet genoeg gas meer om de compressor goed te laten werken. Het systeem schakelt zichzelf uit en de compressor slaat niet meer aan.</span></p>
+      <p><span>Ce n'est pas un défaut. Le circuit de clim perd naturellement 10 à 15% de gaz par an — par les joints toriques, les raccords, les flexibles. Après 2 à 3 ans, il n'y a plus assez de gaz pour que le compresseur puisse travailler correctement. Le système se met en sécurité et le compresseur ne s'enclenche plus.</span>
+      </p>
 
-      <p><span data-lang="fr">On utilise une station de recharge automatique qui vide le circuit, récupère le gaz restant, tire au vide pour éliminer l'humidité, et recharge avec la quantité exacte prescrite par le constructeur — au gramme près. On ajoute aussi de l'huile de compresseur et un traceur UV pour détecter d'éventuelles fuites.</span>
-      <span data-lang="nl">We gebruiken een automatisch bijvulstation dat het circuit leegmaakt, het resterende gas recupereert, vacuüm trekt om vocht te verwijderen, en bijvult met de exacte hoeveelheid voorgeschreven door de constructeur — op de gram nauwkeurig. We voegen ook compressorolie en UV-tracer toe om eventuele lekken te detecteren.</span></p>
+      <p><span>On utilise une station de recharge automatique qui vide le circuit, récupère le gaz restant, tire au vide pour éliminer l'humidité, et recharge avec la quantité exacte prescrite par le constructeur — au gramme près. On ajoute aussi de l'huile de compresseur et un traceur UV pour détecter d'éventuelles fuites.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Deux types de gaz existent aujourd'hui.</strong> Le R134a, utilisé sur les véhicules d'avant 2017 environ. Et le R1234yf, obligatoire sur les modèles récents. Le R1234yf est nettement plus cher — c'est le gaz qui fait la différence sur la facture, pas notre main-d'oeuvre. Chez un concessionnaire, une recharge R1234yf peut facilement dépasser 250-350 euros. Chez nous, c'est une autre histoire.</span>
-      <span data-lang="nl"><strong>Er bestaan vandaag twee types gas.</strong> R134a, gebruikt in voertuigen van voor 2017 ongeveer. En R1234yf, verplicht bij recente modellen. R1234yf is beduidend duurder — het is het gas dat het verschil maakt op de factuur, niet onze arbeid. Bij een concessie kan een R1234yf-bijvulling makkelijk boven de 250-350 euro uitkomen. Bij ons is dat een ander verhaal.</span></p>
+      <p><span><strong>Deux types de gaz existent aujourd'hui.</strong> Le R134a, utilisé sur les véhicules d'avant 2017 environ. Et le R1234yf, obligatoire sur les modèles récents. Le R1234yf est nettement plus cher — c'est le gaz qui fait la différence sur la facture, pas notre main-d'oeuvre. Chez un concessionnaire, une recharge R1234yf peut facilement dépasser 250-350 euros. Chez nous, c'est une autre histoire.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/atelier-interieur.webp" alt="Atelier réparation climatisation automobile garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/atelier-interieur.webp" alt="Atelier réparation climatisation automobile garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <!-- SECTION 2: Réparation -->
-      <h2><span data-lang="fr">Réparation climatisation</span><span data-lang="nl">Airco herstelling</span></h2>
+      <h2><span>Réparation climatisation</span></h2>
 
-      <p><span data-lang="fr">Si votre clim a besoin d'une recharge tous les 6 mois, le problème n'est pas le gaz. C'est une fuite. Et une fuite, ça ne se résout pas en remettant du gaz — c'est comme remplir un seau percé.</span>
-      <span data-lang="nl">Als uw airco om de 6 maanden bijgevuld moet worden, is het probleem niet het gas. Het is een lek. En een lek los je niet op door gas bij te vullen — dat is als een emmer met een gat vullen.</span></p>
+      <p><span>Si votre clim a besoin d'une recharge tous les 6 mois, le problème n'est pas le gaz. C'est une fuite. Et une fuite, ça ne se résout pas en remettant du gaz — c'est comme remplir un seau percé.</span>
+      </p>
 
-      <p><span data-lang="fr">On localise les fuites avec un test UV. On ajoute un traceur fluorescent dans le circuit, on fait tourner la clim, et on inspecte chaque raccord, chaque joint, chaque composant avec une lampe UV. La fuite apparaît en jaune-vert fluorescent. Impossible de la rater.</span>
-      <span data-lang="nl">We lokaliseren lekken met een UV-test. We voegen een fluorescerend spoormiddel toe aan het circuit, laten de airco draaien, en inspecteren elke aansluiting, elke afdichting, elk onderdeel met een UV-lamp. Het lek verschijnt in fluorescerend geelgroen. Onmogelijk om te missen.</span></p>
+      <p><span>On localise les fuites avec un test UV. On ajoute un traceur fluorescent dans le circuit, on fait tourner la clim, et on inspecte chaque raccord, chaque joint, chaque composant avec une lampe UV. La fuite apparaît en jaune-vert fluorescent. Impossible de la rater.</span>
+      </p>
 
-      <p><span data-lang="fr">Les composants qu'on remplace le plus souvent : le compresseur (quand il bloque ou fuit au niveau du joint d'arbre), le condenseur (souvent percé par des gravillons ou de la corrosion — il est en première ligne derrière la calandre), l'évaporateur (la pièce la plus pénible à atteindre — il faut souvent démonter une partie du tableau de bord), et les flexibles haute/basse pression qui se dessèchent avec le temps.</span>
-      <span data-lang="nl">De onderdelen die we het vaakst vervangen: de compressor (als die blokkeert of lekt ter hoogte van de asdichting), de condensor (vaak doorboord door steentjes of corrosie — hij zit vooraan achter de grille), de verdamper (het lastigste onderdeel om bij te komen — vaak moet een deel van het dashboard gedemonteerd worden), en de hoge/lage druk slangen die na verloop van tijd uitdrogen.</span></p>
+      <p><span>Les composants qu'on remplace le plus souvent : le compresseur (quand il bloque ou fuit au niveau du joint d'arbre), le condenseur (souvent percé par des gravillons ou de la corrosion — il est en première ligne derrière la calandre), l'évaporateur (la pièce la plus pénible à atteindre — il faut souvent démonter une partie du tableau de bord), et les flexibles haute/basse pression qui se dessèchent avec le temps.</span>
+      </p>
 
-      <p><span data-lang="fr">Un compresseur de clim chez le concessionnaire, c'est facilement 800 à 1500 euros pièce et main-d'oeuvre. Chez un indépendant comme nous, le compresseur est le même (qualité OEM ou première monte), mais la facture est différente. On ne gonfle pas les prix.</span>
-      <span data-lang="nl">Een aircocompressor bij de concessie kost al snel 800 tot 1500 euro onderdelen en arbeid. Bij een onafhankelijke garage zoals wij is de compressor dezelfde (OEM-kwaliteit of eerste montage), maar de factuur is anders. We blazen de prijzen niet op.</span></p>
+      <p><span>Un compresseur de clim chez le concessionnaire, c'est facilement 800 à 1500 euros pièce et main-d'oeuvre. Chez un indépendant comme nous, le compresseur est le même (qualité OEM ou première monte), mais la facture est différente. On ne gonfle pas les prix.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/atelier-interieur.webp" alt="Réparation climatisation auto atelier DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/atelier-interieur.webp" alt="Réparation climatisation auto atelier DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <div class="photo-gallery" style="grid-template-columns:1fr 1fr">
-        <img src="img/climatisation-recharge.webp" alt="Recharge climatisation automobile garage Zaventem" loading="lazy" width="800" height="533">
-        <img src="img/climatisation-compresseur.webp" alt="Compresseur climatisation réparation garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/climatisation-recharge.webp" alt="Recharge climatisation automobile garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
+        <img src="img/climatisation-compresseur.webp" alt="Compresseur climatisation réparation garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <!-- SECTION 3: Installation -->
-      <h2><span data-lang="fr">Installation de climatiseurs</span><span data-lang="nl">Installatie van aircosystemen</span></h2>
+      <h2><span>Installation de climatiseurs</span></h2>
 
-      <p><span data-lang="fr">Certains véhicules utilitaires sont livrés sans climatisation. Les versions de base des Berlingo, Partner, Kangoo, Transit, Sprinter — le constructeur les vend comme ça pour garder le prix catalogue bas. Et le patron qui achète une flotte de 5 camionnettes se retrouve avec des chauffeurs qui cuisent en été.</span>
-      <span data-lang="nl">Sommige bedrijfsvoertuigen worden zonder airco geleverd. De basisversies van de Berlingo, Partner, Kangoo, Transit, Sprinter — de constructeur verkoopt ze zo om de catalogusprijs laag te houden. En de baas die een vloot van 5 bestelwagens koopt, zit met chauffeurs die bakken in de zomer.</span></p>
+      <p><span>Certains véhicules utilitaires sont livrés sans climatisation. Les versions de base des Berlingo, Partner, Kangoo, Transit, Sprinter — le constructeur les vend comme ça pour garder le prix catalogue bas. Et le patron qui achète une flotte de 5 camionnettes se retrouve avec des chauffeurs qui cuisent en été.</span>
+      </p>
 
-      <p><span data-lang="fr">On installe des systèmes de climatisation complets sur les véhicules utilitaires et les anciens véhicules qui n'en sont pas équipés d'origine. Compresseur, condenseur, évaporateur, tuyauterie, commandes — tout le circuit. Ce n'est pas un bricolage avec un kit universel. On utilise les pièces prévues par le constructeur pour la version climatisée du même véhicule.</span>
-      <span data-lang="nl">We installeren volledige aircosystemen op bedrijfsvoertuigen en oudere voertuigen die er vanaf de fabriek niet mee uitgerust zijn. Compressor, condensor, verdamper, leidingen, bediening — het volledige circuit. Het is geen knutselwerk met een universele kit. We gebruiken de onderdelen die de constructeur voorziet voor de versie met airco van hetzelfde voertuig.</span></p>
+      <p><span>On installe des systèmes de climatisation complets sur les véhicules utilitaires et les anciens véhicules qui n'en sont pas équipés d'origine. Compresseur, condenseur, évaporateur, tuyauterie, commandes — tout le circuit. Ce n'est pas un bricolage avec un kit universel. On utilise les pièces prévues par le constructeur pour la version climatisée du même véhicule.</span>
+      </p>
 
-      <p><span data-lang="fr">Le résultat est identique à une voiture sortie d'usine avec la clim. Même performance, même fiabilité, même intégration dans le tableau de bord. Vos chauffeurs vous remercieront.</span>
-      <span data-lang="nl">Het resultaat is identiek aan een auto die met airco uit de fabriek kwam. Dezelfde prestaties, dezelfde betrouwbaarheid, dezelfde integratie in het dashboard. Uw chauffeurs zullen u dankbaar zijn.</span></p>
+      <p><span>Le résultat est identique à une voiture sortie d'usine avec la clim. Même performance, même fiabilité, même intégration dans le tableau de bord. Vos chauffeurs vous remercieront.</span>
+      </p>
 
       <!-- SECTION 4: Désinfection -->
-      <h2><span data-lang="fr">Désinfection circuit de climatisation</span><span data-lang="nl">Desinfectie aircosysteem</span></h2>
+      <h2><span>Désinfection circuit de climatisation</span></h2>
 
-      <p><span data-lang="fr">Vous allumez la clim et une odeur de moisi envahit l'habitacle. C'est un classique. L'évaporateur — cette espèce de radiateur caché derrière le tableau de bord — est constamment humide quand la clim tourne. L'eau de condensation stagne dans le bac de récupération. Et dans cet environnement chaud et humide, les bactéries et les moisissures font la fête.</span>
-      <span data-lang="nl">U zet de airco aan en een mufferige geur vult de cabine. Het is een klassieker. De verdamper — die soort radiator verborgen achter het dashboard — is constant vochtig als de airco draait. Het condenswater stagneert in de opvangbak. En in die warme, vochtige omgeving hebben bacteriën en schimmels vrij spel.</span></p>
+      <p><span>Vous allumez la clim et une odeur de moisi envahit l'habitacle. C'est un classique. L'évaporateur — cette espèce de radiateur caché derrière le tableau de bord — est constamment humide quand la clim tourne. L'eau de condensation stagne dans le bac de récupération. Et dans cet environnement chaud et humide, les bactéries et les moisissures font la fête.</span>
+      </p>
 
-      <p><span data-lang="fr">Ce n'est pas juste désagréable. C'est un problème de santé. Ces moisissures, vous les respirez — vous et vos passagers. Les personnes allergiques ou asthmatiques le sentent immédiatement. Même sans allergie, c'est irritant pour les voies respiratoires.</span>
-      <span data-lang="nl">Het is niet alleen vervelend. Het is een gezondheidsprobleem. Die schimmels ademt u in — u en uw passagiers. Mensen met allergie of astma merken het onmiddellijk. Zelfs zonder allergie is het irriterend voor de luchtwegen.</span></p>
+      <p><span>Ce n'est pas juste désagréable. C'est un problème de santé. Ces moisissures, vous les respirez — vous et vos passagers. Les personnes allergiques ou asthmatiques le sentent immédiatement. Même sans allergie, c'est irritant pour les voies respiratoires.</span>
+      </p>
 
-      <p><span data-lang="fr">On traite le circuit avec un produit antibactérien professionnel qu'on nébulise directement dans le boîtier de ventilation. On nettoie le bac de condensation. Et on remplace le filtre habitacle — le filtre qui est censé retenir pollens, poussières et particules fines. Si votre filtre habitacle n'a pas été changé depuis plus d'un an, il fait partie du problème.</span>
-      <span data-lang="nl">We behandelen het circuit met een professioneel antibacterieel product dat we rechtstreeks in de ventilatiebox vernevelen. We reinigen de condensbak. En we vervangen het interieurfilter — het filter dat pollen, stof en fijn stof moet tegenhouden. Als uw interieurfilter al meer dan een jaar niet vervangen is, maakt het deel uit van het probleem.</span></p>
+      <p><span>On traite le circuit avec un produit antibactérien professionnel qu'on nébulise directement dans le boîtier de ventilation. On nettoie le bac de condensation. Et on remplace le filtre habitacle — le filtre qui est censé retenir pollens, poussières et particules fines. Si votre filtre habitacle n'a pas été changé depuis plus d'un an, il fait partie du problème.</span>
+      </p>
 
-      <p><span data-lang="fr">Pensez-y aussi lors de votre <a href="vidange-huile.html">vidange</a> — on peut remplacer le filtre habitacle en même temps que le filtre à huile et le filtre à air. Tout en une visite.</span>
-      <span data-lang="nl">Denk er ook aan bij uw <a href="vidange-huile.html">olieverversing</a> — we kunnen het interieurfilter tegelijk vervangen met het oliefilter en het luchtfilter. Alles in één bezoek.</span></p>
+      <p><span>Pensez-y aussi lors de votre <a href="vidange-huile.html">vidange</a> — on peut remplacer le filtre habitacle en même temps que le filtre à huile et le filtre à air. Tout en une visite.</span>
+      </p>
 
-      <p><span data-lang="fr">On recommande une désinfection une fois par an — idéalement au printemps, avant la saison chaude. Vos poumons vous diront merci. Et pour un <a href="garage-automobile.html">entretien complet</a> de votre véhicule, on gère tout dans la foulée.</span>
-      <span data-lang="nl">We raden een desinfectie aan één keer per jaar — idealiter in de lente, voor het warme seizoen. Uw longen zullen u dankbaar zijn. En voor een <a href="garage-automobile.html">volledig onderhoud</a> van uw voertuig regelen we alles meteen.</span></p>
+      <p><span>On recommande une désinfection une fois par an — idéalement au printemps, avant la saison chaude. Vos poumons vous diront merci. Et pour un <a href="garage-automobile.html">entretien complet</a> de votre véhicule, on gère tout dans la foulée.</span>
+      </p>
 
     </div>
 
     <!-- SIDEBAR -->
     <aside class="service-sidebar">
       <div class="sidebar-card sidebar-card--cta">
-        <span class="label"><span data-lang="fr">Clim en panne ?</span><span data-lang="nl">Airco kapot?</span></span>
+        <span class="label"><span>Clim en panne ?</span></span>
         <span class="phone"><a href="tel:+32484115813">0484 11 58 13</a></span>
-        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span data-lang="fr">Recharge, réparation, désinfection</span><span data-lang="nl">Bijvulling, herstelling, desinfectie</span></p>
-        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></a>
+        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span>Recharge, réparation, désinfection</span></p>
+        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span>Appelez maintenant</span></a>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Nos prestations clim</span><span data-lang="nl">Onze airco-diensten</span></h4>
+        <h4><span>Nos prestations clim</span></h4>
         <p style="color:var(--text-secondary, #4B5563);font-size:0.85rem;line-height:1.6;padding:0.3rem 0;">
-          <span data-lang="fr"><strong>Recharge</strong> — R134a / R1234yf<br>
+          <span><strong>Recharge</strong> — R134a / R1234yf<br>
           <strong>Réparation</strong> — Compresseur, condenseur<br>
           <strong>Diagnostic</strong> — Test UV, détection fuites<br>
           <strong>Désinfection</strong> — Anti-bactérien, filtre</span>
-          <span data-lang="nl"><strong>Bijvulling</strong> — R134a / R1234yf<br>
-          <strong>Herstelling</strong> — Compressor, condensor<br>
-          <strong>Diagnose</strong> — UV-test, lekdetectie<br>
-          <strong>Desinfectie</strong> — Antibacterieel, filter</span>
+          
         </p>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Autres services</span><span data-lang="nl">Andere diensten</span></h4>
-        <a href="garage-automobile.html" data-lang="fr">Entretien & Réparation</a><a href="garage-automobile.html" data-lang="nl">Onderhoud & Herstelling</a>
-        <a href="mecanique-automobile.html" data-lang="fr">Mécanique automobile</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-        <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-        <a href="carrosserie.html" data-lang="fr">Carrosserie & Peinture</a><a href="carrosserie.html" data-lang="nl">Carrosserie & Lak</a>
-        <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing & Filters</a>
-        <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-      
-        <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-        <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-        <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
+        <h4><span>Autres services</span></h4>
+        <a href="garage-automobile.html">Entretien & Réparation</a>
+        <a href="mecanique-automobile.html">Mécanique automobile</a>
+        <a href="pneus.html">Pneus</a>
+        <a href="carrosserie.html">Carrosserie & Peinture</a>
+        <a href="vidange-huile.html">Vidange & Filtres</a>
+        <a href="controle-technique.html">Contrôle technique</a>
+
+        <a href="reparation-electrique.html">Réparation électrique</a>
+        <a href="batterie.html">Batterie</a>
+        <a href="diagnostic-moteur.html">Diagnostic moteur</a>
       </div>
     </aside>
   </div></div></section>
 
   <!-- RELATED SERVICES -->
   <section class="related-services section--lg"><div class="container">
-    <div class="related-services__header reveal"><span class="label"><span data-lang="fr">Services liés</span><span data-lang="nl">Gerelateerde diensten</span></span><h2><span data-lang="fr">Voir aussi</span><span data-lang="nl">Zie ook</span></h2></div>
+    <div class="related-services__header reveal"><span class="label"><span>Services liés</span></span><h2><span>Voir aussi</span></h2></div>
     <div class="related-services__grid">
-      <a href="vidange-huile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><h3><span data-lang="fr">Vidange & Filtres</span><span data-lang="nl">Olieverversing</span></h3><p><span data-lang="fr">Vidange moteur, filtre habitacle.</span><span data-lang="nl">Motorolie, interieurfilter.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="garage-automobile.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span data-lang="fr">Garage automobile</span><span data-lang="nl">Autogarage</span></h3><p><span data-lang="fr">Entretien complet toutes marques.</span><span data-lang="nl">Volledig onderhoud alle merken.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="mecanique-automobile.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3><span data-lang="fr">Mécanique automobile</span><span data-lang="nl">Automechaniek</span></h3><p><span data-lang="fr">Moteur, turbo, embrayage.</span><span data-lang="nl">Motor, turbo, koppeling.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="vidange-huile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><h3><span>Vidange & Filtres</span></h3><p><span>Vidange moteur, filtre habitacle.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="garage-automobile.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span>Garage automobile</span></h3><p><span>Entretien complet toutes marques.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="mecanique-automobile.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3><span>Mécanique automobile</span></h3><p><span>Moteur, turbo, embrayage.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
     </div>
   </div></section>
 
@@ -323,63 +348,63 @@
   <section class="section--lg" style="background: var(--gray-50, #F9FAFB);">
     <div class="container">
       <div class="services__header">
-        <span class="label"><span data-lang="fr">Questions fréquentes</span><span data-lang="nl">Veelgestelde vragen</span></span>
-        <h2><span data-lang="fr">FAQ — Climatisation auto à Zaventem</span><span data-lang="nl">FAQ — Autoairco in Zaventem</span></h2>
+        <span class="label"><span>Questions fréquentes</span></span>
+        <h2><span>FAQ — Climatisation auto à Zaventem</span></h2>
       </div>
       <div style="max-width:800px;margin:0 auto;">
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ma clim souffle chaud, c'est quoi ?</span><span data-lang="nl">Mijn airco blaast warm, wat is dat?</span>
+            <span>Ma clim souffle chaud, c'est quoi ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Dans 80% des cas, c'est un manque de gaz réfrigérant. Le circuit perd naturellement du gaz chaque année. Après 2-3 ans, le niveau est trop bas pour refroidir. Une recharge résout le problème. Si ça revient vite, il y a une fuite qu'on localise avec un test UV.</span>
-            <span data-lang="nl">In 80% van de gevallen is het een tekort aan koelmiddel. Het circuit verliest van nature elk jaar wat gas. Na 2-3 jaar is het niveau te laag om te koelen. Een bijvulling lost het probleem op. Als het snel terugkomt, is er een lek dat we opsporen met een UV-test.</span>
+            <span>Dans 80% des cas, c'est un manque de gaz réfrigérant. Le circuit perd naturellement du gaz chaque année. Après 2-3 ans, le niveau est trop bas pour refroidir. Une recharge résout le problème. Si ça revient vite, il y a une fuite qu'on localise avec un test UV.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Combien coûte une recharge de clim ?</span><span data-lang="nl">Hoeveel kost een airco bijvulling?</span>
+            <span>Combien coûte une recharge de clim ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Ça dépend du gaz : R134a (véhicules avant 2017) est moins cher que le R1234yf (véhicules récents). Chez un concessionnaire, la recharge R1234yf dépasse souvent 250-350 euros. Chez nous, c'est sensiblement moins. On vous donne le prix exact avant de commencer.</span>
-            <span data-lang="nl">Dat hangt af van het gas: R134a (voertuigen voor 2017) is goedkoper dan R1234yf (recente voertuigen). Bij een concessie komt een R1234yf-bijvulling vaak boven 250-350 euro. Bij ons is dat merkbaar goedkoper. We geven u de exacte prijs voor we beginnen.</span>
+            <span>Ça dépend du gaz : R134a (véhicules avant 2017) est moins cher que le R1234yf (véhicules récents). Chez un concessionnaire, la recharge R1234yf dépasse souvent 250-350 euros. Chez nous, c'est sensiblement moins. On vous donne le prix exact avant de commencer.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">À quelle fréquence faut-il recharger la clim ?</span><span data-lang="nl">Hoe vaak moet de airco bijgevuld worden?</span>
+            <span>À quelle fréquence faut-il recharger la clim ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Tous les 2 ans en moyenne. Le circuit perd 10-15% de gaz par an via les joints et raccords. Si vous devez recharger tous les 6 mois, c'est qu'il y a une fuite à réparer — recharger sans réparer, c'est jeter de l'argent.</span>
-            <span data-lang="nl">Gemiddeld om de 2 jaar. Het circuit verliest 10-15% gas per jaar via afdichtingen en aansluitingen. Als u om de 6 maanden moet bijvullen, is er een lek dat hersteld moet worden — bijvullen zonder te repareren is geld weggooien.</span>
+            <span>Tous les 2 ans en moyenne. Le circuit perd 10-15% de gaz par an via les joints et raccords. Si vous devez recharger tous les 6 mois, c'est qu'il y a une fuite à réparer — recharger sans réparer, c'est jeter de l'argent.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ma clim fait du bruit quand je l'allume, c'est grave ?</span><span data-lang="nl">Mijn airco maakt lawaai als ik hem aanzet, is dat erg?</span>
+            <span>Ma clim fait du bruit quand je l'allume, c'est grave ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Un petit clac à l'enclenchement, c'est normal — c'est l'embrayage du compresseur. Mais un sifflement continu, un grincement ou un bruit de roulement quand la clim tourne, ça peut être un compresseur en fin de vie ou une courroie usée. Faites vérifier avant qu'il ne bloque complètement.</span>
-            <span data-lang="nl">Een klikje bij het inschakelen is normaal — dat is de koppeling van de compressor. Maar een aanhoudend gesis, geknars of lagergeluid wanneer de airco draait, kan wijzen op een compressor die op is of een versleten riem. Laat het controleren voor hij volledig blokkeert.</span>
+            <span>Un petit clac à l'enclenchement, c'est normal — c'est l'embrayage du compresseur. Mais un sifflement continu, un grincement ou un bruit de roulement quand la clim tourne, ça peut être un compresseur en fin de vie ou une courroie usée. Faites vérifier avant qu'il ne bloque complètement.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ma clim sent mauvais, c'est quoi cette odeur ?</span><span data-lang="nl">Mijn airco stinkt, wat is die geur?</span>
+            <span>Ma clim sent mauvais, c'est quoi cette odeur ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">L'odeur de moisi, c'est des bactéries et des moisissures sur l'évaporateur. L'humidité stagne dans le boîtier de ventilation. Une désinfection du circuit et un remplacement du filtre habitacle règlent le problème. On recommande de le faire une fois par an, de préférence au printemps.</span>
-            <span data-lang="nl">Die mufferige geur komt van bacteriën en schimmels op de verdamper. Het vocht stagneert in de ventilatiekast. Een desinfectie van het circuit en een nieuw interieurfilter lossen het probleem op. We raden aan om dit één keer per jaar te doen, bij voorkeur in de lente.</span>
+            <span>L'odeur de moisi, c'est des bactéries et des moisissures sur l'évaporateur. L'humidité stagne dans le boîtier de ventilation. Une désinfection du circuit et un remplacement du filtre habitacle règlent le problème. On recommande de le faire une fois par an, de préférence au printemps.</span>
+
           </p>
         </details>
 
@@ -389,21 +414,21 @@
 
   <!-- CTA -->
   <section class="cta-section section--lg"><div class="container">
-    <span class="label reveal"><span data-lang="fr">Climatisation — Zaventem</span><span data-lang="nl">Airco — Zaventem</span></span>
-    <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+    <span class="label reveal"><span>Climatisation — Zaventem</span></span>
+    <h2 class="reveal"><span>Appelez maintenant</span></h2>
     <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
-    <p class="cta-section__hours reveal reveal-delay-2"><span data-lang="fr">Recharge clim R134a / R1234yf — Toutes marques<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span><span data-lang="nl">Airco bijvulling R134a / R1234yf — Alle merken<br>Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
+    <p class="cta-section__hours reveal reveal-delay-2"><span>Recharge clim R134a / R1234yf — Toutes marques<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
   </div></section>
 
   <!-- FOOTER -->
   <footer class="footer"><div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37"><p><span data-lang="fr">Garage automobile à Zaventem. Climatisation auto. Toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Autoairco. Alle merken.</span></p></div>
-      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html" data-lang="fr">Entretien</a><a href="garage-automobile.html" data-lang="nl">Onderhoud</a><a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a><a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a><a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a><a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
-      <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a><a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a><a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a><a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a><a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a></div>
+      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async"><p><span>Garage automobile à Zaventem. Climatisation auto. Toutes marques.</span></p></div>
+      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html">Entretien</a><a href="pneus.html">Pneus</a><a href="carrosserie.html">Carrosserie</a><a href="vidange-huile.html">Vidange</a><a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
+      <div class="footer__col"><h4><span>Plus</span></h4><a href="mecanique-automobile.html">Mécanique</a><a href="reparation-boite-dsg.html">Boîte DSG</a><a href="reparation-boite-vitesse.html">Boîte de vitesse</a><a href="controle-technique.html">Contrôle technique</a><a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a><a href="embrayage.html">Embrayage</a><a href="remplacement-turbo.html">Turbo</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a><a href="https://www.google.com/maps/search/?api=1&query=DMT+AUTOGROUP+1,2,3+AutoService&query_place_id=ChIJZYxTG37fw0cREIle6gqXy4Y" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>&copy; 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Climatisation auto Zaventem</span><span data-lang="nl">Autoairco Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
+    <div class="footer__bottom"><span>&copy; 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span><span><span>Climatisation auto Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
   <script src="js/main.js" defer></script>
 </body>

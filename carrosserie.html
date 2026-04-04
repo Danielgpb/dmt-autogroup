@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/carrosserie">
   <meta property="og:image" content="https://dmt-autogroup.be/img/facade-garage.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carrossier Zaventem | DMT AUTOGROUP">
+  <meta name="twitter:description" content="Carrossier à Zaventem. Réparation de carrosserie, débosselage, peinture automobile et réparation de pare-chocs. DMT AUTOGROUP — 0484 11 58 13.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/facade-garage.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/carrosserie">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,13 +32,27 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
     "name": "DMT AUTOGROUP 1,2,3 AutoService",
-    "url": "https://dmt-autogroup.be/carrosserie",
+    "url": "https://dmt-autogroup.be/",
     "image": "https://dmt-autogroup.be/img/facade-garage.webp",
     "telephone": "+32484115813",
+    "sameAs": ["https://www.google.com/maps?cid=9711024847498784016"],
     "address": { "@type": "PostalAddress", "streetAddress": "Mechelsesteenweg 270", "addressLocality": "Zaventem", "postalCode": "1933", "addressCountry": "BE" },
     "geo": { "@type": "GeoCoordinates", "latitude": 50.8639552, "longitude": 4.5159167 },
-    "serviceType": ["Réparation de carrosserie", "Débosselage", "Peinture automobile", "Réparation de pare-chocs", "Redressage de châssis"]
+    "serviceType": ["Réparation de carrosserie", "Débosselage", "Peinture automobile", "Réparation de pare-chocs", "Redressage de châssis"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 30,
+      "bestRating": "5"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -91,90 +113,96 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/atelier-interieur.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/carrosserie">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/carrosserie">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/carrosserie">
 </head>
 <body>
   <header class="nav"><div class="nav__inner">
-    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
     <nav class="nav__links">
-      <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+      <a href="index.html">Accueil</a>
 
       <!-- Services dropdown -->
       <div class="nav__dropdown">
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+        <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
         <div class="nav__dropdown-menu">
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-            <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-            <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+            <span class="nav__dropdown-title">Entretien</span>
+            <a href="garage-automobile.html">Garage automobile</a>
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+            <a href="freins.html">Freins</a>
+            <a href="controle-technique.html">Contrôle technique</a>
+            <a href="climatisation.html">Climatisation</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-            <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-            <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-            <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-            <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+            <span class="nav__dropdown-title">Mécanique</span>
+            <a href="mecanique-automobile.html">Mécanique auto</a>
+            <a href="reparation-moteur.html">Réparation moteur</a>
+            <a href="remplacement-turbo.html">Turbo</a>
+            <a href="embrayage.html">Embrayage</a>
+            <a href="courroie-distribution.html">Courroie distribution</a>
+            <a href="reparation-boite-dsg.html">Boîte DSG</a>
+            <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+            <a href="filtre-particules.html">Filtre à particules</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-            <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-            <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-            <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-            <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+            <span class="nav__dropdown-title">Électrique & Diag</span>
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+            <a href="reparation-electrique.html">Réparation électrique</a>
+            <a href="batterie.html">Batterie</a>
+            <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+            <a href="carrosserie.html">Carrosserie</a>
+            <a href="pneus.html">Pneus</a>
+            <a href="direction-suspension.html">Direction & Suspension</a>
           </div>
         </div>
       </div>
 
-      <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+      <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
     </nav>
     <div class="nav__actions">
-      <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+      <div class="lang-switch"><a class="active">FR</a><a href="nl/carrosserie.html">NL</a></div>
       <a href="tel:+32484115813" class="btn btn--phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="phone-text">0484 11 58 13</span></a>
     </div>
     <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div></header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--bronze)">0484 11 58 13</a>
   </div>
 
-  <section class="service-hero" style="background: url('img/atelier-interieur.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/atelier-interieur.webp" alt="Intérieur atelier garage DMT AUTOGROUP Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
-      <span class="label"><span data-lang="fr">Carrossier Zaventem</span><span data-lang="nl">Carrossier Zaventem</span></span>
-      <h1><span data-lang="fr">Carrosserie automobile<br>à Zaventem</span><span data-lang="nl">Autocarrosserie<br>in Zaventem</span></h1>
+      <span class="label"><span>Carrossier Zaventem</span></span>
+      <h1><span>Carrosserie automobile<br>à Zaventem</span></h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">Accrochage sur le parking? Bosse dans la portière? Pare-chocs abîmé? Chez DMT AUTOGROUP à Zaventem, on remet votre carrosserie en état — du petit accroc à la réparation complète. On travaille sur toutes marques et on vous rend votre voiture comme neuve.</span>
-        <span data-lang="nl">Parkeerschade? Deuk in het portier? Beschadigde bumper? Bij DMT AUTOGROUP in Zaventem herstellen we uw carrosserie — van een kleine kras tot een volledige herstelling. We werken op alle merken en geven uw auto terug als nieuw.</span>
+        <span>Accrochage sur le parking? Bosse dans la portière? Pare-chocs abîmé? Chez DMT AUTOGROUP à Zaventem, on remet votre carrosserie en état — du petit accroc à la réparation complète. On travaille sur toutes marques et on vous rend votre voiture comme neuve.</span>
+
       </p>
     </div>
   </section>
@@ -182,87 +210,86 @@
   <section class="service-content section--lg"><div class="container"><div class="service-content__grid">
     <div class="service-content__main">
 
-      <h2><span data-lang="fr">Réparation de carrosserie</span><span data-lang="nl">Carrosserieherstelling</span></h2>
-      <p><span data-lang="fr">Votre carrosserie est abîmée et vous cherchez un carrossier de confiance à Zaventem? DMT AUTOGROUP répare tous les types de dégâts de carrosserie. Accident, bosse de parking, dégâts de grêle ou usure du temps — on remet votre voiture en état. Tôles froissées, éléments déformés, remplacement de panneaux : on gère tout dans notre atelier.</span>
-      <span data-lang="nl">Is uw carrosserie beschadigd en zoekt u een betrouwbare carrossier in Zaventem? DMT AUTOGROUP herstelt alle soorten carrosserieschade. Ongeval, parkeerschade, hagelschade of gewone slijtage — we brengen uw auto weer in orde. Gekreukt plaatwerk, vervormde elementen, vervanging van panelen: we regelen alles in ons atelier.</span></p>
-      <p><span data-lang="fr">On voit souvent des gens qui arrivent avec un devis de 1400 euros d'un autre garage. On fait le même travail pour 30-40% de moins. La semaine dernière, un client de Woluwe est arrivé avec un devis de 2000 euros d'un concessionnaire pour une aile cabossée. On a réparé ça pour 700 euros, même résultat.</span>
-      <span data-lang="nl">We zien regelmatig mensen binnenkomen met een offerte van 1400 euro van een andere garage. Wij doen hetzelfde werk voor 30-40% minder. Vorige week kwam een klant met een offerte van 2000 euro van een concessie voor een ingedeukt spatbord. Wij hebben dat hersteld voor 700 euro, zelfde resultaat.</span></p>
-      <p><span data-lang="fr">Vous passez par l'assurance? On s'occupe du dossier complet. Constat, devis détaillé, envoi des documents à votre assureur — vous, vous récupérez votre voiture propre. L'assurance couvre souvent la réparation. Si vous préférez payer vous-même pour éviter une hausse de prime, on vous conseille la meilleure option. Le devis est toujours gratuit. Si votre véhicule a aussi des problèmes mécaniques suite à un choc, notre <a href="garage-automobile.html">garage automobile</a> gère la partie mécanique en même temps.</span>
-      <span data-lang="nl">Gaat u via de verzekering? Dan nemen we het volledige dossier op ons. Aanrijdingsformulier, gedetailleerde offerte, documenten naar uw verzekeraar — u krijgt gewoon uw auto proper terug. De verzekering dekt vaak de herstelling. Betaalt u liever zelf om een premieverhoging te vermijden? Dan adviseren we u de beste optie. De offerte is altijd gratis. Heeft uw voertuig ook mechanische problemen na een botsing? Dan regelt onze <a href="garage-automobile.html">autogarage</a> het mechanische deel tegelijk.</span></p>
+      <h2><span>Réparation de carrosserie</span></h2>
+      <p><span>Votre carrosserie est abîmée et vous cherchez un carrossier de confiance à Zaventem? DMT AUTOGROUP répare tous les types de dégâts de carrosserie. Accident, bosse de parking, dégâts de grêle ou usure du temps — on remet votre voiture en état. Tôles froissées, éléments déformés, remplacement de panneaux : on gère tout dans notre atelier.</span>
+      </p>
+      <p><span>On voit souvent des gens qui arrivent avec un devis de 1400 euros d'un autre garage. On fait le même travail pour 30-40% de moins. La semaine dernière, un client de Woluwe est arrivé avec un devis de 2000 euros d'un concessionnaire pour une aile cabossée. On a réparé ça pour 700 euros, même résultat.</span>
+      </p>
+      <p><span>Vous passez par l'assurance? On s'occupe du dossier complet. Constat, devis détaillé, envoi des documents à votre assureur — vous, vous récupérez votre voiture propre. L'assurance couvre souvent la réparation. Si vous préférez payer vous-même pour éviter une hausse de prime, on vous conseille la meilleure option. Le devis est toujours gratuit. Si votre véhicule a aussi des problèmes mécaniques suite à un choc, notre <a href="garage-automobile.html">garage automobile</a> gère la partie mécanique en même temps.</span>
+      </p>
 
       <div class="photo-gallery">
-        <img src="img/carrosserie-avant-apres.webp" alt="Avant après réparation carrosserie garage Zaventem" width="800" height="533" loading="lazy">
-        <img src="img/carrosserie-peinture.webp" alt="Peinture automobile carrossier Zaventem DMT AUTOGROUP" width="800" height="533" loading="lazy">
+        <img src="img/carrosserie-avant-apres.webp" alt="Avant après réparation carrosserie garage Zaventem" width="800" height="533" loading="lazy" decoding="async">
+        <img src="img/carrosserie-peinture.webp" alt="Peinture automobile carrossier Zaventem DMT AUTOGROUP" width="800" height="533" loading="lazy" decoding="async">
       </div>
 
-      <h2><span data-lang="fr">Débosselage</span><span data-lang="nl">Uitdeuken</span></h2>
-      <p><span data-lang="fr">Une bosse sur le capot, une portière enfoncée sur un parking — ça arrive tout le temps. Notre carrossier redresse les bosses sans toujours avoir besoin de repeindre. Quand c'est possible, on utilise des techniques de débosselage sans peinture (PDR) pour garder la peinture d'origine et vous faire économiser.</span>
-      <span data-lang="nl">Een deuk op de motorkap, een ingedeukt portier op een parking — het overkomt iedereen. Onze carrossier verwijdert deuken zonder altijd te moeten herspuiten. Waar mogelijk gebruiken we paintless dent repair (PDR) om de originele lak te behouden en u geld te besparen.</span></p>
-      <p><span data-lang="fr">Pour les petites bosses de parking, le débosselage sans peinture c'est souvent 150-250 euros au lieu de 600-800 avec une peinture complète. On travaille la tôle par l'arrière avec des outils spéciaux. Pas de mastic, pas de peinture, pas de perte de valeur sur votre véhicule. Le résultat est rapide — souvent dans la journée.</span>
-      <span data-lang="nl">Voor kleine parkeerdeukjes kost uitdeuken zonder spuiten vaak 150-250 euro in plaats van 600-800 met een volledige lakbeurt. We bewerken het plaatwerk van achteren met speciaal gereedschap. Geen plamuur, geen lak, geen waardeverlies op uw voertuig. Het resultaat is snel — vaak op dezelfde dag.</span></p>
-      <p><span data-lang="fr">Quand la bosse est trop profonde ou que la peinture est fissurée, on passe au débosselage traditionnel avec mastic et repeinture. On vous dit toujours quelle méthode convient le mieux avant de commencer. Si le choc a aussi touché des pièces mécaniques, notre équipe de <a href="mecanique-automobile.html">mécanique automobile</a> intervient en parallèle.</span>
-      <span data-lang="nl">Als de deuk te diep is of de lak gebarsten, schakelen we over naar traditioneel uitdeuken met plamuur en herspuiten. We vertellen u altijd welke methode het beste past voordat we beginnen. Als de klap ook mechanische onderdelen heeft geraakt, grijpt ons team <a href="mecanique-automobile.html">automechaniek</a> tegelijk in.</span></p>
+      <h2><span>Débosselage</span></h2>
+      <p><span>Une bosse sur le capot, une portière enfoncée sur un parking — ça arrive tout le temps. Notre carrossier redresse les bosses sans toujours avoir besoin de repeindre. Quand c'est possible, on utilise des techniques de débosselage sans peinture (PDR) pour garder la peinture d'origine et vous faire économiser.</span>
+      </p>
+      <p><span>Pour les petites bosses de parking, le débosselage sans peinture c'est souvent 150-250 euros au lieu de 600-800 avec une peinture complète. On travaille la tôle par l'arrière avec des outils spéciaux. Pas de mastic, pas de peinture, pas de perte de valeur sur votre véhicule. Le résultat est rapide — souvent dans la journée.</span>
+      </p>
+      <p><span>Quand la bosse est trop profonde ou que la peinture est fissurée, on passe au débosselage traditionnel avec mastic et repeinture. On vous dit toujours quelle méthode convient le mieux avant de commencer. Si le choc a aussi touché des pièces mécaniques, notre équipe de <a href="mecanique-automobile.html">mécanique automobile</a> intervient en parallèle.</span>
+      </p>
 
-      <h2><span data-lang="fr">Peinture automobile</span><span data-lang="nl">Autolak</span></h2>
-      <p><span data-lang="fr">Rayures profondes, éclats de peinture, ou repeinture après réparation — on fait de la peinture automobile pro chez DMT AUTOGROUP. On matche la couleur exacte de votre véhicule grâce à notre système de correspondance de teintes par code constructeur.</span>
-      <span data-lang="nl">Diepe krassen, lakschade, of herspuiten na herstelling — we doen professioneel lakwerk bij DMT AUTOGROUP. We matchen de exacte kleur van uw voertuig dankzij ons kleurafstemming via de constructeurscode.</span></p>
-      <p><span data-lang="fr">Retouche locale sur une petite rayure, repeinture partielle d'un panneau (aile, portière, capot) ou repeinture complète du véhicule — on adapte le travail à vos besoins. Chaque couche — apprêt, base colorée, vernis — est appliquée dans les règles de l'art. Le séchage se fait dans des conditions contrôlées pour un résultat dur et brillant qui tient dans le temps.</span>
-      <span data-lang="nl">Lokale retouche bij een kleine kras, gedeeltelijke herspuiting van een paneel (spatbord, portier, motorkap) of een volledige herspuiting van het voertuig — we passen het werk aan uw noden aan. Elke laag — primer, basiskleur, blanke lak — wordt vakkundig aangebracht. Het drogen gebeurt onder gecontroleerde omstandigheden voor een hard en glanzend resultaat dat lang meegaat.</span></p>
-      <p><span data-lang="fr">C'est aussi l'occasion idéale de combiner avec une <a href="vidange-huile.html">vidange et un remplacement de filtres</a> pendant que votre voiture est à l'atelier. Deux oiseaux, une pierre.</span>
-      <span data-lang="nl">Het is ook het ideale moment om een <a href="vidange-huile.html">olieverversing en filtervervanging</a> te combineren terwijl uw auto in het atelier staat. Twee vliegen in één klap.</span></p>
+      <h2><span>Peinture automobile</span></h2>
+      <p><span>Rayures profondes, éclats de peinture, ou repeinture après réparation — on fait de la peinture automobile pro chez DMT AUTOGROUP. On matche la couleur exacte de votre véhicule grâce à notre système de correspondance de teintes par code constructeur.</span>
+      </p>
+      <p><span>Retouche locale sur une petite rayure, repeinture partielle d'un panneau (aile, portière, capot) ou repeinture complète du véhicule — on adapte le travail à vos besoins. Chaque couche — apprêt, base colorée, vernis — est appliquée dans les règles de l'art. Le séchage se fait dans des conditions contrôlées pour un résultat dur et brillant qui tient dans le temps.</span>
+      </p>
+      <p><span>C'est aussi l'occasion idéale de combiner avec une <a href="vidange-huile.html">vidange et un remplacement de filtres</a> pendant que votre voiture est à l'atelier. Deux oiseaux, une pierre.</span>
+      </p>
 
       <div class="photo-gallery">
-        <img src="img/carrosserie-preparation.webp" alt="Ponçage préparation carrosserie avant peinture Zaventem" width="800" height="533" loading="lazy">
-        <img src="img/carrosserie-pare-chocs.webp" alt="Réparation pare-chocs endommagé garage Zaventem" width="800" height="533" loading="lazy">
+        <img src="img/carrosserie-preparation.webp" alt="Ponçage préparation carrosserie avant peinture Zaventem" width="800" height="533" loading="lazy" decoding="async">
+        <img src="img/carrosserie-pare-chocs.webp" alt="Réparation pare-chocs endommagé garage Zaventem" width="800" height="533" loading="lazy" decoding="async">
       </div>
 
-      <h2><span data-lang="fr">Réparation de pare-chocs</span><span data-lang="nl">Bumperherstelling</span></h2>
-      <p><span data-lang="fr">Le pare-chocs, c'est toujours le premier à prendre. Fissure, déformation, clips cassés — on répare ou on remplace selon l'état. La plupart des pare-chocs modernes sont en plastique. Quand la fissure est propre, on fait de la soudure plastique : on fond le matériau pour refermer la cassure de l'intérieur.</span>
-      <span data-lang="nl">De bumper is altijd het eerste dat schade oploopt. Barsten, vervormingen, kapotte clips — we herstellen of vervangen naargelang de staat. De meeste moderne bumpers zijn van kunststof. Als de barst proper is, doen we kunststoflassen: we smelten het materiaal om de breuk van binnenuit te sluiten.</span></p>
-      <p><span data-lang="fr">C'est solide et invisible après peinture. Quand le pare-chocs est trop déformé ou cassé en plusieurs morceaux, on le remplace. On vous conseille toujours honnêtement : si la réparation coûte presque autant qu'un remplacement, on vous le dit.</span>
-      <span data-lang="nl">Dat is stevig en onzichtbaar na het lakken. Als de bumper te vervormd of in meerdere stukken gebroken is, vervangen we hem. We adviseren u altijd eerlijk: als de herstelling bijna even duur is als een vervanging, dan zeggen we dat.</span></p>
-      <p><span data-lang="fr">Pas besoin d'aller chez le concessionnaire pour ça — notre atelier fait le travail aussi bien pour beaucoup moins cher.</span>
-      <span data-lang="nl">Geen nood aan de dealer — ons atelier doet het werk even goed voor veel minder.</span></p>
+      <h2><span>Réparation de pare-chocs</span></h2>
+      <p><span>Le pare-chocs, c'est toujours le premier à prendre. Fissure, déformation, clips cassés — on répare ou on remplace selon l'état. La plupart des pare-chocs modernes sont en plastique. Quand la fissure est propre, on fait de la soudure plastique : on fond le matériau pour refermer la cassure de l'intérieur.</span>
+      </p>
+      <p><span>C'est solide et invisible après peinture. Quand le pare-chocs est trop déformé ou cassé en plusieurs morceaux, on le remplace. On vous conseille toujours honnêtement : si la réparation coûte presque autant qu'un remplacement, on vous le dit.</span>
+      </p>
+      <p><span>Pas besoin d'aller chez le concessionnaire pour ça — notre atelier fait le travail aussi bien pour beaucoup moins cher.</span>
+      </p>
 
-      <h2><span data-lang="fr">Redressage de châssis</span><span data-lang="nl">Chassis richten</span></h2>
-      <p><span data-lang="fr">Après un choc important, le châssis peut être déformé. C'est un travail de précision qu'on fait dans notre atelier avec l'équipement adapté. Collisions frontales, chocs latéraux ou impacts arrière qui ont tordu la structure du véhicule — on a l'outillage et le savoir-faire pour remettre ça droit.</span>
-      <span data-lang="nl">Na een zware klap kan het chassis vervormd zijn. Dat is precisiewerk dat we in ons atelier doen met aangepaste apparatuur. Frontale botsingen, zijdelingse klappen of achteraan-impacts die de structuur van het voertuig hebben verdraaid — we hebben het gereedschap en de kennis om dat recht te zetten.</span></p>
-      <p><span data-lang="fr">Le châssis, c'est le squelette de votre voiture. S'il est déformé, même de quelques millimètres, la tenue de route est compromise et la sécurité de vos passagers aussi. On utilise un banc de redressage pour ramener chaque point de mesure aux cotes d'usine.</span>
-      <span data-lang="nl">Het chassis is het skelet van uw auto. Als het vervormd is, zelfs maar een paar millimeter, dan is de wegligging aangetast en de veiligheid van uw passagiers ook. We gebruiken een richtbank om elk meetpunt terug naar de fabriekswaarden te brengen.</span></p>
-      <p><span data-lang="fr">Après le redressage, on contrôle la géométrie et on vérifie que tout est aligné. Un châssis bien redressé, c'est la base pour que votre voiture roule droit et que les <a href="pneus.html">pneus</a> s'usent de manière uniforme. Pensez aussi à faire vérifier vos freins et votre <a href="controle-technique.html">préparation au contrôle technique</a> après un redressage.</span>
-      <span data-lang="nl">Na het richten controleren we de geometrie en verifiëren we dat alles uitgelijnd is. Een goed gericht chassis is de basis zodat uw auto recht rijdt en de <a href="pneus.html">banden</a> gelijkmatig slijten. Denk er ook aan om uw remmen en uw <a href="controle-technique.html">voorbereiding technische keuring</a> te laten controleren na een chassisherstelling.</span></p>
+      <h2><span>Redressage de châssis</span></h2>
+      <p><span>Après un choc important, le châssis peut être déformé. C'est un travail de précision qu'on fait dans notre atelier avec l'équipement adapté. Collisions frontales, chocs latéraux ou impacts arrière qui ont tordu la structure du véhicule — on a l'outillage et le savoir-faire pour remettre ça droit.</span>
+      </p>
+      <p><span>Le châssis, c'est le squelette de votre voiture. S'il est déformé, même de quelques millimètres, la tenue de route est compromise et la sécurité de vos passagers aussi. On utilise un banc de redressage pour ramener chaque point de mesure aux cotes d'usine.</span>
+      </p>
+      <p><span>Après le redressage, on contrôle la géométrie et on vérifie que tout est aligné. Un châssis bien redressé, c'est la base pour que votre voiture roule droit et que les <a href="pneus.html">pneus</a> s'usent de manière uniforme. Pensez aussi à faire vérifier vos freins et votre <a href="controle-technique.html">préparation au contrôle technique</a> après un redressage.</span>
+      </p>
 
     </div>
     <aside class="service-sidebar">
       <div class="sidebar-card sidebar-card--cta">
-        <span class="label"><span data-lang="fr">Besoin d'un carrossier?</span><span data-lang="nl">Carrossier nodig?</span></span>
+        <span class="label"><span>Besoin d'un carrossier?</span></span>
         <span class="phone"><a href="tel:+32484115813">0484 11 58 13</a></span>
-        <p style="color:var(--smoke);font-size:0.85rem"><span data-lang="fr">Lun–Ven · 08:30–18:00</span><span data-lang="nl">Ma–Vr · 08:30–18:00</span></p>
-        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm)"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></a>
+        <p style="color:var(--smoke);font-size:0.85rem"><span>Lun–Ven · 08:30–18:00</span></p>
+        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm)"><span>Appelez maintenant</span></a>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Autres services</span><span data-lang="nl">Andere diensten</span></h4>
-        <a href="garage-automobile.html" data-lang="fr">Entretien & Réparation</a><a href="garage-automobile.html" data-lang="nl">Onderhoud & Herstelling</a>
-        <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-        <a href="mecanique-automobile.html" data-lang="fr">Mécanique automobile</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-        <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-        <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-        <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG — Réparation & Vidange</a>
-        <a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak — Herstelling & Olie</a>
-      
-        <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-        <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-        <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+        <h4><span>Autres services</span></h4>
+        <a href="garage-automobile.html">Entretien & Réparation</a>
+        <a href="pneus.html">Pneus</a>
+        <a href="mecanique-automobile.html">Mécanique automobile</a>
+        <a href="vidange-huile.html">Vidange & Filtres</a>
+        <a href="controle-technique.html">Contrôle technique</a>
+        <a href="reparation-boite-dsg.html">Boîte DSG — Réparation & Vidange</a>
+
+        <a href="freins.html">Freins</a>
+        <a href="reparation-electrique.html">Réparation électrique</a>
+        <a href="direction-suspension.html">Direction & Suspension</a>
       </div>
     </aside>
   </div></div></section>
 
   <section class="related-services section--lg"><div class="container">
-    <div class="related-services__header reveal"><span class="label"><span data-lang="fr">Services liés</span><span data-lang="nl">Gerelateerde diensten</span></span><h2><span data-lang="fr">Voir aussi</span><span data-lang="nl">Zie ook</span></h2></div>
+    <div class="related-services__header reveal"><span class="label"><span>Services liés</span></span><h2><span>Voir aussi</span></h2></div>
     <div class="related-services__grid">
-      <a href="garage-automobile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span data-lang="fr">Entretien & Réparation</span><span data-lang="nl">Onderhoud & Herstelling</span></h3><p><span data-lang="fr">Diagnostic, freins, embrayage et plus.</span><span data-lang="nl">Diagnose, remmen, koppeling en meer.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="pneus.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h3><span data-lang="fr">Pneus</span><span data-lang="nl">Banden</span></h3><p><span data-lang="fr">Vente, montage et équilibrage.</span><span data-lang="nl">Verkoop, montage en balancering.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="controle-technique.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3><span data-lang="fr">Contrôle technique</span><span data-lang="nl">Technische keuring</span></h3><p><span data-lang="fr">Préparation CT.</span><span data-lang="nl">Voorbereiding keuring.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="garage-automobile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span>Entretien & Réparation</span></h3><p><span>Diagnostic, freins, embrayage et plus.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="pneus.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h3><span>Pneus</span></h3><p><span>Vente, montage et équilibrage.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="controle-technique.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3><span>Contrôle technique</span></h3><p><span>Préparation CT.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
     </div>
   </div></section>
 
@@ -270,58 +297,58 @@
   <section class="section--lg" style="background: var(--gray-50, #F9FAFB);">
     <div class="container">
       <div class="services__header">
-        <span class="label"><span data-lang="fr">Questions fréquentes</span><span data-lang="nl">Veelgestelde vragen</span></span>
-        <h2><span data-lang="fr">FAQ — Carrossier à Zaventem</span><span data-lang="nl">FAQ — Carrossier in Zaventem</span></h2>
+        <span class="label"><span>Questions fréquentes</span></span>
+        <h2><span>FAQ — Carrossier à Zaventem</span></h2>
       </div>
       <div style="max-width:800px;margin:0 auto;">
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">J'ai une bosse sur ma portière, ça coûte combien à réparer ?</span><span data-lang="nl">Ik heb een deuk in mijn portier, hoeveel kost dat om te herstellen?</span>
+            <span>J'ai une bosse sur ma portière, ça coûte combien à réparer ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Impossible de donner un prix fixe sans voir la bosse — ça dépend de la taille, de l'emplacement et de l'état de la peinture. Une petite bosse de parking, c'est souvent entre 150 et 400 euros. Un panneau à remplacer, c'est autre chose. Passez chez nous, le devis est gratuit et on vous dit exactement ce qu'il faut. Appelez le 0484 11 58 13.</span>
-            <span data-lang="nl">Onmogelijk om een vaste prijs te geven zonder de deuk te zien — het hangt af van de grootte, de locatie en de staat van de lak. Een kleine parkeerschade is vaak 150 tot 400 euro. Een paneel vervangen is iets anders. Kom langs, de offerte is gratis en we vertellen exact wat er nodig is. Bel 0484 11 58 13.</span>
+            <span>Impossible de donner un prix fixe sans voir la bosse — ça dépend de la taille, de l'emplacement et de l'état de la peinture. Une petite bosse de parking, c'est souvent entre 150 et 400 euros. Un panneau à remplacer, c'est autre chose. Passez chez nous, le devis est gratuit et on vous dit exactement ce qu'il faut. Appelez le 0484 11 58 13.</span>
+
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">C'est possible de réparer sans repeindre ?</span><span data-lang="nl">Kan je herstellen zonder te herspuiten?</span>
+            <span>C'est possible de réparer sans repeindre ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Oui, si la peinture n'est pas fissurée et que la bosse est accessible par l'arrière. On appelle ça le débosselage sans peinture (PDR). C'est plus rapide, moins cher, et votre peinture d'origine reste intacte. On vous dit honnêtement si c'est faisable ou pas.</span>
-            <span data-lang="nl">Ja, als de lak niet gebarsten is en de deuk bereikbaar is van achteren. Dat noemen we paintless dent repair (PDR). Het is sneller, goedkoper, en uw originele lak blijft intact. We vertellen eerlijk of het haalbaar is of niet.</span>
+            <span>Oui, si la peinture n'est pas fissurée et que la bosse est accessible par l'arrière. On appelle ça le débosselage sans peinture (PDR). C'est plus rapide, moins cher, et votre peinture d'origine reste intacte. On vous dit honnêtement si c'est faisable ou pas.</span>
+
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Mon pare-chocs est fendu, réparation ou remplacement ?</span><span data-lang="nl">Mijn bumper is gescheurd, herstellen of vervangen?</span>
+            <span>Mon pare-chocs est fendu, réparation ou remplacement ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Si la fissure est propre, on fait de la soudure plastique — c'est solide et invisible après peinture. Si le pare-chocs est cassé en plusieurs morceaux ou trop déformé, le remplacement sera plus logique. On peut aussi vérifier les <a href="garage-automobile.html">capteurs et l'électronique</a> intégrés au pare-chocs. On vous conseille toujours l'option la plus honnête.</span>
-            <span data-lang="nl">Als de barst proper is, doen we kunststoflassen — dat is stevig en onzichtbaar na het lakken. Als de bumper in meerdere stukken gebroken of te vervormd is, is vervanging logischer. We kunnen ook de <a href="garage-automobile.html">sensoren en elektronica</a> in de bumper controleren. We adviseren altijd de eerlijkste optie.</span>
+            <span>Si la fissure est propre, on fait de la soudure plastique — c'est solide et invisible après peinture. Si le pare-chocs est cassé en plusieurs morceaux ou trop déformé, le remplacement sera plus logique. On peut aussi vérifier les <a href="garage-automobile.html">capteurs et l'électronique</a> intégrés au pare-chocs. On vous conseille toujours l'option la plus honnête.</span>
+            
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Vous pouvez faire un devis gratuit ?</span><span data-lang="nl">Kunnen jullie een gratis offerte maken?</span>
+            <span>Vous pouvez faire un devis gratuit ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Oui, toujours. Passez à l'atelier ou envoyez-nous des photos par téléphone. On vous donne un prix clair avant de toucher à quoi que ce soit. Pas de surprises.</span>
-            <span data-lang="nl">Ja, altijd. Kom langs in het atelier of stuur ons foto's via telefoon. We geven u een duidelijke prijs voordat we iets aanraken. Geen verrassingen.</span>
+            <span>Oui, toujours. Passez à l'atelier ou envoyez-nous des photos par téléphone. On vous donne un prix clair avant de toucher à quoi que ce soit. Pas de surprises.</span>
+
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Mon assurance couvre la réparation, comment ça marche ?</span><span data-lang="nl">Mijn verzekering dekt de herstelling, hoe werkt dat?</span>
+            <span>Mon assurance couvre la réparation, comment ça marche ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">On s'occupe de tout le papier — constat, devis détaillé, envoi à l'assureur. Vous déposez votre voiture, on fait la réparation, et vous récupérez votre auto propre. On s'occupe de la <a href="garage-automobile.html">réparation mécanique</a> aussi si nécessaire. Si les dégâts sont petits, on vous dit aussi quand c'est plus malin de payer vous-même pour éviter la hausse de prime.</span>
-            <span data-lang="nl">Wij regelen alle papieren — aanrijdingsformulier, gedetailleerde offerte, verzending naar de verzekeraar. U zet uw auto af, wij doen de herstelling, en u krijgt uw auto proper terug. We zorgen ook voor de <a href="garage-automobile.html">mechanische herstelling</a> indien nodig. Bij kleine schade vertellen we ook wanneer het slimmer is om zelf te betalen om een premieverhoging te vermijden.</span>
+            <span>On s'occupe de tout le papier — constat, devis détaillé, envoi à l'assureur. Vous déposez votre voiture, on fait la réparation, et vous récupérez votre auto propre. On s'occupe de la <a href="garage-automobile.html">réparation mécanique</a> aussi si nécessaire. Si les dégâts sont petits, on vous dit aussi quand c'est plus malin de payer vous-même pour éviter la hausse de prime.</span>
+            
           </p>
         </details>
       </div>
@@ -329,20 +356,20 @@
   </section>
 
   <section class="cta-section section--lg"><div class="container">
-    <span class="label reveal"><span data-lang="fr">Carrossier Zaventem</span><span data-lang="nl">Carrossier Zaventem</span></span>
-    <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+    <span class="label reveal"><span>Carrossier Zaventem</span></span>
+    <h2 class="reveal"><span>Appelez maintenant</span></h2>
     <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
-    <p class="cta-section__hours reveal reveal-delay-2"><span data-lang="fr">Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span><span data-lang="nl">Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
+    <p class="cta-section__hours reveal reveal-delay-2"><span>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
   </div></section>
 
   <footer class="footer"><div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37"><p><span data-lang="fr">Garage automobile à Zaventem. Toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Alle merken.</span></p></div>
-      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html" data-lang="fr">Entretien</a><a href="garage-automobile.html" data-lang="nl">Onderhoud</a><a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a><a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a><a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a><a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
-      <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a><a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a><a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a><a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a><a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a></div>
+      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async"><p><span>Garage automobile à Zaventem. Toutes marques.</span></p></div>
+      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html">Entretien</a><a href="pneus.html">Pneus</a><a href="carrosserie.html">Carrosserie</a><a href="vidange-huile.html">Vidange</a><a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
+      <div class="footer__col"><h4><span>Plus</span></h4><a href="mecanique-automobile.html">Mécanique</a><a href="reparation-boite-dsg.html">Boîte DSG</a><a href="reparation-boite-vitesse.html">Boîte de vitesse</a><a href="controle-technique.html">Contrôle technique</a><a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a><a href="embrayage.html">Embrayage</a><a href="remplacement-turbo.html">Turbo</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a><a href="https://maps.google.com/?q=Mechelsesteenweg+270+1933+Zaventem" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Carrossier Zaventem</span><span data-lang="nl">Carrossier Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
+    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span><span><span>Carrossier Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
   <script src="js/main.js" defer></script>
 </body>

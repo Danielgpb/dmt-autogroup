@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/vidange-huile">
   <meta property="og:image" content="https://dmt-autogroup.be/img/facade-garage.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vidange Zaventem — Huile & Filtres | DMT AUTOGROUP">
+  <meta name="twitter:description" content="Service de vidange à Zaventem. Vidange huile moteur, remplacement filtre à huile, filtre habitacle et filtre carburant. DMT AUTOGROUP — 0484 11 58 13.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/facade-garage.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/vidange-huile">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,13 +32,27 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
     "name": "DMT AUTOGROUP 1,2,3 AutoService",
-    "url": "https://dmt-autogroup.be/vidange-huile",
+    "url": "https://dmt-autogroup.be/",
     "image": "https://dmt-autogroup.be/img/facade-garage.webp",
     "telephone": "+32484115813",
+    "sameAs": ["https://www.google.com/maps?cid=9711024847498784016"],
     "address": { "@type": "PostalAddress", "streetAddress": "Mechelsesteenweg 270", "addressLocality": "Zaventem", "postalCode": "1933", "addressCountry": "BE" },
     "geo": { "@type": "GeoCoordinates", "latitude": 50.8639552, "longitude": 4.5159167 },
-    "serviceType": ["Vidange huile moteur", "Remplacement filtre à huile", "Remplacement filtre habitacle", "Remplacement filtre carburant"]
+    "serviceType": ["Vidange huile moteur", "Remplacement filtre à huile", "Remplacement filtre habitacle", "Remplacement filtre carburant"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 30,
+      "bestRating": "5"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -91,94 +113,100 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/vidange-huile.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/vidange-huile">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/olieverversing">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/vidange-huile">
 </head>
 <body>
   <header class="nav"><div class="nav__inner">
-    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
     <nav class="nav__links">
-      <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+      <a href="index.html">Accueil</a>
 
       <!-- Services dropdown -->
       <div class="nav__dropdown">
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+        <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
         <div class="nav__dropdown-menu">
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-            <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-            <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+            <span class="nav__dropdown-title">Entretien</span>
+            <a href="garage-automobile.html">Garage automobile</a>
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+            <a href="freins.html">Freins</a>
+            <a href="controle-technique.html">Contrôle technique</a>
+            <a href="climatisation.html">Climatisation</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-            <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-            <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-            <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-            <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+            <span class="nav__dropdown-title">Mécanique</span>
+            <a href="mecanique-automobile.html">Mécanique auto</a>
+            <a href="reparation-moteur.html">Réparation moteur</a>
+            <a href="remplacement-turbo.html">Turbo</a>
+            <a href="embrayage.html">Embrayage</a>
+            <a href="courroie-distribution.html">Courroie distribution</a>
+            <a href="reparation-boite-dsg.html">Boîte DSG</a>
+            <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+            <a href="filtre-particules.html">Filtre à particules</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-            <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-            <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-            <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-            <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+            <span class="nav__dropdown-title">Électrique & Diag</span>
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+            <a href="reparation-electrique.html">Réparation électrique</a>
+            <a href="batterie.html">Batterie</a>
+            <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+            <a href="carrosserie.html">Carrosserie</a>
+            <a href="pneus.html">Pneus</a>
+            <a href="direction-suspension.html">Direction & Suspension</a>
           </div>
         </div>
       </div>
 
-      <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+      <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
     </nav>
     <div class="nav__actions">
-      <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+      <div class="lang-switch"><a class="active">FR</a><a href="nl/olieverversing.html">NL</a></div>
       <a href="tel:+32484115813" class="btn btn--phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="phone-text">0484 11 58 13</span></a>
     </div>
     <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div></header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--bronze)">0484 11 58 13</a>
   </div>
 
-  <section class="service-hero" style="background: url('img/vidange-huile.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/vidange-huile.webp" alt="Vidange huile moteur garage DMT AUTOGROUP Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
-      <span class="label"><span data-lang="fr">Service de vidange Zaventem</span><span data-lang="nl">Olieverversing Zaventem</span></span>
-      <h1><span data-lang="fr">Vidange & filtres<br>à Zaventem</span><span data-lang="nl">Olieverversing & filters<br>in Zaventem</span></h1>
+      <span class="label"><span>Service de vidange Zaventem</span></span>
+      <h1><span>Vidange & filtres<br>à Zaventem</span></h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">La vidange, c'est le geste d'entretien le plus simple et le plus important pour votre moteur. Chez DMT AUTOGROUP à Zaventem, on utilise de l'huile de qualité adaptée à votre véhicule et on remplace les filtres. C'est fait en moins d'une heure.</span>
-        <span data-lang="nl">De olieverversing is het eenvoudigste en belangrijkste onderhoud voor uw motor. Bij DMT AUTOGROUP in Zaventem gebruiken we kwaliteitsolie aangepast aan uw voertuig en vervangen we de filters. Het is klaar in minder dan een uur.</span>
+        <span>La vidange, c'est le geste d'entretien le plus simple et le plus important pour votre moteur. Chez DMT AUTOGROUP à Zaventem, on utilise de l'huile de qualité adaptée à votre véhicule et on remplace les filtres. C'est fait en moins d'une heure.</span>
+
       </p>
       <p class="service-hero__intro">
-        <span data-lang="fr">Notre service de vidange est ouvert à tous — particuliers et professionnels. Pas besoin de rendez-vous, passez quand ça vous arrange.</span>
-        <span data-lang="nl">Onze olieverversing staat open voor iedereen — particulieren en professionals. Geen afspraak nodig, kom langs wanneer het u past.</span>
+        <span>Notre service de vidange est ouvert à tous — particuliers et professionnels. Pas besoin de rendez-vous, passez quand ça vous arrange.</span>
+
       </p>
     </div>
   </section>
@@ -186,92 +214,91 @@
   <section class="service-content section--lg"><div class="container"><div class="service-content__grid">
     <div class="service-content__main">
 
-      <h2><span data-lang="fr">Vidange huile moteur</span><span data-lang="nl">Motorolie verversen</span></h2>
-      <p><span data-lang="fr">L'huile moteur se dégrade avec le temps et les kilomètres. Si vous attendez trop longtemps, elle ne lubrifie plus correctement et votre moteur s'use prématurément. En règle générale, il faut faire une vidange tous les 15 000 km ou une fois par an, selon ce qui arrive en premier.</span>
-      <span data-lang="nl">Motorolie degradeert na verloop van tijd en kilometers. Als u te lang wacht, smeert de olie niet meer goed en slijt uw motor voortijdig. In de regel moet u een olieverversing laten doen om de 15.000 km of eenmaal per jaar, afhankelijk van wat het eerst komt.</span></p>
-      <p><span data-lang="fr">Un truc qu'on voit souvent : des conducteurs qui roulent 30 000 km sans vidange. Quand ils arrivent, l'huile est noire comme du café. Le moteur souffre en silence.</span>
-      <span data-lang="nl">Iets wat we vaak zien: bestuurders die 30.000 km rijden zonder olieverversing. Als ze binnenkomen, is de olie zwart als koffie. De motor lijdt in stilte.</span></p>
-      <p><span data-lang="fr">Si vous dépassez l'intervalle, l'huile perd sa viscosité. Les particules métalliques s'accumulent et abîment les pièces internes. Sur le long terme, sauter une vidange peut mener à une surchauffe, une surconsommation de carburant, et même un moteur bloqué.</span>
-      <span data-lang="nl">Als u het interval overschrijdt, verliest de olie haar viscositeit. Metaaldeeltjes hopen zich op en beschadigen de interne onderdelen. Op de lange termijn kan het overslaan van een olieverversing leiden tot oververhitting, overmatig brandstofverbruik en zelfs een geblokkeerde motor.</span></p>
+      <h2><span>Vidange huile moteur</span></h2>
+      <p><span>L'huile moteur se dégrade avec le temps et les kilomètres. Si vous attendez trop longtemps, elle ne lubrifie plus correctement et votre moteur s'use prématurément. En règle générale, il faut faire une vidange tous les 15 000 km ou une fois par an, selon ce qui arrive en premier.</span>
+      </p>
+      <p><span>Un truc qu'on voit souvent : des conducteurs qui roulent 30 000 km sans vidange. Quand ils arrivent, l'huile est noire comme du café. Le moteur souffre en silence.</span>
+      </p>
+      <p><span>Si vous dépassez l'intervalle, l'huile perd sa viscosité. Les particules métalliques s'accumulent et abîment les pièces internes. Sur le long terme, sauter une vidange peut mener à une surchauffe, une surconsommation de carburant, et même un moteur bloqué.</span>
+      </p>
 
-      <p><span data-lang="fr">Chez DMT AUTOGROUP, on vidange votre huile moteur et on la remplace par une huile de qualité — 5W30, 5W40, 0W20, selon ce que demande votre constructeur. La différence entre huile synthétique et huile minérale est importante. L'huile synthétique tient plus longtemps et protège mieux à haute température. L'huile minérale convient aux moteurs plus anciens avec des kilomètrages élevés.</span>
-      <span data-lang="nl">Bij DMT AUTOGROUP verversen we uw motorolie en vervangen we deze door kwaliteitsolie — 5W30, 5W40, 0W20, volgens de specificaties van uw constructeur. Het verschil tussen synthetische olie en minerale olie is belangrijk. Synthetische olie gaat langer mee en beschermt beter bij hoge temperaturen. Minerale olie is geschikt voor oudere motoren met een hoge kilometerstand.</span></p>
-      <p><span data-lang="fr">On voit des gens qui se font facturer 300 euros pour une vidange chez le concessionnaire. Chez nous, c'est 100-150 euros selon le modèle — même huile, même filtre.</span>
-      <span data-lang="nl">We zien mensen die 300 euro betalen voor een olieverversing bij de concessiehouder. Bij ons is het 100-150 euro afhankelijk van het model — dezelfde olie, hetzelfde filter.</span></p>
-      <p><span data-lang="fr">On vous conseille la bonne huile pour votre moteur, pas la plus chère. On travaille sur toutes les marques, du petit diesel au gros moteur essence. Pendant que votre voiture est sur le pont, on peut aussi vérifier l'état de vos <a href="pneus.html">pneus</a> et vous conseiller si un remplacement s'impose.</span>
-      <span data-lang="nl">Wij adviseren de juiste olie voor uw motor, niet de duurste. We werken op alle merken, van kleine diesels tot grote benzinemotoren. Terwijl uw auto op de brug staat, controleren we ook graag de staat van uw <a href="pneus.html">banden</a> en adviseren we u als vervanging nodig is.</span></p>
+      <p><span>Chez DMT AUTOGROUP, on vidange votre huile moteur et on la remplace par une huile de qualité — 5W30, 5W40, 0W20, selon ce que demande votre constructeur. La différence entre huile synthétique et huile minérale est importante. L'huile synthétique tient plus longtemps et protège mieux à haute température. L'huile minérale convient aux moteurs plus anciens avec des kilomètrages élevés.</span>
+      </p>
+      <p><span>On voit des gens qui se font facturer 300 euros pour une vidange chez le concessionnaire. Chez nous, c'est 100-150 euros selon le modèle — même huile, même filtre.</span>
+      </p>
+      <p><span>On vous conseille la bonne huile pour votre moteur, pas la plus chère. On travaille sur toutes les marques, du petit diesel au gros moteur essence. Pendant que votre voiture est sur le pont, on peut aussi vérifier l'état de vos <a href="pneus.html">pneus</a> et vous conseiller si un remplacement s'impose.</span>
+      </p>
 
       <div class="photo-gallery" style="grid-template-columns:1fr 1fr">
-        <img src="img/vidange-travail.webp" alt="Vidange huile moteur mécanicien Zaventem" loading="lazy" width="800" height="533">
-        <img src="img/vidange-porsche.webp" alt="Vidange Porsche garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/vidange-travail.webp" alt="Vidange huile moteur mécanicien Zaventem" loading="lazy" width="800" height="533" decoding="async">
+        <img src="img/vidange-porsche.webp" alt="Vidange Porsche garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
-      <h2><span data-lang="fr">Remplacement filtre à huile</span><span data-lang="nl">Oliefilter vervangen</span></h2>
-      <p><span data-lang="fr">Le filtre à huile, on le change à chaque vidange — c'est automatique chez nous. Pourquoi ? Parce que mettre de l'huile neuve avec un vieux filtre, c'est comme filtrer de l'eau propre à travers un filtre sale. Ça n'a aucun sens.</span>
-      <span data-lang="nl">Het oliefilter vervangen we bij elke olieverversing — dat is automatisch bij ons. Waarom? Omdat nieuwe olie door een oud filter gieten hetzelfde is als proper water door een vuil filter laten lopen. Dat slaat nergens op.</span></p>
-      <p><span data-lang="fr">Un filtre à huile bouché laisse passer des impuretés dans le moteur : particules métalliques, résidus de combustion, saletés. Ces impuretés rayent les cylindres et usent les paliers. Le résultat ? Des bruits de moteur, une perte de performance, et à terme une panne coûteuse.</span>
-      <span data-lang="nl">Een verstopt oliefilter laat onzuiverheden door in de motor: metaaldeeltjes, verbrandingsresten, vuil. Die onzuiverheden krassen de cilinders en slijten de lagers. Het resultaat? Motorgeluid, vermogensverlies en uiteindelijk een dure panne.</span></p>
-      <p><span data-lang="fr">Le filtre à huile coûte quelques euros. Le remplacer à chaque vidange, c'est un petit investissement qui évite de gros frais de <a href="mecanique-automobile.html">réparation moteur</a> plus tard. Chez DMT AUTOGROUP à Zaventem, on utilise des filtres de qualité adaptés à votre véhicule.</span>
-      <span data-lang="nl">Het oliefilter kost amper een paar euro. Het vervangen bij elke olieverversing is een kleine investering die grote kosten voor <a href="mecanique-automobile.html">motorherstelling</a> voorkomt. Bij DMT AUTOGROUP in Zaventem gebruiken we kwaliteitsfilters aangepast aan uw voertuig.</span></p>
+      <h2><span>Remplacement filtre à huile</span></h2>
+      <p><span>Le filtre à huile, on le change à chaque vidange — c'est automatique chez nous. Pourquoi ? Parce que mettre de l'huile neuve avec un vieux filtre, c'est comme filtrer de l'eau propre à travers un filtre sale. Ça n'a aucun sens.</span>
+      </p>
+      <p><span>Un filtre à huile bouché laisse passer des impuretés dans le moteur : particules métalliques, résidus de combustion, saletés. Ces impuretés rayent les cylindres et usent les paliers. Le résultat ? Des bruits de moteur, une perte de performance, et à terme une panne coûteuse.</span>
+      </p>
+      <p><span>Le filtre à huile coûte quelques euros. Le remplacer à chaque vidange, c'est un petit investissement qui évite de gros frais de <a href="mecanique-automobile.html">réparation moteur</a> plus tard. Chez DMT AUTOGROUP à Zaventem, on utilise des filtres de qualité adaptés à votre véhicule.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/vidange-filtre-comparaison.webp" alt="Comparaison filtre sale vs filtre neuf vidange Zaventem" width="800" height="533" loading="lazy">
+        <img src="img/vidange-filtre-comparaison.webp" alt="Comparaison filtre sale vs filtre neuf vidange Zaventem" width="800" height="533" loading="lazy" decoding="async">
       </div>
 
-      <h2><span data-lang="fr">Remplacement de filtres d'air pour habitacle</span><span data-lang="nl">Interieurfilter vervangen</span></h2>
-      <p><span data-lang="fr">Le filtre habitacle, c'est ce qui filtre l'air que vous respirez dans votre voiture. Pollen, poussière, gaz d'échappement — surtout si vous roulez souvent sur la E40 ou dans le trafic autour de l'aéroport de Zaventem, ce filtre se bouche vite.</span>
-      <span data-lang="nl">Het interieurfilter filtert de lucht die u inademt in uw auto. Pollen, stof, uitlaatgassen — vooral als u vaak rijdt op de E40 of in het verkeer rond de luchthaven van Zaventem, raakt dit filter snel verstopt.</span></p>
-      <p><span data-lang="fr">Le filtre habitacle, personne n'y pense. Mais si vous toussez en voiture ou que l'air sent le moisi quand vous mettez le chauffage, c'est souvent ça le coupable.</span>
-      <span data-lang="nl">Niemand denkt aan het interieurfilter. Maar als u hoest in de auto of de lucht muf ruikt wanneer u de verwarming aanzet, is dat vaak de boosdoener.</span></p>
-      <p><span data-lang="fr">En Belgique, la saison des pollens entre mars et juin est particulièrement rude. Un filtre habitacle encrassé laisse passer les allergènes et la poussière fine dans l'habitacle. On le remplace en quelques minutes et vous sentez la différence immédiatement. L'air dans votre voiture redevient frais et propre. C'est aussi bon à faire avant de passer votre <a href="controle-technique.html">contrôle technique</a>.</span>
-      <span data-lang="nl">In België is het pollenseizoen tussen maart en juni bijzonder zwaar. Een vuil interieurfilter laat allergenen en fijnstof door in het interieur. We vervangen het in een paar minuten en u merkt het verschil meteen. De lucht in uw auto wordt weer fris en schoon. Dit is ook goed om te doen voor uw <a href="controle-technique.html">technische keuring</a>.</span></p>
+      <h2><span>Remplacement de filtres d'air pour habitacle</span></h2>
+      <p><span>Le filtre habitacle, c'est ce qui filtre l'air que vous respirez dans votre voiture. Pollen, poussière, gaz d'échappement — surtout si vous roulez souvent sur la E40 ou dans le trafic autour de l'aéroport de Zaventem, ce filtre se bouche vite.</span>
+      </p>
+      <p><span>Le filtre habitacle, personne n'y pense. Mais si vous toussez en voiture ou que l'air sent le moisi quand vous mettez le chauffage, c'est souvent ça le coupable.</span>
+      </p>
+      <p><span>En Belgique, la saison des pollens entre mars et juin est particulièrement rude. Un filtre habitacle encrassé laisse passer les allergènes et la poussière fine dans l'habitacle. On le remplace en quelques minutes et vous sentez la différence immédiatement. L'air dans votre voiture redevient frais et propre. C'est aussi bon à faire avant de passer votre <a href="controle-technique.html">contrôle technique</a>.</span>
+      </p>
 
-      <h2><span data-lang="fr">Remplacement filtre à carburant</span><span data-lang="nl">Brandstoffilter vervangen</span></h2>
-      <p><span data-lang="fr">Le filtre à carburant protège vos injecteurs et votre pompe à injection. Sur les diesels, c'est un entretien à ne pas négliger — un filtre bouché peut causer des pertes de puissance, des ratés, et même endommager le circuit d'injection qui coûte cher à réparer.</span>
-      <span data-lang="nl">Het brandstoffilter beschermt uw injectoren en inspuitpomp. Bij diesels is dit onderhoud dat je niet mag verwaarlozen — een verstopt filter kan vermogensverlies, haperingen en zelfs schade aan het injectiesysteem veroorzaken.</span></p>
-      <p><span data-lang="fr">Les symptômes d'un filtre à carburant encrassé sont faciles à reconnaître. Votre voiture perd de la puissance en côte ou en accélération. Le moteur tourne de façon irrégulière au ralenti. Dans les cas graves, le moteur cale à un feu rouge ou au démarrage.</span>
-      <span data-lang="nl">De symptomen van een vuil brandstoffilter zijn makkelijk te herkennen. Uw auto verliest vermogen bij het optrekken of op een helling. De motor draait onregelmatig in stationair. In ernstige gevallen slaat de motor af bij een rood licht of bij het starten.</span></p>
-      <p><span data-lang="fr">Si vous remarquez ces signes, venez vite — plus vous attendez, plus les dégâts sur les injecteurs s'aggravent.</span>
-      <span data-lang="nl">Merkt u deze tekens? Kom dan snel langs — hoe langer u wacht, hoe erger de schade aan de injectoren wordt.</span></p>
-      <p><span data-lang="fr">Chez DMT AUTOGROUP, on vérifie l'état du filtre à carburant à chaque <a href="garage-automobile.html">entretien</a> et on le remplace quand il faut. Sur les véhicules diesel modernes, le filtre à carburant contient aussi un séparateur d'eau qu'il faut purger régulièrement. On s'en occupe pendant la vidange.</span>
-      <span data-lang="nl">Bij DMT AUTOGROUP controleren we de staat van het brandstoffilter bij elk <a href="garage-automobile.html">onderhoud</a> en vervangen we het wanneer nodig. Bij moderne dieselvoertuigen bevat het brandstoffilter ook een waterafscheider die regelmatig moet worden leeggemaakt. Dat doen we tijdens de olieverversing.</span></p>
-      <p><span data-lang="fr">Que vous rouliez au diesel ou à l'essence, on a le bon filtre en stock pour votre modèle. Les habitants de Zaventem, Diegem, Nossegem, Sterrebeek et Kraainem passent chez nous pour un entretien complet en un seul passage.</span>
-      <span data-lang="nl">Of u nu op diesel of benzine rijdt, we hebben het juiste filter op voorraad voor uw model. De inwoners van Zaventem, Diegem, Nossegem, Sterrebeek en Kraainem komen bij ons voor een compleet onderhoud in één beurt.</span></p>
+      <h2><span>Remplacement filtre à carburant</span></h2>
+      <p><span>Le filtre à carburant protège vos injecteurs et votre pompe à injection. Sur les diesels, c'est un entretien à ne pas négliger — un filtre bouché peut causer des pertes de puissance, des ratés, et même endommager le circuit d'injection qui coûte cher à réparer.</span>
+      </p>
+      <p><span>Les symptômes d'un filtre à carburant encrassé sont faciles à reconnaître. Votre voiture perd de la puissance en côte ou en accélération. Le moteur tourne de façon irrégulière au ralenti. Dans les cas graves, le moteur cale à un feu rouge ou au démarrage.</span>
+      </p>
+      <p><span>Si vous remarquez ces signes, venez vite — plus vous attendez, plus les dégâts sur les injecteurs s'aggravent.</span>
+      </p>
+      <p><span>Chez DMT AUTOGROUP, on vérifie l'état du filtre à carburant à chaque <a href="garage-automobile.html">entretien</a> et on le remplace quand il faut. Sur les véhicules diesel modernes, le filtre à carburant contient aussi un séparateur d'eau qu'il faut purger régulièrement. On s'en occupe pendant la vidange.</span>
+      </p>
+      <p><span>Que vous rouliez au diesel ou à l'essence, on a le bon filtre en stock pour votre modèle. Les habitants de Zaventem, Diegem, Nossegem, Sterrebeek et Kraainem passent chez nous pour un entretien complet en un seul passage.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/vidange-huile.webp" alt="Huile moteur vidange service Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/vidange-huile.webp" alt="Huile moteur vidange service Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
     </div>
     <aside class="service-sidebar">
       <div class="sidebar-card sidebar-card--cta">
-        <span class="label"><span data-lang="fr">Vidange rapide?</span><span data-lang="nl">Snelle olieverversing?</span></span>
+        <span class="label"><span>Vidange rapide?</span></span>
         <span class="phone"><a href="tel:+32484115813">0484 11 58 13</a></span>
-        <p style="color:var(--smoke);font-size:0.85rem"><span data-lang="fr">Lun–Ven · 08:30–18:00</span><span data-lang="nl">Ma–Vr · 08:30–18:00</span></p>
-        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm)"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></a>
+        <p style="color:var(--smoke);font-size:0.85rem"><span>Lun–Ven · 08:30–18:00</span></p>
+        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm)"><span>Appelez maintenant</span></a>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Autres services</span><span data-lang="nl">Andere diensten</span></h4>
-        <a href="garage-automobile.html" data-lang="fr">Entretien & Réparation</a><a href="garage-automobile.html" data-lang="nl">Onderhoud & Herstelling</a>
-        <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-        <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-        <a href="mecanique-automobile.html" data-lang="fr">Mécanique automobile</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-        <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-        <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG — Réparation & Vidange</a>
-        <a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak — Herstelling & Olie</a>
-      
-        <a href="filtre-particules.html" data-lang="fr">Filtre à particules (FAP)</a><a href="filtre-particules.html" data-lang="nl">Roetfilter (DPF)</a>
-        <a href="courroie-distribution.html" data-lang="fr">Courroie de distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-        <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
+        <h4><span>Autres services</span></h4>
+        <a href="garage-automobile.html">Entretien & Réparation</a>
+        <a href="pneus.html">Pneus</a>
+        <a href="carrosserie.html">Carrosserie</a>
+        <a href="mecanique-automobile.html">Mécanique automobile</a>
+        <a href="controle-technique.html">Contrôle technique</a>
+        <a href="reparation-boite-dsg.html">Boîte DSG — Réparation & Vidange</a>
+
+        <a href="filtre-particules.html">Filtre à particules (FAP)</a>
+        <a href="courroie-distribution.html">Courroie de distribution</a>
+        <a href="diagnostic-moteur.html">Diagnostic moteur</a>
       </div>
     </aside>
   </div></div></section>
 
   <section class="related-services section--lg"><div class="container">
-    <div class="related-services__header reveal"><span class="label"><span data-lang="fr">Services liés</span><span data-lang="nl">Gerelateerde diensten</span></span><h2><span data-lang="fr">Voir aussi</span><span data-lang="nl">Zie ook</span></h2></div>
+    <div class="related-services__header reveal"><span class="label"><span>Services liés</span></span><h2><span>Voir aussi</span></h2></div>
     <div class="related-services__grid">
-      <a href="garage-automobile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span data-lang="fr">Entretien & Réparation</span><span data-lang="nl">Onderhoud & Herstelling</span></h3><p><span data-lang="fr">Entretien complet toutes marques.</span><span data-lang="nl">Volledig onderhoud alle merken.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="controle-technique.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3><span data-lang="fr">Contrôle technique</span><span data-lang="nl">Technische keuring</span></h3><p><span data-lang="fr">Préparation CT.</span><span data-lang="nl">Voorbereiding keuring.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="garage-automobile.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span>Entretien & Réparation</span></h3><p><span>Entretien complet toutes marques.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="controle-technique.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3><span>Contrôle technique</span></h3><p><span>Préparation CT.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
     </div>
   </div></section>
 
@@ -279,58 +306,58 @@
   <section class="section--lg" style="background: var(--gray-50, #F9FAFB);">
     <div class="container">
       <div class="services__header">
-        <span class="label"><span data-lang="fr">Questions fréquentes</span><span data-lang="nl">Veelgestelde vragen</span></span>
-        <h2><span data-lang="fr">FAQ — Service de vidange à Zaventem</span><span data-lang="nl">FAQ — Olieverversing in Zaventem</span></h2>
+        <span class="label"><span>Questions fréquentes</span></span>
+        <h2><span>FAQ — Service de vidange à Zaventem</span></h2>
       </div>
       <div style="max-width:800px;margin:0 auto;">
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ça fait 2 ans que j'ai pas fait de vidange, c'est grave ?</span><span data-lang="nl">Het is al 2 jaar geleden dat ik een olieverversing heb laten doen, is dat erg?</span>
+            <span>Ça fait 2 ans que j'ai pas fait de vidange, c'est grave ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Deux ans sans vidange, c'est trop long. L'huile perd ses propriétés lubrifiantes bien avant ça. Les particules métalliques s'accumulent et commencent à rayer les pièces internes du moteur. Le mieux, c'est de passer rapidement — on fait un check complet : huile, filtres, et on vérifie les <a href="garage-automobile.html">freins</a> tant qu'on y est. Souvent, une bonne vidange avec un filtre neuf suffit à remettre les choses en ordre.</span>
-            <span data-lang="nl">Twee jaar zonder olieverversing is te lang. De olie verliest haar smeereigenschappen ruim daarvoor al. Metaaldeeltjes hopen zich op en beginnen de interne onderdelen te beschadigen. Het beste is om snel langs te komen — we doen een volledige check: olie, filters, en we controleren de <a href="garage-automobile.html">remmen</a> terwijl we toch bezig zijn. Meestal volstaat een goede olieverversing met een nieuw filter om de zaak weer in orde te brengen.</span>
+            <span>Deux ans sans vidange, c'est trop long. L'huile perd ses propriétés lubrifiantes bien avant ça. Les particules métalliques s'accumulent et commencent à rayer les pièces internes du moteur. Le mieux, c'est de passer rapidement — on fait un check complet : huile, filtres, et on vérifie les <a href="garage-automobile.html">freins</a> tant qu'on y est. Souvent, une bonne vidange avec un filtre neuf suffit à remettre les choses en ordre.</span>
+            
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">C'est quoi la différence entre huile synthétique et minérale ?</span><span data-lang="nl">Wat is het verschil tussen synthetische en minerale olie?</span>
+            <span>C'est quoi la différence entre huile synthétique et minérale ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">L'huile synthétique est fabriquée en laboratoire. Elle résiste mieux aux températures extrêmes et dure plus longtemps entre deux vidanges. L'huile minérale est extraite du pétrole, moins chère, et convient aux moteurs plus anciens avec beaucoup de kilomètres. On vous conseille la bonne huile selon votre moteur et votre usage — pas la plus chère, celle qui convient.</span>
-            <span data-lang="nl">Synthetische olie wordt in het laboratorium gemaakt. Ze is beter bestand tegen extreme temperaturen en gaat langer mee tussen twee olieversversingen. Minerale olie wordt gewonnen uit aardolie, is goedkoper, en is geschikt voor oudere motoren met veel kilometers. We adviseren de juiste olie op basis van uw motor en gebruik — niet de duurste, maar de juiste.</span>
+            <span>L'huile synthétique est fabriquée en laboratoire. Elle résiste mieux aux températures extrêmes et dure plus longtemps entre deux vidanges. L'huile minérale est extraite du pétrole, moins chère, et convient aux moteurs plus anciens avec beaucoup de kilomètres. On vous conseille la bonne huile selon votre moteur et votre usage — pas la plus chère, celle qui convient.</span>
+
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Mon garagiste me facture 300 euros la vidange, c'est normal ?</span><span data-lang="nl">Mijn garagist rekent 300 euro aan voor een olieverversing, is dat normaal?</span>
+            <span>Mon garagiste me facture 300 euros la vidange, c'est normal ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Chez un concessionnaire, 300 euros pour une vidange, ça arrive souvent. La main-d'oeuvre et les marges sur les pièces gonflent la facture. Chez nous, une vidange complète avec filtre à huile coûte entre 100 et 150 euros selon le modèle. Même huile constructeur, même filtre de qualité. Appelez le 0484 11 58 13 pour un devis exact.</span>
-            <span data-lang="nl">Bij een concessiehouder betaalt u al snel 300 euro voor een olieverversing. De werkuren en de marges op onderdelen drijven de factuur op. Bij ons kost een volledige olieverversing met oliefilter tussen 100 en 150 euro afhankelijk van het model. Dezelfde constructeurolie, hetzelfde kwaliteitsfilter. Bel 0484 11 58 13 voor een exacte offerte.</span>
+            <span>Chez un concessionnaire, 300 euros pour une vidange, ça arrive souvent. La main-d'oeuvre et les marges sur les pièces gonflent la facture. Chez nous, une vidange complète avec filtre à huile coûte entre 100 et 150 euros selon le modèle. Même huile constructeur, même filtre de qualité. Appelez le 0484 11 58 13 pour un devis exact.</span>
+
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Est-ce que vous changez tous les filtres en même temps ?</span><span data-lang="nl">Vervangen jullie alle filters tegelijk?</span>
+            <span>Est-ce que vous changez tous les filtres en même temps ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Le filtre à huile, oui, c'est systématique à chaque vidange. Pour le filtre à air, le filtre habitacle et le filtre à carburant, on vérifie leur état et on vous dit honnêtement s'il faut les changer maintenant ou si ça peut attendre. On ne remplace jamais un filtre qui n'en a pas besoin. C'est aussi l'occasion de faire un <a href="controle-technique.html">pré-contrôle technique</a> en même temps.</span>
-            <span data-lang="nl">Het oliefilter, ja, dat is standaard bij elke olieverversing. Voor het luchtfilter, interieurfilter en brandstoffilter controleren we de staat en vertellen we u eerlijk of ze nu vervangen moeten worden of dat het nog kan wachten. We vervangen nooit een filter dat het niet nodig heeft. Het is ook een goed moment om meteen een <a href="controle-technique.html">voorcontrole voor de keuring</a> te laten doen.</span>
+            <span>Le filtre à huile, oui, c'est systématique à chaque vidange. Pour le filtre à air, le filtre habitacle et le filtre à carburant, on vérifie leur état et on vous dit honnêtement s'il faut les changer maintenant ou si ça peut attendre. On ne remplace jamais un filtre qui n'en a pas besoin. C'est aussi l'occasion de faire un <a href="controle-technique.html">pré-contrôle technique</a> en même temps.</span>
+            
           </p>
         </details>
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Combien de temps ça prend une vidange ?</span><span data-lang="nl">Hoe lang duurt een olieverversing?</span>
+            <span>Combien de temps ça prend une vidange ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Entre 30 et 45 minutes, selon le véhicule. Vous pouvez attendre sur place ou faire un tour dans le quartier. On vous appelle dès que c'est prêt. Pas besoin de rendez-vous, passez quand ça vous arrange.</span>
-            <span data-lang="nl">Tussen 30 en 45 minuten, afhankelijk van het voertuig. U kunt ter plaatse wachten of een ommetje maken in de buurt. We bellen u zodra het klaar is. Geen afspraak nodig, kom langs wanneer het u past.</span>
+            <span>Entre 30 et 45 minutes, selon le véhicule. Vous pouvez attendre sur place ou faire un tour dans le quartier. On vous appelle dès que c'est prêt. Pas besoin de rendez-vous, passez quand ça vous arrange.</span>
+
           </p>
         </details>
       </div>
@@ -338,20 +365,20 @@
   </section>
 
   <section class="cta-section section--lg"><div class="container">
-    <span class="label reveal"><span data-lang="fr">Vidange Zaventem</span><span data-lang="nl">Olieverversing Zaventem</span></span>
-    <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+    <span class="label reveal"><span>Vidange Zaventem</span></span>
+    <h2 class="reveal"><span>Appelez maintenant</span></h2>
     <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
-    <p class="cta-section__hours reveal reveal-delay-2"><span data-lang="fr">Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span><span data-lang="nl">Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
+    <p class="cta-section__hours reveal reveal-delay-2"><span>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
   </div></section>
 
   <footer class="footer"><div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37"><p><span data-lang="fr">Garage automobile à Zaventem. Toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Alle merken.</span></p></div>
-      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html" data-lang="fr">Entretien</a><a href="garage-automobile.html" data-lang="nl">Onderhoud</a><a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a><a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a><a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a><a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
-      <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a><a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a><a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a><a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a><a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a></div>
+      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async"><p><span>Garage automobile à Zaventem. Toutes marques.</span></p></div>
+      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html">Entretien</a><a href="pneus.html">Pneus</a><a href="carrosserie.html">Carrosserie</a><a href="vidange-huile.html">Vidange</a><a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
+      <div class="footer__col"><h4><span>Plus</span></h4><a href="mecanique-automobile.html">Mécanique</a><a href="reparation-boite-dsg.html">Boîte DSG</a><a href="reparation-boite-vitesse.html">Boîte de vitesse</a><a href="controle-technique.html">Contrôle technique</a><a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a><a href="embrayage.html">Embrayage</a><a href="remplacement-turbo.html">Turbo</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a><a href="https://maps.google.com/?q=Mechelsesteenweg+270+1933+Zaventem" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Vidange Zaventem</span><span data-lang="nl">Olieverversing Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
+    <div class="footer__bottom"><span>© 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span><span><span>Vidange Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
   <script src="js/main.js" defer></script>
 </body>

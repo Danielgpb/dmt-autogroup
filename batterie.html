@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dmt-autogroup.be/batterie">
   <meta property="og:image" content="https://dmt-autogroup.be/img/garage-electrique.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:type" content="image/webp">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Batterie voiture Zaventem | DMT AUTOGROUP">
+  <meta name="twitter:description" content="Diagnostic batterie, remplacement AGM/EFB, test alternateur, démarrage de secours. Garage indépendant Zaventem.">
+  <meta name="twitter:image" content="https://dmt-autogroup.be/img/garage-electrique.webp">
   <link rel="canonical" href="https://dmt-autogroup.be/batterie">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,10 +32,12 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://dmt-autogroup.be/#business",
     "name": "DMT AUTOGROUP 1,2,3 AutoService",
-    "url": "https://dmt-autogroup.be/batterie",
+    "url": "https://dmt-autogroup.be/",
     "image": "https://dmt-autogroup.be/img/garage-electrique.webp",
     "telephone": "+32484115813",
+    "sameAs": ["https://www.google.com/maps?cid=9711024847498784016"],
     "address": { "@type": "PostalAddress", "streetAddress": "Mechelsesteenweg 270", "addressLocality": "Zaventem", "postalCode": "1933", "addressCountry": "BE" },
     "geo": { "@type": "GeoCoordinates", "latitude": 50.8639552, "longitude": 4.5159167 },
     "areaServed": [
@@ -43,7 +53,19 @@
       { "@type": "City", "name": "Vilvoorde" },
       { "@type": "City", "name": "Kortenberg" }
     ],
-    "serviceType": ["Diagnostic de batterie", "Remplacement de batterie", "Test alternateur", "Démarrage de secours"]
+    "serviceType": ["Diagnostic de batterie", "Remplacement de batterie", "Test alternateur", "Démarrage de secours"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:30",
+      "closes": "18:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 30,
+      "bestRating": "5"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -104,91 +126,97 @@
     ]
   }
   </script>
+  <link rel="preload" as="image" href="img/garage-electrique.webp" type="image/webp" fetchpriority="high">
+  <link rel="alternate" hreflang="fr-BE" href="https://dmt-autogroup.be/batterie">
+  <link rel="alternate" hreflang="nl-BE" href="https://dmt-autogroup.be/nl/batterij">
+  <link rel="alternate" hreflang="x-default" href="https://dmt-autogroup.be/batterie">
 </head>
 <body>
   <header class="nav"><div class="nav__inner">
-    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44"></a>
+    <a href="index.html" class="nav__logo"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="120" height="44" decoding="async" fetchpriority="high"></a>
     <nav class="nav__links">
-      <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
+      <a href="index.html">Accueil</a>
 
       <!-- Services dropdown -->
       <div class="nav__dropdown">
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="fr">Services ▾</a>
-        <a href="garage-automobile.html" class="nav__dropdown-trigger" data-lang="nl">Diensten ▾</a>
+        <a href="garage-automobile.html" class="nav__dropdown-trigger">Services ▾</a>
+
         <div class="nav__dropdown-menu">
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Entretien</span><span class="nav__dropdown-title" data-lang="nl">Onderhoud</span>
-            <a href="garage-automobile.html" data-lang="fr">Garage automobile</a><a href="garage-automobile.html" data-lang="nl">Autogarage</a>
-            <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-            <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-            <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-            <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+            <span class="nav__dropdown-title">Entretien</span>
+            <a href="garage-automobile.html">Garage automobile</a>
+            <a href="vidange-huile.html">Vidange & Filtres</a>
+            <a href="freins.html">Freins</a>
+            <a href="controle-technique.html">Contrôle technique</a>
+            <a href="climatisation.html">Climatisation</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Mécanique</span><span class="nav__dropdown-title" data-lang="nl">Mechaniek</span>
-            <a href="mecanique-automobile.html" data-lang="fr">Mécanique auto</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-            <a href="reparation-moteur.html" data-lang="fr">Réparation moteur</a><a href="reparation-moteur.html" data-lang="nl">Motorherstelling</a>
-            <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-            <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-            <a href="courroie-distribution.html" data-lang="fr">Courroie distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributieriem</a>
-            <a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a>
-            <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-            <a href="filtre-particules.html" data-lang="fr">Filtre à particules</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
+            <span class="nav__dropdown-title">Mécanique</span>
+            <a href="mecanique-automobile.html">Mécanique auto</a>
+            <a href="reparation-moteur.html">Réparation moteur</a>
+            <a href="remplacement-turbo.html">Turbo</a>
+            <a href="embrayage.html">Embrayage</a>
+            <a href="courroie-distribution.html">Courroie distribution</a>
+            <a href="reparation-boite-dsg.html">Boîte DSG</a>
+            <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+            <a href="filtre-particules.html">Filtre à particules</a>
           </div>
           <div class="nav__dropdown-col">
-            <span class="nav__dropdown-title" data-lang="fr">Électrique & Diag</span><span class="nav__dropdown-title" data-lang="nl">Elektrisch & Diagnose</span>
-            <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-            <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-            <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-            <span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="fr">Carrosserie & Pneus</span><span class="nav__dropdown-title" style="margin-top:0.8rem;" data-lang="nl">Carrosserie & Banden</span>
-            <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-            <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-            <a href="direction-suspension.html" data-lang="fr">Direction & Suspension</a><a href="direction-suspension.html" data-lang="nl">Stuur & Ophanging</a>
+            <span class="nav__dropdown-title">Électrique & Diag</span>
+            <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+            <a href="reparation-electrique.html">Réparation électrique</a>
+            <a href="batterie.html">Batterie</a>
+            <span class="nav__dropdown-title" style="margin-top:0.8rem;">Carrosserie & Pneus</span>
+            <a href="carrosserie.html">Carrosserie</a>
+            <a href="pneus.html">Pneus</a>
+            <a href="direction-suspension.html">Direction & Suspension</a>
           </div>
         </div>
       </div>
 
-      <a href="contact.html" data-lang="fr">Contact</a><a href="contact.html" data-lang="nl">Contact</a>
+      <a href="contact.html">Contact</a>
+        <a href="a-propos.html">À propos</a>
     </nav>
     <div class="nav__actions">
-      <div class="lang-switch"><button data-lang="fr" class="active">FR</button><button data-lang="nl">NL</button></div>
+      <div class="lang-switch"><a class="active">FR</a><a href="nl/batterij.html">NL</a></div>
       <a href="tel:+32484115813" class="btn btn--phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="phone-text">0484 11 58 13</span></a>
     </div>
     <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div></header>
   <div class="mobile-menu">
-    <a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="nl">Home</a>
-    <a href="garage-automobile.html" data-lang="fr">Services</a><a href="garage-automobile.html" data-lang="nl">Diensten</a>
-    <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-    <a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a>
-    <a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a>
-    <a href="reparation-boite-dsg.html" data-lang="fr">DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG</a>
-    <a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a>
-    <a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a>
-    <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
-    <a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a>
-    <a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a>
-    <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a>
-    <a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a>
-    <a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a>
-    <a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a>
-    <a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a>
-    <a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a>
-    <a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a>
-    <a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a>
-    <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
+    <a href="index.html">Accueil</a>
+    <a href="garage-automobile.html">Services</a>
+    <a href="pneus.html">Pneus</a>
+    <a href="carrosserie.html">Carrosserie</a>
+    <a href="mecanique-automobile.html">Mécanique</a>
+    <a href="reparation-boite-dsg.html">DSG</a>
+    <a href="reparation-boite-vitesse.html">Boîte de vitesse</a>
+    <a href="freins.html">Freins</a>
+    <a href="climatisation.html">Climatisation</a>
+    <a href="batterie.html">Batterie</a>
+    <a href="reparation-electrique.html">Électrique</a>
+    <a href="diagnostic-moteur.html">Diagnostic</a>
+    <a href="reparation-moteur.html">Moteur</a>
+    <a href="direction-suspension.html">Suspension</a>
+    <a href="courroie-distribution.html">Distribution</a>
+    <a href="embrayage.html">Embrayage</a>
+    <a href="remplacement-turbo.html">Turbo</a>
+    <a href="filtre-particules.html">FAP</a>
+    <a href="vidange-huile.html">Vidange</a>
+    <a href="controle-technique.html">Contrôle technique</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+32484115813" style="color:var(--yellow, #EAB308)">0484 11 58 13</a>
   </div>
 
   <!-- HERO -->
-  <section class="service-hero" style="background: url('img/garage-electrique.webp') center/cover no-repeat;">
+  <section class="service-hero">
+    <img src="img/garage-electrique.webp" alt="Réparation électrique automobile DMT AUTOGROUP Zaventem" class="service-hero__bg" width="1200" height="800" fetchpriority="high" decoding="async">>
     <div class="container">
-      <span class="label"><span data-lang="fr">Batterie — Diagnostic, Remplacement, Alternateur — Zaventem</span><span data-lang="nl">Batterij — Diagnose, Vervanging, Dynamo — Zaventem</span></span>
-      <h1><span data-lang="fr">Batterie automobile<br>à Zaventem</span><span data-lang="nl">Autobatterij<br>in Zaventem</span></h1>
+      <span class="label"><span>Batterie — Diagnostic, Remplacement, Alternateur — Zaventem</span></span>
+      <h1><span>Batterie automobile<br>à Zaventem</span></h1>
       <p class="service-hero__intro">
-        <span data-lang="fr">Votre voiture ne démarre plus ? Voyant batterie allumé ? Démarreur qui peine le matin ? Chez DMT AUTOGROUP, on teste, on diagnostique et on remplace votre batterie — toutes marques, y compris les batteries AGM et EFB pour véhicules Start-Stop. <strong>Codage batterie VAG inclus.</strong></span>
-        <span data-lang="nl">Start uw auto niet meer? Batterijlampje aan? Startmotor die 's ochtends moeite heeft? Bij DMT AUTOGROUP testen, diagnosticeren en vervangen we uw batterij — alle merken, inclusief AGM- en EFB-batterijen voor Start-Stop voertuigen. <strong>VAG-batterijcodering inbegrepen.</strong></span>
+        <span>Votre voiture ne démarre plus ? Voyant batterie allumé ? Démarreur qui peine le matin ? Chez DMT AUTOGROUP, on teste, on diagnostique et on remplace votre batterie — toutes marques, y compris les batteries AGM et EFB pour véhicules Start-Stop. <strong>Codage batterie VAG inclus.</strong></span>
+        
       </p>
     </div>
   </section>
@@ -198,120 +226,117 @@
     <div class="service-content__main">
 
       <!-- SECTION 1: Diagnostic et test -->
-      <h2><span data-lang="fr">Diagnostic et test de batterie</span><span data-lang="nl">Batterijdiagnose en -test</span></h2>
+      <h2><span>Diagnostic et test de batterie</span></h2>
 
-      <p><span data-lang="fr">La batterie qui lâche sans prévenir, c'est un mythe. Elle prévient. Le démarrage qui hésite le matin. Les phares qui faiblissent au ralenti. Le Start-Stop qui ne fonctionne plus. Les vitres électriques qui montent plus lentement. Ce sont des signaux. Le problème, c'est que la plupart des gens ne les voient pas — jusqu'au matin où la voiture ne démarre plus du tout.</span>
-      <span data-lang="nl">De batterij die zonder waarschuwing uitvalt, is een mythe. Ze waarschuwt wel degelijk. De motor die 's ochtends aarzelt bij het starten. De koplampen die dimmen bij stationair. De Start-Stop die niet meer werkt. De elektrische ramen die trager omhooggaan. Het zijn signalen. Het probleem is dat de meeste mensen ze niet opmerken — tot de ochtend dat de auto helemaal niet meer start.</span></p>
+      <p><span>La batterie qui lâche sans prévenir, c'est un mythe. Elle prévient. Le démarrage qui hésite le matin. Les phares qui faiblissent au ralenti. Le Start-Stop qui ne fonctionne plus. Les vitres électriques qui montent plus lentement. Ce sont des signaux. Le problème, c'est que la plupart des gens ne les voient pas — jusqu'au matin où la voiture ne démarre plus du tout.</span>
+      </p>
 
-      <p><span data-lang="fr">On teste votre batterie avec un testeur professionnel qui mesure trois choses : la tension (doit être au-dessus de 12,4V au repos), la capacité CCA (Cold Cranking Amps — la puissance de démarrage à froid), et l'état de santé général en pourcentage. Le test prend 5 minutes et vous donne une réponse claire : votre batterie est bonne, elle commence à faiblir, ou elle est morte.</span>
-      <span data-lang="nl">We testen uw batterij met een professionele tester die drie dingen meet: de spanning (moet boven 12,4V zijn in rust), de CCA-capaciteit (Cold Cranking Amps — het koude startvermogen), en de algemene gezondheidsstatus in percentage. De test duurt 5 minuten en geeft u een duidelijk antwoord: uw batterij is goed, ze begint te verzwakken, of ze is dood.</span></p>
+      <p><span>On teste votre batterie avec un testeur professionnel qui mesure trois choses : la tension (doit être au-dessus de 12,4V au repos), la capacité CCA (Cold Cranking Amps — la puissance de démarrage à froid), et l'état de santé général en pourcentage. Le test prend 5 minutes et vous donne une réponse claire : votre batterie est bonne, elle commence à faiblir, ou elle est morte.</span>
+      </p>
 
-      <p><span data-lang="fr">Ce qu'un test chez le centre auto du coin ne fait pas, c'est vérifier le système complet. La batterie peut être bonne mais mal chargée. L'alternateur peut ne pas fournir assez de courant. Un consommateur peut rester allumé en permanence et vider la batterie la nuit — un module qui ne se met pas en veille, une lumière de coffre coincée. On vérifie tout.</span>
-      <span data-lang="nl">Wat een test bij het autocentrum om de hoek niet doet, is het volledige systeem controleren. De batterij kan goed zijn maar slecht opgeladen. De dynamo levert misschien niet genoeg stroom. Een verbruiker kan permanent aan blijven staan en de batterij 's nachts leegzuigen — een module die niet in slaapstand gaat, een kofferlampje dat blijft branden. We controleren alles.</span></p>
+      <p><span>Ce qu'un test chez le centre auto du coin ne fait pas, c'est vérifier le système complet. La batterie peut être bonne mais mal chargée. L'alternateur peut ne pas fournir assez de courant. Un consommateur peut rester allumé en permanence et vider la batterie la nuit — un module qui ne se met pas en veille, une lumière de coffre coincée. On vérifie tout.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/garage-electrique.webp" alt="Diagnostic batterie et électrique automobile garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/garage-electrique.webp" alt="Diagnostic batterie et électrique automobile garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <div class="photo-section">
-        <img src="img/batterie-test.webp" alt="Test diagnostic batterie voiture garage Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/batterie-test.webp" alt="Test diagnostic batterie voiture garage Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <!-- SECTION 2: Remplacement -->
-      <h2><span data-lang="fr">Remplacement de batterie</span><span data-lang="nl">Batterij vervangen</span></h2>
+      <h2><span>Remplacement de batterie</span></h2>
 
-      <p><span data-lang="fr">Remplacer une batterie, ça a l'air simple. Débrancher l'ancienne, mettre la nouvelle, terminé. Sauf que sur une voiture moderne, c'est plus compliqué que ça. Et si c'est mal fait, ça coûte cher en problèmes électroniques.</span>
-      <span data-lang="nl">Een batterij vervangen lijkt eenvoudig. De oude loskoppelen, de nieuwe plaatsen, klaar. Maar op een moderne auto is het ingewikkelder dan dat. En als het verkeerd gedaan wordt, kost het u duur aan elektronische problemen.</span></p>
+      <p><span>Remplacer une batterie, ça a l'air simple. Débrancher l'ancienne, mettre la nouvelle, terminé. Sauf que sur une voiture moderne, c'est plus compliqué que ça. Et si c'est mal fait, ça coûte cher en problèmes électroniques.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Premier point : la bonne batterie.</strong> On ne met pas n'importe quelle batterie dans n'importe quelle voiture. La capacité (Ah), le courant de démarrage (CCA), les dimensions, la position des bornes, la technologie — tout doit correspondre. Une voiture avec Start-Stop a besoin d'une batterie AGM ou EFB, pas d'une batterie classique. Si vous mettez une batterie standard dans un véhicule Start-Stop, elle tiendra 6 mois au lieu de 5 ans.</span>
-      <span data-lang="nl"><strong>Eerste punt: de juiste batterij.</strong> Je plaatst niet zomaar om het even welke batterij in om het even welke auto. De capaciteit (Ah), de startstroom (CCA), de afmetingen, de positie van de polen, de technologie — alles moet kloppen. Een auto met Start-Stop heeft een AGM- of EFB-batterij nodig, geen gewone batterij. Als u een standaard batterij in een Start-Stop voertuig plaatst, houdt ze 6 maanden vol in plaats van 5 jaar.</span></p>
+      <p><span><strong>Premier point : la bonne batterie.</strong> On ne met pas n'importe quelle batterie dans n'importe quelle voiture. La capacité (Ah), le courant de démarrage (CCA), les dimensions, la position des bornes, la technologie — tout doit correspondre. Une voiture avec Start-Stop a besoin d'une batterie AGM ou EFB, pas d'une batterie classique. Si vous mettez une batterie standard dans un véhicule Start-Stop, elle tiendra 6 mois au lieu de 5 ans.</span>
+      </p>
 
-      <p><span data-lang="fr"><strong>Deuxième point : le codage.</strong> Sur les VW, Audi, Seat, Skoda (groupe VAG) et BMW récents, le calculateur de gestion d'énergie doit être informé du remplacement. Il doit connaître la marque, la capacité et la technologie de la nouvelle batterie. Sans ce codage, le système continue à gérer la charge comme si c'était l'ancienne batterie usée — il sous-charge la nouvelle, et elle vieillit prématurément. On fait ce codage systématiquement après chaque remplacement.</span>
-      <span data-lang="nl"><strong>Tweede punt: de codering.</strong> Op recente VW, Audi, Seat, Skoda (VAG-groep) en BMW moet het energiebeheermodule op de hoogte gebracht worden van de vervanging. Het moet het merk, de capaciteit en de technologie van de nieuwe batterij kennen. Zonder die codering blijft het systeem de lading beheren alsof het de oude, versleten batterij is — het laadt de nieuwe onvoldoende op, en ze veroudert voortijdig. We doen deze codering standaard na elke vervanging.</span></p>
+      <p><span><strong>Deuxième point : le codage.</strong> Sur les VW, Audi, Seat, Skoda (groupe VAG) et BMW récents, le calculateur de gestion d'énergie doit être informé du remplacement. Il doit connaître la marque, la capacité et la technologie de la nouvelle batterie. Sans ce codage, le système continue à gérer la charge comme si c'était l'ancienne batterie usée — il sous-charge la nouvelle, et elle vieillit prématurément. On fait ce codage systématiquement après chaque remplacement.</span>
+      </p>
 
-      <p><span data-lang="fr">Chez un concessionnaire VW ou Audi, un remplacement de batterie AGM avec codage peut facilement dépasser 400-500 euros. Chez nous, la batterie est de même qualité (Varta, Bosch, Exide — les fournisseurs des constructeurs), mais vous ne payez pas la marge concessionnaire. Et le codage est inclus, pas facturé en supplément.</span>
-      <span data-lang="nl">Bij een VW- of Audi-concessie kan een AGM-batterijvervanging met codering makkelijk boven de 400-500 euro uitkomen. Bij ons is de batterij van dezelfde kwaliteit (Varta, Bosch, Exide — de leveranciers van de constructeurs), maar u betaalt geen concessiemarge. En de codering zit inbegrepen, niet apart aangerekend.</span></p>
+      <p><span>Chez un concessionnaire VW ou Audi, un remplacement de batterie AGM avec codage peut facilement dépasser 400-500 euros. Chez nous, la batterie est de même qualité (Varta, Bosch, Exide — les fournisseurs des constructeurs), mais vous ne payez pas la marge concessionnaire. Et le codage est inclus, pas facturé en supplément.</span>
+      </p>
 
       <div class="photo-section">
-        <img src="img/garage-electrique.webp" alt="Diagnostic et remplacement batterie voiture DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533">
+        <img src="img/garage-electrique.webp" alt="Diagnostic et remplacement batterie voiture DMT AUTOGROUP Zaventem" loading="lazy" width="800" height="533" decoding="async">
       </div>
 
       <!-- SECTION 3: Alternateur -->
-      <h2><span data-lang="fr">Problèmes d'alternateur et de charge</span><span data-lang="nl">Problemen met dynamo en laadsysteem</span></h2>
+      <h2><span>Problèmes d'alternateur et de charge</span></h2>
 
-      <p><span data-lang="fr">Vous venez de mettre une batterie neuve et elle est déjà à plat une semaine plus tard. Avant de maudire la batterie, regardez l'alternateur.</span>
-      <span data-lang="nl">U heeft net een nieuwe batterij geplaatst en ze is al leeg na een week. Voordat u de batterij vervloekt, kijk naar de dynamo.</span></p>
+      <p><span>Vous venez de mettre une batterie neuve et elle est déjà à plat une semaine plus tard. Avant de maudire la batterie, regardez l'alternateur.</span>
+      </p>
 
-      <p><span data-lang="fr">L'alternateur, c'est la dynamo de votre voiture. Il recharge la batterie pendant que le moteur tourne. Quand il fatigue, il ne produit plus assez de courant. La batterie se vide progressivement. Le voyant batterie s'allume sur le tableau de bord. Et un jour, la voiture s'arrête au milieu de la route — plus de courant pour les bougies, l'injection, le calculateur. Rideau.</span>
-      <span data-lang="nl">De dynamo is de generator van uw auto. Hij laadt de batterij op terwijl de motor draait. Als hij vermoeid raakt, produceert hij niet genoeg stroom meer. De batterij loopt geleidelijk leeg. Het batterijlampje gaat branden op het dashboard. En op een dag stopt de auto midden op de weg — geen stroom meer voor de bougies, de inspuiting, de computer. Einde verhaal.</span></p>
+      <p><span>L'alternateur, c'est la dynamo de votre voiture. Il recharge la batterie pendant que le moteur tourne. Quand il fatigue, il ne produit plus assez de courant. La batterie se vide progressivement. Le voyant batterie s'allume sur le tableau de bord. Et un jour, la voiture s'arrête au milieu de la route — plus de courant pour les bougies, l'injection, le calculateur. Rideau.</span>
+      </p>
 
-      <p><span data-lang="fr">On teste l'alternateur en mesurant sa tension de sortie (doit être entre 13,8V et 14,4V moteur tournant), son courant de charge, et le signal des diodes. Un alternateur peut aussi avoir une diode claquée et produire un courant "sale" qui perturbe l'électronique — ça provoque des erreurs aléatoires dans les calculateurs, des comportements bizarres. Pas évident à diagnostiquer si on ne mesure pas.</span>
-      <span data-lang="nl">We testen de dynamo door de uitgangsspanning te meten (moet tussen 13,8V en 14,4V liggen bij draaiende motor), de laadstroom, en het diodesignaal. Een dynamo kan ook een doorgeslagen diode hebben die een "vuile" stroom produceert die de elektronica verstoort — dat veroorzaakt willekeurige fouten in de computers, vreemd gedrag. Niet makkelijk te diagnosticeren als je niet meet.</span></p>
+      <p><span>On teste l'alternateur en mesurant sa tension de sortie (doit être entre 13,8V et 14,4V moteur tournant), son courant de charge, et le signal des diodes. Un alternateur peut aussi avoir une diode claquée et produire un courant "sale" qui perturbe l'électronique — ça provoque des erreurs aléatoires dans les calculateurs, des comportements bizarres. Pas évident à diagnostiquer si on ne mesure pas.</span>
+      </p>
 
-      <p><span data-lang="fr">La courroie d'alternateur aussi, on la vérifie. Si elle est craquelée, détendue ou si elle glisse, l'alternateur ne tourne pas à la bonne vitesse. Un sifflement aigu au démarrage à froid, c'est souvent elle. Pour un diagnostic complet de vos systèmes électriques, consultez notre page <a href="reparation-electrique.html">réparation électrique</a>. Et si le problème dépasse la batterie et l'alternateur, notre <a href="diagnostic-moteur.html">diagnostic moteur</a> permet d'aller plus loin.</span>
-      <span data-lang="nl">De dynamo-riem controleren we ook. Als die gebarsten is, te los zit of slipt, draait de dynamo niet op de juiste snelheid. Een schel gefluit bij koude start is vaak de riem. Voor een volledige diagnose van uw elektrische systemen, bekijk onze pagina <a href="reparation-electrique.html">elektrische herstellingen</a>. En als het probleem verder gaat dan batterij en dynamo, biedt onze <a href="diagnostic-moteur.html">motordiagnose</a> een diepgaandere analyse.</span></p>
+      <p><span>La courroie d'alternateur aussi, on la vérifie. Si elle est craquelée, détendue ou si elle glisse, l'alternateur ne tourne pas à la bonne vitesse. Un sifflement aigu au démarrage à froid, c'est souvent elle. Pour un diagnostic complet de vos systèmes électriques, consultez notre page <a href="reparation-electrique.html">réparation électrique</a>. Et si le problème dépasse la batterie et l'alternateur, notre <a href="diagnostic-moteur.html">diagnostic moteur</a> permet d'aller plus loin.</span>
+      </p>
 
       <!-- SECTION 4: Démarrage de secours -->
-      <h2><span data-lang="fr">Démarrage de secours</span><span data-lang="nl">Starthulp</span></h2>
+      <h2><span>Démarrage de secours</span></h2>
 
-      <p><span data-lang="fr">Il est 7h30 du matin, il fait 2 degrés, et votre voiture refuse de démarrer. Le tableau de bord clignote faiblement. Le démarreur fait un petit clic pathétique. Vous êtes en retard pour le boulot.</span>
-      <span data-lang="nl">Het is 7u30 's ochtends, het is 2 graden, en uw auto weigert te starten. Het dashboard knippert zwak. De startmotor maakt een zielig klikje. U bent al te laat voor het werk.</span></p>
+      <p><span>Il est 7h30 du matin, il fait 2 degrés, et votre voiture refuse de démarrer. Le tableau de bord clignote faiblement. Le démarreur fait un petit clic pathétique. Vous êtes en retard pour le boulot.</span>
+      </p>
 
-      <p><span data-lang="fr">Si vous avez des câbles de démarrage, il y a des règles à respecter. On branche d'abord le rouge sur la borne positive de la batterie morte, puis sur la borne positive de la batterie donneuse. Ensuite le noir sur la borne négative de la batterie donneuse, et enfin sur un point de masse du véhicule en panne — pas sur la borne négative de la batterie morte. C'est pour éviter une étincelle près de la batterie, qui peut dégager de l'hydrogène.</span>
-      <span data-lang="nl">Als u startkabels heeft, zijn er regels te volgen. Sluit eerst de rode kabel aan op de pluspool van de lege batterij, dan op de pluspool van de donorbatterij. Daarna de zwarte kabel op de minpool van de donorbatterij, en tot slot op een massapunt van het gestrande voertuig — niet op de minpool van de lege batterij. Dit om een vonk vlakbij de batterij te vermijden, die waterstofgas kan ontbranden.</span></p>
+      <p><span>Si vous avez des câbles de démarrage, il y a des règles à respecter. On branche d'abord le rouge sur la borne positive de la batterie morte, puis sur la borne positive de la batterie donneuse. Ensuite le noir sur la borne négative de la batterie donneuse, et enfin sur un point de masse du véhicule en panne — pas sur la borne négative de la batterie morte. C'est pour éviter une étincelle près de la batterie, qui peut dégager de l'hydrogène.</span>
+      </p>
 
-      <p><span data-lang="fr">On utilise un booster professionnel — un bloc lithium qui peut démarrer n'importe quel moteur sans avoir besoin d'une deuxième voiture. C'est plus sûr, plus rapide, et ça ne risque pas d'endommager l'électronique du véhicule donneur.</span>
-      <span data-lang="nl">Wij gebruiken een professionele booster — een lithiumblok dat elke motor kan starten zonder een tweede auto nodig te hebben. Het is veiliger, sneller, en er is geen risico op schade aan de elektronica van het donorvoertuig.</span></p>
+      <p><span>On utilise un booster professionnel — un bloc lithium qui peut démarrer n'importe quel moteur sans avoir besoin d'une deuxième voiture. C'est plus sûr, plus rapide, et ça ne risque pas d'endommager l'électronique du véhicule donneur.</span>
+      </p>
 
-      <p><span data-lang="fr">Mais un démarrage de secours, ce n'est pas une solution. C'est un pansement. Si votre batterie a besoin d'aide pour démarrer, c'est qu'elle est soit morte, soit mal chargée par un alternateur défaillant. Dans les deux cas, il faut investiguer. Et c'est exactement ce qu'on fait chez DMT AUTOGROUP : on ne se contente pas de vous faire redémarrer — on trouve pourquoi ça s'est arrêté.</span>
-      <span data-lang="nl">Maar starthulp is geen oplossing. Het is een pleister. Als uw batterij hulp nodig heeft om te starten, is ze ofwel dood, ofwel slecht opgeladen door een defecte dynamo. In beide gevallen moet er onderzoek gebeuren. En dat is precies wat we doen bij DMT AUTOGROUP: we laten u niet gewoon hervertrekken — we zoeken uit waarom het gestopt is.</span></p>
+      <p><span>Mais un démarrage de secours, ce n'est pas une solution. C'est un pansement. Si votre batterie a besoin d'aide pour démarrer, c'est qu'elle est soit morte, soit mal chargée par un alternateur défaillant. Dans les deux cas, il faut investiguer. Et c'est exactement ce qu'on fait chez DMT AUTOGROUP : on ne se contente pas de vous faire redémarrer — on trouve pourquoi ça s'est arrêté.</span>
+      </p>
 
     </div>
 
     <!-- SIDEBAR -->
     <aside class="service-sidebar">
       <div class="sidebar-card sidebar-card--cta">
-        <span class="label"><span data-lang="fr">Batterie à plat ?</span><span data-lang="nl">Batterij leeg?</span></span>
+        <span class="label"><span>Batterie à plat ?</span></span>
         <span class="phone"><a href="tel:+32484115813">0484 11 58 13</a></span>
-        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span data-lang="fr">Test batterie en 5 minutes</span><span data-lang="nl">Batterijtest in 5 minuten</span></p>
-        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></a>
+        <p style="color:var(--smoke, #6B7280);font-size:0.85rem"><span>Test batterie en 5 minutes</span></p>
+        <a href="tel:+32484115813" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:var(--space-sm, 1rem)"><span>Appelez maintenant</span></a>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Nos prestations batterie</span><span data-lang="nl">Onze batterijdiensten</span></h4>
+        <h4><span>Nos prestations batterie</span></h4>
         <p style="color:var(--text-secondary, #4B5563);font-size:0.85rem;line-height:1.6;padding:0.3rem 0;">
-          <span data-lang="fr"><strong>Test</strong> — Tension, CCA, état de santé<br>
+          <span><strong>Test</strong> — Tension, CCA, état de santé<br>
           <strong>Remplacement</strong> — AGM, EFB, standard<br>
           <strong>Codage</strong> — VAG, BMW, Mercedes<br>
           <strong>Alternateur</strong> — Test, réparation</span>
-          <span data-lang="nl"><strong>Test</strong> — Spanning, CCA, gezondheid<br>
-          <strong>Vervanging</strong> — AGM, EFB, standaard<br>
-          <strong>Codering</strong> — VAG, BMW, Mercedes<br>
-          <strong>Dynamo</strong> — Test, herstelling</span>
+          
         </p>
       </div>
       <div class="sidebar-card">
-        <h4><span data-lang="fr">Autres services</span><span data-lang="nl">Andere diensten</span></h4>
-        <a href="garage-automobile.html" data-lang="fr">Entretien & Réparation</a><a href="garage-automobile.html" data-lang="nl">Onderhoud & Herstelling</a>
-        <a href="mecanique-automobile.html" data-lang="fr">Mécanique automobile</a><a href="mecanique-automobile.html" data-lang="nl">Automechaniek</a>
-        <a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a>
-        <a href="carrosserie.html" data-lang="fr">Carrosserie & Peinture</a><a href="carrosserie.html" data-lang="nl">Carrosserie & Lak</a>
-        <a href="vidange-huile.html" data-lang="fr">Vidange & Filtres</a><a href="vidange-huile.html" data-lang="nl">Olieverversing & Filters</a>
-        <a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a>
-      
-        <a href="reparation-electrique.html" data-lang="fr">Réparation électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrische herstelling</a>
-        <a href="diagnostic-moteur.html" data-lang="fr">Diagnostic moteur</a><a href="diagnostic-moteur.html" data-lang="nl">Motordiagnose</a>
-        <a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a>
+        <h4><span>Autres services</span></h4>
+        <a href="garage-automobile.html">Entretien & Réparation</a>
+        <a href="mecanique-automobile.html">Mécanique automobile</a>
+        <a href="pneus.html">Pneus</a>
+        <a href="carrosserie.html">Carrosserie & Peinture</a>
+        <a href="vidange-huile.html">Vidange & Filtres</a>
+        <a href="controle-technique.html">Contrôle technique</a>
+
+        <a href="reparation-electrique.html">Réparation électrique</a>
+        <a href="diagnostic-moteur.html">Diagnostic moteur</a>
+        <a href="climatisation.html">Climatisation</a>
       </div>
     </aside>
   </div></div></section>
 
   <!-- RELATED SERVICES -->
   <section class="related-services section--lg"><div class="container">
-    <div class="related-services__header reveal"><span class="label"><span data-lang="fr">Services liés</span><span data-lang="nl">Gerelateerde diensten</span></span><h2><span data-lang="fr">Voir aussi</span><span data-lang="nl">Zie ook</span></h2></div>
+    <div class="related-services__header reveal"><span class="label"><span>Services liés</span></span><h2><span>Voir aussi</span></h2></div>
     <div class="related-services__grid">
-      <a href="reparation-electrique.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 10 10-12h-9l1-10z"/></svg></div><h3><span data-lang="fr">Réparation électrique</span><span data-lang="nl">Elektrische herstelling</span></h3><p><span data-lang="fr">Électricité auto, câblage, calculateurs.</span><span data-lang="nl">Auto-elektriciteit, bedrading, computers.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="diagnostic-moteur.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span data-lang="fr">Diagnostic moteur</span><span data-lang="nl">Motordiagnose</span></h3><p><span data-lang="fr">Diagnostic complet toutes marques.</span><span data-lang="nl">Volledige diagnose alle merken.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-      <a href="garage-automobile.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3><span data-lang="fr">Garage automobile</span><span data-lang="nl">Autogarage</span></h3><p><span data-lang="fr">Entretien complet toutes marques.</span><span data-lang="nl">Volledig onderhoud alle merken.</span></p><span class="service-card__link"><span data-lang="fr">Voir</span><span data-lang="nl">Bekijk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="reparation-electrique.html" class="service-card reveal"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 10 10-12h-9l1-10z"/></svg></div><h3><span>Réparation électrique</span></h3><p><span>Électricité auto, câblage, calculateurs.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="diagnostic-moteur.html" class="service-card reveal reveal-delay-1"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3><span>Diagnostic moteur</span></h3><p><span>Diagnostic complet toutes marques.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      <a href="garage-automobile.html" class="service-card reveal reveal-delay-2"><div class="service-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3><span>Garage automobile</span></h3><p><span>Entretien complet toutes marques.</span></p><span class="service-card__link"><span>Voir</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
     </div>
   </div></section>
 
@@ -319,63 +344,63 @@
   <section class="section--lg" style="background: var(--gray-50, #F9FAFB);">
     <div class="container">
       <div class="services__header">
-        <span class="label"><span data-lang="fr">Questions fréquentes</span><span data-lang="nl">Veelgestelde vragen</span></span>
-        <h2><span data-lang="fr">FAQ — Batterie auto à Zaventem</span><span data-lang="nl">FAQ — Autobatterij in Zaventem</span></h2>
+        <span class="label"><span>Questions fréquentes</span></span>
+        <h2><span>FAQ — Batterie auto à Zaventem</span></h2>
       </div>
       <div style="max-width:800px;margin:0 auto;">
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Ma voiture ne démarre plus, c'est la batterie ?</span><span data-lang="nl">Mijn auto start niet meer, is het de batterij?</span>
+            <span>Ma voiture ne démarre plus, c'est la batterie ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Probablement, mais pas forcément. Si le démarreur tourne au ralenti, c'est une batterie faible. Si rien ne se passe du tout, c'est souvent une batterie complètement morte ou une cosse oxydée. Si le démarreur fait un clac sec, ça peut être le démarreur lui-même. On teste en 5 minutes pour trancher.</span>
-            <span data-lang="nl">Waarschijnlijk, maar niet per se. Als de startmotor traag draait, is het een zwakke batterij. Als er helemaal niets gebeurt, is het vaak een compleet lege batterij of een geoxideerde klem. Als de startmotor een droge klik maakt, kan het de startmotor zelf zijn. We testen in 5 minuten om zekerheid te geven.</span>
+            <span>Probablement, mais pas forcément. Si le démarreur tourne au ralenti, c'est une batterie faible. Si rien ne se passe du tout, c'est souvent une batterie complètement morte ou une cosse oxydée. Si le démarreur fait un clac sec, ça peut être le démarreur lui-même. On teste en 5 minutes pour trancher.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Combien dure une batterie de voiture ?</span><span data-lang="nl">Hoe lang gaat een autobatterij mee?</span>
+            <span>Combien dure une batterie de voiture ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">En moyenne 4 à 6 ans. Mais ça dépend de votre usage. Les trajets courts la tuent plus vite — le moteur ne tourne pas assez longtemps pour recharger complètement. Le froid aussi : une batterie qui tient en été peut lâcher au premier matin de gel.</span>
-            <span data-lang="nl">Gemiddeld 4 tot 6 jaar. Maar het hangt af van uw gebruik. Korte ritten doden de batterij sneller — de motor draait niet lang genoeg om volledig op te laden. Kou ook: een batterij die het 's zomers houdt, kan het begeven op de eerste echte vorstdag.</span>
+            <span>En moyenne 4 à 6 ans. Mais ça dépend de votre usage. Les trajets courts la tuent plus vite — le moteur ne tourne pas assez longtemps pour recharger complètement. Le froid aussi : une batterie qui tient en été peut lâcher au premier matin de gel.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">C'est quoi la différence entre AGM et EFB ?</span><span data-lang="nl">Wat is het verschil tussen AGM en EFB?</span>
+            <span>C'est quoi la différence entre AGM et EFB ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Les deux sont pour les voitures Start-Stop. L'AGM est haut de gamme — elle encaisse beaucoup plus de cycles. L'EFB est un bon compromis, moins chère mais plus performante qu'une batterie classique. On ne met pas une EFB là où le constructeur a prévu une AGM — ça ne tient pas.</span>
-            <span data-lang="nl">Beide zijn voor Start-Stop auto's. AGM is het topmodel — het kan veel meer cycli aan. EFB is een goed compromis, goedkoper maar beter dan een gewone batterij. We plaatsen geen EFB waar de constructeur een AGM voorziet — dat houdt niet stand.</span>
+            <span>Les deux sont pour les voitures Start-Stop. L'AGM est haut de gamme — elle encaisse beaucoup plus de cycles. L'EFB est un bon compromis, moins chère mais plus performante qu'une batterie classique. On ne met pas une EFB là où le constructeur a prévu une AGM — ça ne tient pas.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Faut-il coder la batterie après remplacement ?</span><span data-lang="nl">Moet de batterij gecodeerd worden na vervanging?</span>
+            <span>Faut-il coder la batterie après remplacement ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Sur les VW, Audi, Seat, Skoda et BMW récents, oui. Sans codage, le calculateur sous-charge la nouvelle batterie et elle vieillit prématurément. C'est un codage de 5 minutes qu'on fait systématiquement — inclus dans le prix du remplacement.</span>
-            <span data-lang="nl">Op recente VW, Audi, Seat, Skoda en BMW, ja. Zonder codering laadt het systeem de nieuwe batterij onvoldoende op en veroudert ze voortijdig. Het is een codering van 5 minuten die we standaard doen — inbegrepen in de prijs van de vervanging.</span>
+            <span>Sur les VW, Audi, Seat, Skoda et BMW récents, oui. Sans codage, le calculateur sous-charge la nouvelle batterie et elle vieillit prématurément. C'est un codage de 5 minutes qu'on fait systématiquement — inclus dans le prix du remplacement.</span>
+
           </p>
         </details>
 
         <details open style="margin-bottom:1rem;padding:1.25rem;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.08);cursor:pointer;">
           <summary style="font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-            <span data-lang="fr">Le voyant batterie est allumé mais ma voiture roule, c'est grave ?</span><span data-lang="nl">Het batterijlampje brandt maar mijn auto rijdt, is dat erg?</span>
+            <span>Le voyant batterie est allumé mais ma voiture roule, c'est grave ?</span>
             <span style="font-size:1.2rem;color:#EAB308;">+</span>
           </summary>
           <p style="margin-top:0.75rem;color:#4B5563;line-height:1.7;">
-            <span data-lang="fr">Le voyant batterie signifie que l'alternateur ne charge plus. Votre voiture roule sur la réserve de la batterie — quand elle sera vide, tout s'éteint. Ça peut prendre 20 minutes ou 2 heures. Coupez tout ce qui n'est pas indispensable (clim, radio, sièges chauffants) et venez directement.</span>
-            <span data-lang="nl">Het batterijlampje betekent dat de dynamo niet meer oplaadt. Uw auto rijdt op de reserve van de batterij — als die leeg is, gaat alles uit. Dat kan 20 minuten of 2 uur duren. Schakel alles uit wat niet noodzakelijk is (airco, radio, stoelverwarming) en kom meteen langs.</span>
+            <span>Le voyant batterie signifie que l'alternateur ne charge plus. Votre voiture roule sur la réserve de la batterie — quand elle sera vide, tout s'éteint. Ça peut prendre 20 minutes ou 2 heures. Coupez tout ce qui n'est pas indispensable (clim, radio, sièges chauffants) et venez directement.</span>
+
           </p>
         </details>
 
@@ -385,21 +410,21 @@
 
   <!-- CTA -->
   <section class="cta-section section--lg"><div class="container">
-    <span class="label reveal"><span data-lang="fr">Batterie — Zaventem</span><span data-lang="nl">Batterij — Zaventem</span></span>
-    <h2 class="reveal"><span data-lang="fr">Appelez maintenant</span><span data-lang="nl">Bel nu</span></h2>
+    <span class="label reveal"><span>Batterie — Zaventem</span></span>
+    <h2 class="reveal"><span>Appelez maintenant</span></h2>
     <div class="cta-section__phone reveal reveal-delay-1"><a href="tel:+32484115813">0484 11 58 13</a></div>
-    <p class="cta-section__hours reveal reveal-delay-2"><span data-lang="fr">Test batterie, remplacement AGM/EFB, codage VAG<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span><span data-lang="nl">Batterijtest, vervanging AGM/EFB, VAG-codering<br>Maandag — Vrijdag · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
+    <p class="cta-section__hours reveal reveal-delay-2"><span>Test batterie, remplacement AGM/EFB, codage VAG<br>Lundi — Vendredi · 08:30 — 18:00<br>Mechelsesteenweg 270, 1933 Zaventem</span></p>
   </div></section>
 
   <!-- FOOTER -->
   <footer class="footer"><div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37"><p><span data-lang="fr">Garage automobile à Zaventem. Batterie auto. Toutes marques.</span><span data-lang="nl">Autogarage in Zaventem. Autobatterij. Alle merken.</span></p></div>
-      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html" data-lang="fr">Entretien</a><a href="garage-automobile.html" data-lang="nl">Onderhoud</a><a href="pneus.html" data-lang="fr">Pneus</a><a href="pneus.html" data-lang="nl">Banden</a><a href="carrosserie.html" data-lang="fr">Carrosserie</a><a href="carrosserie.html" data-lang="nl">Carrosserie</a><a href="vidange-huile.html" data-lang="fr">Vidange</a><a href="vidange-huile.html" data-lang="nl">Olieverversing</a><a href="freins.html" data-lang="fr">Freins</a><a href="freins.html" data-lang="nl">Remmen</a><a href="climatisation.html" data-lang="fr">Climatisation</a><a href="climatisation.html" data-lang="nl">Airco</a><a href="batterie.html" data-lang="fr">Batterie</a><a href="batterie.html" data-lang="nl">Batterij</a></div>
-      <div class="footer__col"><h4><span data-lang="fr">Plus</span><span data-lang="nl">Meer</span></h4><a href="mecanique-automobile.html" data-lang="fr">Mécanique</a><a href="mecanique-automobile.html" data-lang="nl">Mechaniek</a><a href="reparation-boite-dsg.html" data-lang="fr">Boîte DSG</a><a href="reparation-boite-dsg.html" data-lang="nl">DSG Versnellingsbak</a><a href="reparation-boite-vitesse.html" data-lang="fr">Boîte de vitesse</a><a href="reparation-boite-vitesse.html" data-lang="nl">Versnellingsbak</a><a href="controle-technique.html" data-lang="fr">Contrôle technique</a><a href="controle-technique.html" data-lang="nl">Technische keuring</a><a href="contact.html">Contact</a><a href="reparation-electrique.html" data-lang="fr">Électrique</a><a href="reparation-electrique.html" data-lang="nl">Elektrisch</a><a href="diagnostic-moteur.html" data-lang="fr">Diagnostic</a><a href="diagnostic-moteur.html" data-lang="nl">Diagnose</a><a href="reparation-moteur.html" data-lang="fr">Moteur</a><a href="reparation-moteur.html" data-lang="nl">Motor</a><a href="direction-suspension.html" data-lang="fr">Suspension</a><a href="direction-suspension.html" data-lang="nl">Ophanging</a><a href="courroie-distribution.html" data-lang="fr">Distribution</a><a href="courroie-distribution.html" data-lang="nl">Distributie</a><a href="filtre-particules.html" data-lang="fr">FAP</a><a href="filtre-particules.html" data-lang="nl">Roetfilter</a><a href="embrayage.html" data-lang="fr">Embrayage</a><a href="embrayage.html" data-lang="nl">Koppeling</a><a href="remplacement-turbo.html" data-lang="fr">Turbo</a><a href="remplacement-turbo.html" data-lang="nl">Turbo</a></div>
+      <div class="footer__brand"><img src="img/logo.webp" alt="DMT AUTOGROUP" width="100" height="37" decoding="async"><p><span>Garage automobile à Zaventem. Batterie auto. Toutes marques.</span></p></div>
+      <div class="footer__col"><h4>Services</h4><a href="garage-automobile.html">Entretien</a><a href="pneus.html">Pneus</a><a href="carrosserie.html">Carrosserie</a><a href="vidange-huile.html">Vidange</a><a href="freins.html">Freins</a><a href="climatisation.html">Climatisation</a><a href="batterie.html">Batterie</a></div>
+      <div class="footer__col"><h4><span>Plus</span></h4><a href="mecanique-automobile.html">Mécanique</a><a href="reparation-boite-dsg.html">Boîte DSG</a><a href="reparation-boite-vitesse.html">Boîte de vitesse</a><a href="controle-technique.html">Contrôle technique</a><a href="contact.html">Contact</a><a href="reparation-electrique.html">Électrique</a><a href="diagnostic-moteur.html">Diagnostic</a><a href="reparation-moteur.html">Moteur</a><a href="direction-suspension.html">Suspension</a><a href="courroie-distribution.html">Distribution</a><a href="filtre-particules.html">FAP</a><a href="embrayage.html">Embrayage</a><a href="remplacement-turbo.html">Turbo</a></div>
       <div class="footer__col"><h4>Contact</h4><a href="tel:+32484115813">0484 11 58 13</a><a href="mailto:DMT.AUTOGROUP@hotmail.com">DMT.AUTOGROUP@hotmail.com</a><a href="https://www.google.com/maps/search/?api=1&query=DMT+AUTOGROUP+1,2,3+AutoService&query_place_id=ChIJZYxTG37fw0cREIle6gqXy4Y" target="_blank" rel="noopener">Mechelsesteenweg 270<br>1933 Zaventem</a></div>
     </div>
-    <div class="footer__bottom"><span>&copy; 2025–2026 DMT AUTOGROUP. Zaventem.</span><span><span data-lang="fr">Batterie voiture Zaventem</span><span data-lang="nl">Autobatterij Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
+    <div class="footer__bottom"><span>&copy; 2025–2026 DMT AUTOGROUP 1,2,3 AutoService. Zaventem, Belgique.</span><span><span>Batterie voiture Zaventem</span></span><a href="mentions-legales.html" style="color:rgba(255,255,255,0.3);margin-left:1rem;">Mentions légales</a><a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.3);margin-left:0.5rem;">Confidentialité</a></div>
   </div></footer>
   <script src="js/main.js" defer></script>
 </body>
