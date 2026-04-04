@@ -96,8 +96,32 @@ force = false
 [redirects.headers]
 
 [[redirects]]
-from = "/services/boite-dsg.html"
-to = "/boite-dsg.html"
+from = "/services/reparation-boite-dsg.html"
+to = "/reparation-boite-dsg.html"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/boite-dsg"
+to = "/reparation-boite-dsg"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/boite-dsg.html"
+to = "/reparation-boite-dsg"
 status = 301.0
 force = false
 

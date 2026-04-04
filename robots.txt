@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /css/design-a.css
-Disallow: /css/design-b.css
-Disallow: /css/design-c.css
-
 Sitemap: https://dmt-autogroup.be/sitemap.xml
