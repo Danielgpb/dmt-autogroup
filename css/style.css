@@ -382,6 +382,8 @@ h4 { font-size: clamp(1rem, 2vw, 1.25rem); }
   padding: var(--space-lg) var(--space-md);
   flex-direction: column;
   gap: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-menu.open {
